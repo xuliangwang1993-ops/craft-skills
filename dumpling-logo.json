@@ -2,7 +2,7 @@
   {"command": "file.new", "params": {}},
   {"command": "node.create", "params": {"type": "frame", "name": "Logo", "props": {"width": 512, "height": 512}}},
   {"command": "node.create", "params": {"type": "ellipse", "parent": 2, "props": {"width": 480, "height": 480, "x": 16, "y": 16, "fill": "#8B1A1A"}}},
-  {"command": "node.create", "params": {"type": "text", "parent": 2, "x": 64, "y": 200, "text": "手工水饺", "props": {"fontSize": 72, "fontStyle": "Bold", "fill": "#FFF8F0"}}},
-  {"command": "node.create", "params": {"type": "text", "parent": 2, "x": 96, "y": 300, "text": "HANDMADE", "props": {"fontSize": 28, "letterSpacing": "4%", "fill": "#F5D0A9"}}},
+  {"command": "node.create", "params": {"type": "text", "parent": 2, "x": 56, "y": 190, "text": "手工水饺", "props": {"fontSize": 72, "fontFamily": "WenQuanYi Zen Hei", "fontStyle": "Regular", "fill": "#FFF8F0"}}},
+  {"command": "node.create", "params": {"type": "text", "parent": 2, "x": 108, "y": 290, "text": "HANDMADE", "props": {"fontSize": 28, "fontFamily": "WenQuanYi Zen Hei", "letterSpacing": "4%", "fill": "#F5D0A9"}}},
   {"command": "inspect.code", "params": {"ids": [2], "unit": "rem", "rootFontSize": 16}}
 ]
