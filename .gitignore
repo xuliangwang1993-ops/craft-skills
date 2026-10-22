@@ -1,0 +1,18 @@
+# 中间产物（体积大、可由 `make run` 逐字节重算）
+runs/*/03_edit/clips/*.mp4
+runs/*/03_edit/rough_9x16.mp4
+runs/*/03_edit/audio/*.wav
+runs/*/03_edit/clips/*.key
+runs/*/03_edit/clips_raw/
+runs/*/05_compose/audio/*.wav
+runs/*/05_compose/_cover_frame_*.png
+runs/*/06_qa/_f_*.png
+runs/faildrill/
+
+# 工具验证的临时工作目录
+reports/.toolwork/
+
+# 本地产物
+*.pyc
+__pycache__/
+.env

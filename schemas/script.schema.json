@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://craft-skills.local/schemas/script.schema.json",
+  "title": "script",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "duration_seconds": {
+      "type": "number",
+      "const": 30
+    },
+    "fps": {
+      "type": "integer",
+      "const": 30
+    },
+    "shots": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "required": [
+          "shot_id",
+          "index",
+          "seconds",
+          "visual",
+          "sub_zh",
+          "sub_en",
+          "refs",
+          "fact_refs"
+        ],
+        "properties": {
+          "shot_id": {
+            "type": "string",
+            "pattern": "^s[0-9]{2}$"
+          },
+          "index": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "seconds": {
+            "type": "number",
+            "minimum": 1
+          },
+          "visual": {
+            "type": "string",
+            "minLength": 3
+          },
+          "sub_zh": {
+            "type": "string"
+          },
+          "sub_en": {
+            "type": "string"
+          },
+          "refs": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "fact_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "menu_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "asset_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "voice": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "total_seconds": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "run_id",
+    "generated_at",
+    "duration_seconds",
+    "fps",
+    "shots",
+    "total_seconds"
+  ]
+}

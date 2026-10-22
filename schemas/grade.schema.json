@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://craft-skills.local/schemas/grade.schema.json",
+  "title": "grade",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "grade": {
+      "type": "object",
+      "required": [
+        "lut",
+        "targets"
+      ],
+      "properties": {
+        "lut": {
+          "type": "string"
+        },
+        "lut_source": {
+          "type": "string"
+        },
+        "targets": {
+          "type": "object",
+          "required": [
+            "temperature_k",
+            "exposure_ev"
+          ],
+          "properties": {
+            "temperature_k": {
+              "type": "number"
+            },
+            "exposure_ev": {
+              "type": "number"
+            }
+          }
+        },
+        "per_shot": {
+          "type": "object"
+        }
+      }
+    }
+  },
+  "required": [
+    "run_id",
+    "generated_at",
+    "grade"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://craft-skills.local/schemas/facts.schema.json",
+  "title": "facts",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "facts": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "object",
+        "required": [
+          "source_id",
+          "field",
+          "value",
+          "status",
+          "source",
+          "checked_at"
+        ],
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "pattern": "^src_[a-z0-9_]+$"
+          },
+          "field": {
+            "type": "string"
+          },
+          "value": {},
+          "status": {
+            "type": "string",
+            "enum": [
+              "verified",
+              "unverified",
+              "conflict",
+              "pending_customer"
+            ]
+          },
+          "source": {
+            "type": "object",
+            "required": [
+              "type",
+              "ref"
+            ],
+            "properties": {
+              "type": {
+                "enum": [
+                  "official_site",
+                  "directory",
+                  "manual",
+                  "customer"
+                ]
+              },
+              "ref": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              }
+            }
+          },
+          "checked_at": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "unverified_fields": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "required": [
+    "run_id",
+    "generated_at",
+    "facts",
+    "unverified_fields"
+  ]
+}

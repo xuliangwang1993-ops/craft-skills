@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://craft-skills.local/schemas/quote.schema.json",
+  "title": "quote",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "packages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "price_min_aud",
+          "price_max_aud",
+          "includes",
+          "basis"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "price_min_aud": {
+            "type": "number",
+            "minimum": 0
+          },
+          "price_max_aud": {
+            "type": "number",
+            "minimum": 0
+          },
+          "includes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "basis": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "measured_cost": {
+      "type": "object"
+    },
+    "market_comparison": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "run_id",
+    "generated_at",
+    "packages",
+    "measured_cost",
+    "market_comparison"
+  ]
+}

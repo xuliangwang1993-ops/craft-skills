@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://craft-skills.local/schemas/menu.schema.json",
+  "title": "menu",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string",
+      "const": "AUD"
+    },
+    "gst_included": {
+      "type": "boolean"
+    },
+    "items": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "type": "object",
+        "required": [
+          "item_id",
+          "name_zh",
+          "name_en",
+          "price_aud",
+          "status",
+          "source_id",
+          "in_video"
+        ],
+        "properties": {
+          "item_id": {
+            "type": "string",
+            "pattern": "^mi_[a-z0-9_]+$"
+          },
+          "name_zh": {
+            "type": "string"
+          },
+          "name_en": {
+            "type": "string"
+          },
+          "price_aud": {
+            "type": "number",
+            "minimum": 0
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "verified",
+              "unverified",
+              "conflict",
+              "pending_customer"
+            ]
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "in_video": {
+            "type": "boolean"
+          },
+          "customer_provided": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "note": {
+      "type": "string"
+    },
+    "empty_reason": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "run_id",
+    "generated_at",
+    "currency",
+    "gst_included",
+    "items"
+  ]
+}

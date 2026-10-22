@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://craft-skills.local/schemas/subs_review.schema.json",
+  "title": "subs_review",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "method": {
+      "type": "string"
+    },
+    "generated_by": {
+      "type": "string"
+    },
+    "human_review": {
+      "type": "object",
+      "required": [
+        "reviewer",
+        "reviewed_at",
+        "lines_total",
+        "lines_changed",
+        "coverage"
+      ],
+      "properties": {
+        "reviewer": {
+          "type": "string"
+        },
+        "reviewed_at": {
+          "type": "string"
+        },
+        "lines_total": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "lines_changed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "coverage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "changes": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "mt_engine": {
+      "type": "string"
+    },
+    "mt_engine_status": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "run_id",
+    "generated_at",
+    "method",
+    "generated_by",
+    "human_review"
+  ]
+}

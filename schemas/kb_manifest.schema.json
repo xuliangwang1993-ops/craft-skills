@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://craft-skills.local/schemas/kb_manifest.schema.json",
+  "title": "kb_manifest",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "documents": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "required": [
+          "file",
+          "title",
+          "sha256",
+          "facts_only"
+        ],
+        "properties": {
+          "file": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string"
+          },
+          "facts_only": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "faq_count": {
+      "type": "integer",
+      "minimum": 15
+    },
+    "assistant_test": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "run_id",
+    "generated_at",
+    "documents",
+    "faq_count"
+  ]
+}

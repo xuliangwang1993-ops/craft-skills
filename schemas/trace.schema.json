@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://craft-skills.local/schemas/trace.schema.json",
+  "title": "trace",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "ok": {
+      "type": "boolean"
+    },
+    "checked": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "mismatches": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "lines": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "required": [
+          "shot_id",
+          "sub_zh",
+          "sub_en",
+          "asset_ids",
+          "fact_refs",
+          "source_ids"
+        ],
+        "properties": {
+          "shot_id": {
+            "type": "string"
+          },
+          "sub_zh": {
+            "type": "string"
+          },
+          "sub_en": {
+            "type": "string"
+          },
+          "asset_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "fact_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "menu_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "coverage": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "run_id",
+    "generated_at",
+    "ok",
+    "checked",
+    "mismatches",
+    "lines"
+  ]
+}

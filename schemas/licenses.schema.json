@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://craft-skills.local/schemas/licenses.schema.json",
+  "title": "licenses",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "asset_id",
+          "name",
+          "origin",
+          "license",
+          "permission",
+          "in_delivery"
+        ],
+        "properties": {
+          "asset_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "license": {
+            "type": "string"
+          },
+          "license_url": {
+            "type": "string"
+          },
+          "permission": {
+            "enum": [
+              "customer-supplied",
+              "placeholder",
+              "licensed",
+              "generated"
+            ]
+          },
+          "permission_status": {
+            "type": "string"
+          },
+          "in_delivery": {
+            "type": "boolean"
+          },
+          "attribution": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "blocked_from_delivery": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "run_id",
+    "generated_at",
+    "items",
+    "blocked_from_delivery"
+  ]
+}

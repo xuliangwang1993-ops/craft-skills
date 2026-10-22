@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://craft-skills.local/schemas/brief.schema.json",
+  "title": "brief",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "sentence": {
+      "type": "string",
+      "minLength": 10
+    },
+    "client": {
+      "type": "object",
+      "required": [
+        "name_en",
+        "name_zh_status"
+      ],
+      "properties": {
+        "name_en": {
+          "type": "string"
+        },
+        "name_zh_status": {
+          "type": "string",
+          "enum": [
+            "verified",
+            "unverified",
+            "conflict",
+            "pending_customer"
+          ]
+        }
+      }
+    },
+    "duration_seconds": {
+      "type": "number",
+      "const": 30
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "zh",
+          "en"
+        ]
+      },
+      "minItems": 2
+    },
+    "aspects": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "9:16",
+          "1:1",
+          "16:9"
+        ]
+      },
+      "minItems": 3
+    },
+    "platforms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 4
+    },
+    "deliverables": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 4
+    },
+    "created_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "run_id",
+    "sentence",
+    "client",
+    "duration_seconds",
+    "languages",
+    "aspects",
+    "platforms",
+    "deliverables",
+    "created_at"
+  ]
+}

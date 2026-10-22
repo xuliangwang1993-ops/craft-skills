@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://craft-skills.local/schemas/media_manifest.schema.json",
+  "title": "media_manifest",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "assets": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "asset_id",
+          "kind",
+          "path",
+          "origin",
+          "permission",
+          "role",
+          "sha256"
+        ],
+        "properties": {
+          "asset_id": {
+            "type": "string",
+            "pattern": "^ast_[a-z0-9_]+$"
+          },
+          "kind": {
+            "enum": [
+              "image",
+              "video",
+              "audio",
+              "font",
+              "graphic"
+            ]
+          },
+          "path": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "origin_url": {
+            "type": "string"
+          },
+          "permission": {
+            "enum": [
+              "customer-supplied",
+              "placeholder",
+              "licensed",
+              "generated"
+            ]
+          },
+          "permission_status": {
+            "enum": [
+              "granted",
+              "pending",
+              "not-required"
+            ]
+          },
+          "role": {
+            "enum": [
+              "hero",
+              "placeholder",
+              "logo",
+              "music",
+              "graphic",
+              "font"
+            ]
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^(|[a-f0-9]{64})$",
+            "description": "generated assets are hashed when produced"
+          },
+          "width": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "height": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "duration": {
+            "type": "number",
+            "minimum": 0
+          },
+          "fps": {
+            "type": "number",
+            "minimum": 0
+          },
+          "license": {
+            "type": "string"
+          },
+          "in_delivery": {
+            "type": "boolean"
+          },
+          "watermark": {
+            "type": "boolean"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "placeholders_only": {
+      "type": "boolean"
+    },
+    "customer_media_received": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "run_id",
+    "generated_at",
+    "assets",
+    "placeholders_only"
+  ]
+}
