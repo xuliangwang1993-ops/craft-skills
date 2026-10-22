@@ -1,6 +1,8 @@
 # craft-skills
 
-**15 open-source creative apps — one AI pipeline.**
+**34 个技能 = 13 个 Craft 应用技能 + 21 个开源底层工具技能 —— 一条 AI 流水线。**
+
+（另有 8 条跨应用工作流；Craft 家族共 14 个仓库，其中 `artcraft` 是核心引擎、无独立 CLI，故无独立技能。）
 
 [ArtCraft / Storytold](https://github.com/storytold) 出品的 Craft 家族是一整套**纯 Rust、开源、净室实现**的专业创作软件：
 
@@ -62,7 +64,69 @@ claude mcp add wordcraft -- wordcraft-cli mcp
 
 ### `skills/` — 单应用技能
 
-13 个应用各一份 SKILL.md（核心引擎 `artcraft` 是底层库，无独立 CLI，故无独立技能），写明：该应用暴露哪些 MCP 工具、标准作业流程、硬规则、路径注意。
+13 个 Craft 应用各一份 SKILL.md（核心引擎 `artcraft` 是底层库，无独立 CLI，故无独立技能），写明：该应用暴露哪些 MCP 工具、标准作业流程、硬规则、路径注意。
+
+### `skills/base/` — 底层工具 / 开源替代（21 个）
+
+**做法是工厂化：一格一个最强工具，全覆盖不留空格，输出稳定，工具之间输出接输入串联。** 每个工具都要过三条标准：
+
+1. **领域标杆**：在自己那一格是公认最强的；
+2. **可独立使用**：命令行或 Python 直接调用，不用再包一层；
+3. **可对接其他工具**：输出是标准格式，能直接当下一个工具的输入。
+
+同一格不放两个重复工具。FFmpeg + OpenCV 是**共享底层**，给上面所有格子共用。
+
+| 格子 | 它让我们能做什么 | 工具 |
+|------|------------------|------|
+| 视频剪辑主干 | 覆盖并超过剪映约八成功能 | FFmpeg + MLT |
+| 字幕 | 自动出带时间轴字幕 | Whisper / FunASR（中文） |
+| 人声伴奏分离 | 提伴奏、去 BGM | Demucs |
+| 抠像 | 不用绿幕抠人像 | RobustVideoMatting |
+| 超分放大 | 低清素材放大修复 | Real-ESRGAN |
+| 配音 TTS | 自然中文配音 | CosyVoice |
+| 调色 | 照片批量调色 | darktable |
+| PDF | 合并拆分、OCR、提取、遮盖审计 | qpdf / OCRmyPDF / PyMuPDF |
+| 办公文档 | 表格、PPT、Word、格式互转 | openpyxl / python-pptx / python-docx / Pandoc |
+| 矢量 | 矢量批量导出 | Inkscape |
+| 批量图片 | 缩略、转码、水印、拼图 | libvips / ImageMagick |
+| 音频 | 转换、剪裁、混音、降噪 | SoX |
+| 共享底层 | 所有音视频与画面分析的公共层 | FFmpeg + OpenCV |
+
+| 技能 | 名称 | 补位的 Craft 槽位 | 许可 | 安装 |
+|------|------|------------------|------|------|
+| [`ffmpeg`](skills/base/ffmpeg/) | 音视频转码与处理（共享底层） | 共享底层 · 支撑 filmcraft / soundcraft / effectcraft | LGPL-2.1+（启用 --enable-gpl 编译时为 GPL） | `sudo apt install ffmpeg` |
+| [`opencv`](skills/base/opencv/) | 计算机视觉（共享底层） | 共享底层 · 支撑 photocraft / filmcraft / effectcraft | Apache-2.0（4.5 起） | `pip install opencv-python-headless` |
+| [`mlt`](skills/base/mlt/) | 多轨时间线剪辑（melt） | filmcraft 开源替代 | LGPL-2.1（部分模块 GPL） | `sudo apt install melt` |
+| [`whisper`](skills/base/whisper/) | 语音识别与字幕（Whisper） | filmcraft / soundcraft 字幕补位 | MIT | `pip install -U openai-whisper` |
+| [`funasr`](skills/base/funasr/) | 中文语音识别（FunASR / Paraformer） | filmcraft / soundcraft 中文字幕补位 | MIT（模型权重另见各自模型许可） | `pip install -U funasr modelscope torch torchaudio` |
+| [`demucs`](skills/base/demucs/) | 人声/伴奏分离（Demucs） | soundcraft 开源补位 | MIT | `pip install -U demucs` |
+| [`sox`](skills/base/sox/) | 音频处理（SoX） | soundcraft 开源替代 | GPL-2.0（libsox 为 LGPL） | `sudo apt install sox libsox-fmt-all` |
+| [`robust-video-matting`](skills/base/robust-video-matting/) | 无绿幕人像抠像（RVM） | effectcraft / filmcraft 抠像补位 | GPL-3.0 | `git clone https://github.com/PeterL1n/RobustVideoMatting && pip install -r RobustVideoMatting/requirements_inference.txt` |
+| [`real-esrgan`](skills/base/real-esrgan/) | 超分辨率放大（Real-ESRGAN） | photocraft / filmcraft 画质增强补位 | BSD-3-Clause | `pip install realesrgan basicsr` |
+| [`cosyvoice`](skills/base/cosyvoice/) | 中文配音 TTS（CosyVoice） | soundcraft / filmcraft 配音补位 | Apache-2.0 | `git clone --recursive https://github.com/FunAudioLLM/CosyVoice && cd CosyVoice && pip install -r requirements.txt` |
+| [`darktable-cli`](skills/base/darktable-cli/) | 照片批量调色（darktable） | lightcraft 开源替代 | GPL-3.0 | `sudo apt install darktable` |
+| [`qpdf`](skills/base/qpdf/) | PDF 结构操作（qpdf） | pdfcraft 开源替代 | Apache-2.0 | `sudo apt install qpdf` |
+| [`ocrmypdf`](skills/base/ocrmypdf/) | 扫描件 OCR（OCRmyPDF） | pdfcraft OCR 开源替代 | MPL-2.0（依赖 Tesseract Apache-2.0、Ghostscript AGPL） | `sudo apt install ocrmypdf tesseract-ocr-chi-sim` |
+| [`pymupdf`](skills/base/pymupdf/) | PDF 读取/渲染/编辑（PyMuPDF） | pdfcraft 开源替代 | ⚠️ AGPL-3.0（或付费商业许可） | `pip install pymupdf` |
+| [`openpyxl`](skills/base/openpyxl/) | Excel 读写（openpyxl） | gridcraft 开源替代 | MIT | `pip install openpyxl` |
+| [`python-pptx`](skills/base/python-pptx/) | PPT 生成（python-pptx） | deckcraft 开源替代 | MIT | `pip install python-pptx` |
+| [`python-docx`](skills/base/python-docx/) | Word 读写（python-docx） | wordcraft 开源替代 | MIT | `pip install python-docx` |
+| [`pandoc`](skills/base/pandoc/) | 文档格式互转（Pandoc） | wordcraft / deckcraft 格式转换补位 | GPL-2.0+ | `sudo apt install pandoc` |
+| [`inkscape`](skills/base/inkscape/) | 矢量图命令行（Inkscape） | vectorcraft 开源替代 | GPL-2.0+ | `sudo apt install inkscape` |
+| [`libvips`](skills/base/libvips/) | 高速批量图片处理（libvips） | photocraft 批处理开源替代 | LGPL-2.1+ | `sudo apt install libvips-tools` |
+| [`imagemagick`](skills/base/imagemagick/) | 通用图片处理（ImageMagick） | photocraft 批处理开源替代 | ImageMagick License（Apache-2.0 风格） | `sudo apt install imagemagick` |
+
+> 许可提醒：PyMuPDF 为 **AGPL-3.0**（网络服务对外提供须开源，商用闭源需买商业许可或换 pypdf）；SoX、darktable、Inkscape、Pandoc、RobustVideoMatting 为 GPL，改代码后分发须开源；只作为独立命令行调用一般不受影响。
+
+**刻意没收的**：Ardour、Natron、Penpot、Scribus、LibreCAD、FreeCAD、GIMP —— 都需要再包一层接口才能给 AI 稳定调用，不满足「可独立使用」；Natron 另外基本停更。
+
+#### 正在重写的三个缺口
+
+开源里没有够格的工具，这三格不留空，锁定闭源标杆自己重写：
+
+1. **模板与素材生态** —— 剪映的模板、贴纸、音乐、特效库是护城河，只能自建或接免版权素材库。
+2. **一键成片** —— PySceneDetect 切镜头 + 大模型挑片段 + MLT 成片，需要自己串成完整流程。
+3. **美颜 / 数字人精修** —— MediaPipe、LivePortrait、MuseTalk 能做但质量不够，需重写到剪映水准。
 
 ---
 
@@ -84,7 +148,7 @@ claude mcp add figcraft     -- figcraft-cli mcp
 
 **3. 用技能**
 
-把 `skills/` 或 `workflows/` 下的目录复制到你的技能目录（如 `~/.claude/skills/`），然后直接提需求：
+把 `skills/`、`skills/base/` 或 `workflows/` 下的目录复制到你的技能目录（如 `~/.claude/skills/`），然后直接提需求：
 
 > 「把 `/path/to/诉状.docx` 做成带批注的 PDF，和证据清单合并成卷宗，顺便查一下有没有假遮盖。」
 
@@ -111,6 +175,7 @@ wordcraft-cli info "$(wslpath -w /mnt/c/Users/you/doc.docx)"
 ## 许可与归属
 
 - **本仓库的技能文档**：MIT
+- **底层工具**：各自许可见上表（MIT / Apache / BSD / MPL / LGPL / GPL / AGPL）
 - **各 Craft 应用**：MIT OR Apache-2.0（见各自仓库）
 - **本仓库是社区项目，非官方。** ArtCraft / Storytold 与本仓库无隶属关系。
 - 所有应用名称与商标归其各自所有者。
