@@ -1,6 +1,6 @@
 # craft-skills
 
-**56 个技能 = 13 个 Craft 应用技能 + 43 个开源底层工具技能（第 0 批 21 + 第 1 批 22）—— 一条 AI 流水线。**
+**74 个技能 = 13 个 Craft 应用技能 + 61 个开源底层工具技能（第 0 批 21 + 第 1 批 22 + 第 2 批 18）—— 一条 AI 流水线。**
 
 扩库计划与格子总表见 [`docs/扩库立项.md`](docs/扩库立项.md)：入库一批、落地一批、立项一批，滚动推进。
 
@@ -68,7 +68,7 @@ claude mcp add wordcraft -- wordcraft-cli mcp
 
 13 个 Craft 应用各一份 SKILL.md（核心引擎 `artcraft` 是底层库，无独立 CLI，故无独立技能），写明：该应用暴露哪些 MCP 工具、标准作业流程、硬规则、路径注意。
 
-### `skills/base/` — 底层工具 / 开源替代（43 个）
+### `skills/base/` — 底层工具 / 开源替代（61 个）
 
 **做法是工厂化：一格一个最强工具，全覆盖不留空格，输出稳定，工具之间输出接输入串联。** 每个工具都要过三条标准：
 
@@ -144,6 +144,31 @@ claude mcp add wordcraft -- wordcraft-cli mcp
 | [`rembg`](skills/base/rembg/) | 图片去背景（rembg） | 图片抠图/去背景 | MIT | `pip install "rembg[cli]"` |
 | [`pyscenedetect`](skills/base/pyscenedetect/) | 镜头切分（PySceneDetect） | 镜头/场景检测 | BSD-3-Clause | `pip install "scenedetect[opencv]"` |
 | [`librosa`](skills/base/librosa/) | 音乐节拍分析（librosa） | 节拍/音乐分析（卡点） | ISC | `pip install librosa soundfile` |
+
+**第 2 批（扩库，阶段：入库，未实测）— 18 个新格子：**
+
+| 技能 | 名称 | 格子 | 许可 | 安装 |
+|------|------|------|------|------|
+| [`deepfilternet`](skills/base/deepfilternet/) | 语音降噪（DeepFilterNet） | 语音降噪 | MIT OR Apache-2.0 | `pip install deepfilternet` |
+| [`practical-rife`](skills/base/practical-rife/) | 慢动作补帧（Practical-RIFE） | 慢动作补帧 | MIT | `git clone https://github.com/hzwer/Practical-RIFE && cd Practical-RIFE && pip install -r requirements.txt` |
+| [`iopaint`](skills/base/iopaint/) | 图片修复/消除路人（LaMa · IOPaint） | 图片修复/消除路人 | Apache-2.0（LaMa 模型 Apache-2.0） | `pip install iopaint` |
+| [`mediapipe`](skills/base/mediapipe/) | 人脸/人体关键点（MediaPipe） | 人脸/人体关键点 | Apache-2.0 | `pip install mediapipe` |
+| [`ultralytics-yolo`](skills/base/ultralytics-yolo/) | 目标检测/跟踪（Ultralytics YOLO） | 目标检测/跟踪 | ⚠️ AGPL-3.0（闭源商用需 Ultralytics 企业许可） | `pip install ultralytics` |
+| [`gpt-sovits`](skills/base/gpt-sovits/) | 声音克隆/变声（GPT-SoVITS） | 声音克隆/变声 | MIT（底模另见各自许可） | `git clone https://github.com/RVC-Boss/GPT-SoVITS && cd GPT-SoVITS && bash install.sh` |
+| [`whisperx`](skills/base/whisperx/) | 逐字时间对齐（WhisperX） | 逐字时间对齐 | BSD-2-Clause（说话人分离用 pyannote，需 HF token 并同意模型条款） | `pip install whisperx` |
+| [`liveportrait`](skills/base/liveportrait/) | 数字人口型/表情驱动（LivePortrait） | 数字人口型/表情驱动 | ⚠️ 代码 MIT，但依赖的 InsightFace 人脸模型仅限非商用（商用须替换检测模型或取得授权） | `git clone https://github.com/KwaiVGI/LivePortrait && cd LivePortrait && pip install -r requirements.txt` |
+| [`wan`](skills/base/wan/) | 文生视频（Wan 2.x） | 文生视频 | Apache-2.0（⚠️ 需大显存 GPU） | `git clone https://github.com/Wan-Video/Wan2.2 && cd Wan2.2 && pip install -r requirements.txt` |
+| [`llama-cpp`](skills/base/llama-cpp/) | 本地大模型推理（llama.cpp） | 本地大模型推理 | MIT（模型权重另见各自许可） | `git clone https://github.com/ggml-org/llama.cpp && cd llama.cpp && cmake -B build && cmake --build build -j` |
+| [`meilisearch`](skills/base/meilisearch/) | 全文检索引擎（Meilisearch） | 全文检索引擎 | MIT（社区版；部分企业功能为商业许可） | `docker run -d -p 7700:7700 -e MEILI_MASTER_KEY=$MEILI_KEY -v $PWD/meili:/meili_data getmeili/meilisearch` |
+| [`n8n`](skills/base/n8n/) | 工作流编排（n8n） | 工作流编排 | ⚠️ Sustainable Use License（源码可见，非 OSI 开源；不得作为托管服务转售） | `docker run -d -p 5678:5678 -v $PWD/n8n:/home/node/.n8n docker.n8n.io/n8nio/n8n` |
+| [`vl-convert`](skills/base/vl-convert/) | 图表绘制（Vega-Lite · vl-convert） | 图表绘制 | BSD-3-Clause（Vega-Lite）/ BSD-3-Clause（vl-convert） | `pip install vl-convert-python` |
+| [`calibre`](skills/base/calibre/) | 电子书转换（Calibre） | 电子书 | GPL-3.0 | `sudo apt install calibre` |
+| [`fonttools`](skills/base/fonttools/) | 字体子集/处理（fontTools） | 字体子集/处理 | MIT | `pip install fonttools brotli` |
+| [`rclone`](skills/base/rclone/) | 文件同步/云存储（rclone） | 文件同步/云存储 | MIT | `sudo apt install rclone` |
+| [`7zip`](skills/base/7zip/) | 压缩归档（7-Zip） | 压缩归档 | LGPL-2.1（部分 BSD-3；unRAR 代码受 unRAR 许可限制，不得用于制作 RAR 压缩器） | `sudo apt install 7zip   # 提供 7zz；旧发行版 p7zip-full 提供 7z` |
+| [`exiftool`](skills/base/exiftool/) | 文件元数据（ExifTool） | 文件元数据 | Artistic License / GPL-1.0+（Perl 同款双许可） | `sudo apt install libimage-exiftool-perl` |
+
+> 第 2 批许可提醒：⚠️ Ultralytics YOLO 为 **AGPL-3.0**（闭源商用需企业许可）；⚠️ n8n 为 **Sustainable Use License，非 OSI 开源**；⚠️ LivePortrait 代码 MIT，但依赖的 **InsightFace 模型仅限非商用**；Calibre 为 GPL-3.0；7-Zip 的 unRAR 部分有额外限制；WhisperX 说话人分离需同意 pyannote 模型条款；Meilisearch 企业功能为商业许可；Wan、LivePortrait、RIFE、GPT-SoVITS 建议/需要 GPU。
 
 > 许可提醒：PyMuPDF、SearXNG 为 **AGPL-3.0**；Blender、ComfyUI 为 GPL；ComfyUI 需要 GPU。PyMuPDF 为 **AGPL-3.0**（网络服务对外提供须开源，商用闭源需买商业许可或换 pypdf）；SoX、darktable、Inkscape、Pandoc、RobustVideoMatting 为 GPL，改代码后分发须开源；只作为独立命令行调用一般不受影响。
 
