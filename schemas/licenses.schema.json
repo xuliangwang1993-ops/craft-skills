@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "required": [
+    "generated_at",
+    "assets"
+  ],
+  "properties": {
+    "generated_at": {
+      "type": "string"
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "license",
+          "attribution",
+          "source"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "license": {
+            "type": "string"
+          },
+          "attribution": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "licenses"
+}

@@ -1,0 +1,42 @@
+{
+  "station": "01_collect",
+  "checked_at": "2026-10-22T09:31:49+00:00",
+  "passed": false,
+  "checks": [
+    {
+      "id": "robots_respected",
+      "ok": true,
+      "detail": "2 次抓取，均允许；搜索页未抓"
+    },
+    {
+      "id": "facts_have_sources",
+      "ok": true,
+      "detail": 42
+    },
+    {
+      "id": "amenities_count",
+      "ok": true,
+      "detail": 17
+    },
+    {
+      "id": "rating_captured",
+      "ok": true,
+      "detail": 4.6
+    },
+    {
+      "id": "media_present",
+      "ok": true,
+      "detail": 8
+    },
+    {
+      "id": "comps_ge_10",
+      "ok": false,
+      "detail": "comps=0 未达 10；原因见 comps.gaps（robots 禁止搜索结果页）"
+    },
+    {
+      "id": "no_personal_data",
+      "ok": true,
+      "detail": "未保存评价人姓名/头像/原文、竞品房东信息"
+    }
+  ]
+}

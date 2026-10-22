@@ -1,0 +1,41 @@
+{
+  "station": "05_copy",
+  "checked_at": "2026-10-22T11:42:06+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "id": "title_le_50",
+      "ok": true,
+      "detail": {
+        "zh": 27,
+        "en": 40
+      }
+    },
+    {
+      "id": "no_forbidden_terms",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "only_verified_amenities",
+      "ok": true,
+      "detail": "17 项已验证设施"
+    },
+    {
+      "id": "every_para_has_sources",
+      "ok": true
+    },
+    {
+      "id": "two_languages",
+      "ok": true,
+      "detail": [
+        "zh",
+        "en"
+      ]
+    },
+    {
+      "id": "pricing_not_in_copy",
+      "ok": true
+    }
+  ]
+}

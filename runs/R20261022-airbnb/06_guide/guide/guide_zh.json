@@ -1,0 +1,35 @@
+{
+  "lang": "zh",
+  "pdf": "runs/R20261022-airbnb/06_guide/guide/guide_zh.pdf",
+  "sections": [
+    "1. 到达",
+    "2. 停车",
+    "3. 开门",
+    "4. Wi-Fi",
+    "5. 家电怎么用",
+    "6. 垃圾分类（NSW 通用）",
+    "7. 安静时间",
+    "8. 紧急联系",
+    "9. 退房清单"
+  ],
+  "placeholders": [
+    "{{AC_REMOTE}}",
+    "{{ADDRESS}}",
+    "{{CHECKOUT_TIME}}",
+    "{{DOOR_CODE}}",
+    "{{HOST_PHONE}}",
+    "{{KEYBOX_CODE}}",
+    "{{KEY_RETURN}}",
+    "{{LAUNDRY_TABLET}}",
+    "{{LOCK_TYPE}}",
+    "{{NEAREST_HOSPITAL}}",
+    "{{PARKING_SPOT}}",
+    "{{QUIET_HOURS}}",
+    "{{TV_REMOTE}}",
+    "{{WIFI_PASSWORD}}",
+    "{{WIFI_ROUTER_LOCATION}}",
+    "{{WIFI_SSID}}"
+  ],
+  "generated_at": "2026-10-22T13:13:40+00:00",
+  "bytes": 75478
+}

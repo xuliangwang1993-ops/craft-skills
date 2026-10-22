@@ -1,0 +1,16 @@
+{
+  "station": "06_guide",
+  "scores": {
+    "commercial": 5,
+    "handoff": 4.0,
+    "craft": 5.0,
+    "benchmark": 4
+  },
+  "total": 4.6,
+  "notes": [
+    "商业价值 5/5：双语 PDF，占位符齐全，打印即用；房东只需填本地字段",
+    "衔接 4.0/5：6/6 项 QA 通过；schema=缺；sha 校验=是",
+    "工艺 5.0/5：QA 通过率 6/6",
+    "标杆 4/5：weasyprint 不是排版天花板（InDesign/LaTeX 更高），但自动化程度足够"
+  ]
+}

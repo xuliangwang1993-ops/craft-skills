@@ -1,0 +1,38 @@
+{
+  "station": "06_guide",
+  "checked_at": "2026-10-22T13:13:57+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "id": "both_pdfs",
+      "ok": true
+    },
+    {
+      "id": "pdf_size_ok",
+      "ok": true,
+      "detail": {
+        "zh": 75478,
+        "en": 18688
+      }
+    },
+    {
+      "id": "all_placeholders_present",
+      "ok": true,
+      "detail": 16
+    },
+    {
+      "id": "same_section_count",
+      "ok": true,
+      "detail": 9
+    },
+    {
+      "id": "no_real_secret",
+      "ok": true,
+      "detail": "全部为 {{...}} 占位；由 secret_scan 复核"
+    },
+    {
+      "id": "emergency_number",
+      "ok": true
+    }
+  ]
+}

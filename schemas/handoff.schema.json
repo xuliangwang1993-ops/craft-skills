@@ -1,0 +1,91 @@
+{
+  "type": "object",
+  "required": [
+    "station",
+    "run_id",
+    "inputs",
+    "outputs",
+    "tools",
+    "duration_s",
+    "exit_code"
+  ],
+  "properties": {
+    "station": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "started_at": {
+      "type": "string"
+    },
+    "ended_at": {
+      "type": "string"
+    },
+    "duration_s": {
+      "type": "number"
+    },
+    "exit_code": {
+      "type": "integer"
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string"
+          },
+          "schema": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "tools": {
+      "type": "array"
+    },
+    "metrics": {
+      "type": "object"
+    },
+    "notes": {
+      "type": "array"
+    },
+    "error": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "handoff"
+}

@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "required": [
+    "generated_at",
+    "articles",
+    "faq_count"
+  ],
+  "properties": {
+    "generated_at": {
+      "type": "string"
+    },
+    "faq_count": {
+      "type": "integer",
+      "minimum": 20
+    },
+    "articles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "path"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "kb"
+}

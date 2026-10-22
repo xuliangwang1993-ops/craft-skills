@@ -1,0 +1,18 @@
+{
+  "status": "blocked_robots",
+  "captured_at": "2026-10-22T09:31:48+00:00",
+  "count": 0,
+  "comps": [],
+  "gaps": [
+    "Airbnb robots.txt 对 User-agent:* 明确 `Disallow: /s/*/*`，搜索结果页（唯一能一次拿到同区多房源+价格的公开入口）禁止抓取，本站按规则停手，未绕过。",
+    "单个房源页 /rooms/<id> 允许抓，但没有合规入口能批量发现 2km 内同类别房源 ID。",
+    "因此 comps=0，第 2 站定价降级为情景模型（confidence=low），阈值『每个建议价 ≥3 个可比房源』未达标。",
+    "补齐方式（需房东 5 分钟）：在 Airbnb App 搜 Rosebery 同日期、筛选『独立房间/2 位住客』，截 3 屏结果（含价格）发回，即可把 comps 补到 10–20 个并重跑第 2 站。"
+  ],
+  "robots": {
+    "checked_url": "https://www.airbnb.com.au/robots.txt",
+    "path_tested": "/s/Rosebery--NSW--Australia/homes",
+    "allowed": false,
+    "matched_rule": "Disallow: /s/*/*"
+  }
+}

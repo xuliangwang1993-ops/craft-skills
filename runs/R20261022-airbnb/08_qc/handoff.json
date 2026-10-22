@@ -1,0 +1,84 @@
+{
+  "station": "08_qc",
+  "run_id": "R20261022-airbnb",
+  "started_at": "2026-10-22T13:37:58+00:00",
+  "ended_at": "2026-10-22T13:38:23+00:00",
+  "duration_s": 24.58,
+  "exit_code": 0,
+  "inputs": [
+    {
+      "path": "runs/R20261022-airbnb/09_support/support_test.json",
+      "sha256": "e594a9e51cd532e043a47fe9377586b673a4e43d2ffe7acc3c722e4f714843fd"
+    },
+    {
+      "path": "runs/R20261022-airbnb/07_site/site.json",
+      "sha256": "2b72fd166497abe5c802b50cde406af429ee30d6d8a8e16d28fba7346e6e1b2c"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "runs/R20261022-airbnb/reports/qc.json",
+      "sha256": "2b2bf5b220d0e6321566b03cdd201372f1e514a28e95dcd787ebffa752d1696e",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/reports/failtest.json",
+      "sha256": "ac2493f61bc23c3126f2ab32ed158548684bba6a09ee4822cdd3db89726cb76e",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/reports/html_audit.json",
+      "sha256": "7a2ddde0b0aef975ea101aac580461cb198ef10a5d4b5cffba14a22409bd8a9d",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/reports/lighthouse.json",
+      "sha256": "32a870a8e133e6a9e4647f0ab7fb0140a015bda10964d6996be63dc173b17da3",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/reports/qc.json",
+      "sha256": "2b2bf5b220d0e6321566b03cdd201372f1e514a28e95dcd787ebffa752d1696e",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/reports/scorecard.json",
+      "sha256": "89fa6ecc04edc5f0c2853c1545e3d7ad58629653cbdcee562d8a17fc28185f7e",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/reports/secret_scan.json",
+      "sha256": "e80781be0c206bd31714af90c3c8aee3dd87ce0318994d6e404aacc06600043f",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/reports/site_e2e.json",
+      "sha256": "574749e55a91d81788ba84e545b69c0aa87d782a9cc61535bc28b9d6de377096",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/reports/trace.json",
+      "sha256": "0563c4da095cb9b17d34b76597038c91b55b217baa058f91fba0da7ebdd1436a",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/reports/trace_manifest.json",
+      "sha256": "c81b926061a6ba7173c0104b3ff68af9149287fb06c2608e2e7189077f991b0a",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/reports/video_qa.json",
+      "sha256": "6208acffd5b1ac7e1bd15627221bb8c4b06d343266a842812097d23c34e4d110",
+      "schema": null
+    }
+  ],
+  "tools": [],
+  "metrics": {
+    "secret_hits": 0,
+    "trace_issues": 0,
+    "site_bytes": 30177962,
+    "lighthouse": "not_run"
+  },
+  "notes": [],
+  "error": null
+}

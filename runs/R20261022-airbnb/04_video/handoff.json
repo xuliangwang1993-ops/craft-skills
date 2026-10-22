@@ -1,0 +1,88 @@
+{
+  "station": "04_video",
+  "run_id": "R20261022-airbnb",
+  "started_at": "2026-10-22T13:08:16+00:00",
+  "ended_at": "2026-10-22T13:11:48+00:00",
+  "duration_s": 212.51,
+  "exit_code": 0,
+  "inputs": [
+    {
+      "path": "runs/R20261022-airbnb/03_photos/photos/order.json",
+      "sha256": "14f7dcd17cbe3f7d723af71260f07ea4c5d72b03be9c46b6908b58fc9564fe64"
+    },
+    {
+      "path": "runs/R20261022-airbnb/01_collect/facts.json",
+      "sha256": "e6f7ecb0cd017de7c46db4fdc20593e7c06eeb2a4267358f15e4f0da17b50b23"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "runs/R20261022-airbnb/04_video/tour_9x16.mp4",
+      "sha256": "6d9e474ede463fea85fb31124271d6d185f164dfd7821462aaf230534cb49429",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/04_video/tour_16x9.mp4",
+      "sha256": "eabd505e8f9200faeca58c4cf1be475dd3d207d172a93fdc6241f1eb7cbaeeb3",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/04_video/cover_9x16.jpg",
+      "sha256": "13d06a8903d087f289e1b8036d555bb1a1ae21ca0d16ce7eebd7165fca61a891",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/04_video/cover_16x9.jpg",
+      "sha256": "2e6e5a41d510b441bfc05610279e4dda6304a3042e7982b224f5f17ff9e2e596",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/04_video/subs/tour_en.srt",
+      "sha256": "a91234b4dbb245650cb51bba7db47fd522ed32a49c32c7ea9fcaf8b11a751928",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/04_video/subs/tour_zh.srt",
+      "sha256": "24b4d25db26187c31e38f72c3f8ce9d247ab0f6eca50975f7756b12f160c7ee8",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/04_video/video_meta.json",
+      "sha256": "a2615dda34be74d54b1a37542a07ca5259c3d066074211d5e05bd49c287483ab",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/04_video/audio/bed.wav",
+      "sha256": "1842627442ca77693faf7fe111554ec87bf41590955833a687ff03e610f4ddfb",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/04_video/audio/LICENSE.txt",
+      "sha256": "07a6215c51fe15e119debd458985a97873e674a25a06145aab25be91a8739a88",
+      "schema": null
+    }
+  ],
+  "tools": [
+    {
+      "name": "ffmpeg",
+      "version": "ffmpeg: a previous ffmpeg operation was aborted and its worker could not be stopped; ffmpeg is unavailable until the app"
+    },
+    {
+      "name": "sox",
+      "version": "sox:      SoX v14.4.2"
+    }
+  ],
+  "metrics": {
+    "duration": {
+      "tour_9x16.mp4": 40.0,
+      "tour_16x9.mp4": 40.0
+    },
+    "slides": 6,
+    "bytes": {
+      "tour_9x16.mp4": 12109932,
+      "tour_16x9.mp4": 14126036
+    }
+  },
+  "notes": [],
+  "error": null
+}

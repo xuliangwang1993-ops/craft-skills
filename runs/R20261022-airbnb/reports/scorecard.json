@@ -1,0 +1,178 @@
+{
+  "run": "R20261022-airbnb",
+  "stations": [
+    {
+      "station": "00_brief",
+      "scores": {
+        "commercial": 4,
+        "handoff": 5.0,
+        "craft": 5.0,
+        "benchmark": 4
+      },
+      "total": 4.5,
+      "notes": [
+        "商业价值 4/5：一句话就被拆成可执行的交付清单；但语言只留 zh/en，ja/ko 未定",
+        "衔接 5.0/5：4/4 项 QA 通过；schema=是；sha 校验=是",
+        "工艺 5.0/5：QA 通过率 4/4",
+        "标杆 4/5：jq 是 JSON 处理的基准工具；本机 1.7.1 实测通过"
+      ]
+    },
+    {
+      "station": "01_collect",
+      "scores": {
+        "commercial": 3,
+        "handoff": 5.0,
+        "craft": 3.5,
+        "benchmark": 2
+      },
+      "total": 3.47,
+      "notes": [
+        "商业价值 3/5：事实表完整可追溯（42 条），但竞品 0 个：定价与定位都缺参照",
+        "衔接 5.0/5：6/7 项 QA 通过；schema=是；sha 校验=是",
+        "工艺 3.5/5：QA 通过率 6/7",
+        "标杆 2/5：curl 合规但采集能力弱；crawl4ai 装不上，真正的行业做法是 crawl4ai/Playwright + 代理池"
+      ]
+    },
+    {
+      "station": "02_pricing",
+      "scores": {
+        "commercial": 3,
+        "handoff": 5.0,
+        "craft": 3.0,
+        "benchmark": 1
+      },
+      "total": 3.2,
+      "notes": [
+        "商业价值 3/5：给出可执行的价位与「直订省多少」算式，但全部是假设，不能对外报价",
+        "衔接 5.0/5：3/5 项 QA 通过；schema=是；sha 校验=是",
+        "工艺 3.0/5：QA 通过率 3/5",
+        "标杆 1/5：duckdb 不可用、无 PriceLabs/Beyond 类动态定价数据源；这是全链最弱的一格"
+      ]
+    },
+    {
+      "station": "03_photos",
+      "scores": {
+        "commercial": 4,
+        "handoff": 4.0,
+        "craft": 3.5,
+        "benchmark": 2
+      },
+      "total": 3.57,
+      "notes": [
+        "商业价值 4/5：6 张可直接用的占位成片，参数全记录；但缺 darktable、1 张透视无法扶正",
+        "衔接 4.0/5：5/6 项 QA 通过；schema=缺；sha 校验=是",
+        "工艺 3.5/5：QA 通过率 5/6",
+        "标杆 2/5：darktable 是行业基准，本机没有；用 PIL/OpenCV 复刻了能复刻的部分"
+      ]
+    },
+    {
+      "station": "04_video",
+      "scores": {
+        "commercial": 4,
+        "handoff": 4.0,
+        "craft": 5.0,
+        "benchmark": 4
+      },
+      "total": 4.25,
+      "notes": [
+        "商业价值 4/5：双尺寸 40s 成片，响度 -13.8 LUFS、真峰 -5.2 dBTP，可直接发",
+        "衔接 4.0/5：5/5 项 QA 通过；schema=缺；sha 校验=是",
+        "工艺 5.0/5：QA 通过率 5/5",
+        "标杆 4/5：ffmpeg 是事实标准；因本机 worker 锁死改到电脑端编码，链路仍可复现"
+      ]
+    },
+    {
+      "station": "05_copy",
+      "scores": {
+        "commercial": 4,
+        "handoff": 4.0,
+        "craft": 5.0,
+        "benchmark": 3
+      },
+      "total": 4.1,
+      "notes": [
+        "商业价值 4/5：中英两版可直接粘贴，句句带来源；但没有 ja/ko，也没做 A/B 文案",
+        "衔接 4.0/5：6/6 项 QA 通过；schema=缺；sha 校验=是",
+        "工艺 5.0/5：QA 通过率 6/6",
+        "标杆 3/5：无已验证翻译工具，人工撰写优于机翻；对标 DeepL+人工 仍差一档"
+      ]
+    },
+    {
+      "station": "06_guide",
+      "scores": {
+        "commercial": 5,
+        "handoff": 4.0,
+        "craft": 5.0,
+        "benchmark": 4
+      },
+      "total": 4.6,
+      "notes": [
+        "商业价值 5/5：双语 PDF，占位符齐全，打印即用；房东只需填本地字段",
+        "衔接 4.0/5：6/6 项 QA 通过；schema=缺；sha 校验=是",
+        "工艺 5.0/5：QA 通过率 6/6",
+        "标杆 4/5：weasyprint 不是排版天花板（InDesign/LaTeX 更高），但自动化程度足够"
+      ]
+    },
+    {
+      "station": "07_site",
+      "scores": {
+        "commercial": 4,
+        "handoff": 5.0,
+        "craft": 5.0,
+        "benchmark": 3
+      },
+      "total": 4.35,
+      "notes": [
+        "商业价值 4/5：能收申请、不收款、移动端可用；但日历还没接房东真实 iCal",
+        "衔接 5.0/5：8/8 项 QA 通过；schema=是；sha 校验=是",
+        "工艺 5.0/5：QA 通过率 8/8",
+        "标杆 3/5：原生静态站性能好，但功能对标 Lodgify/Hostaway 还差预订引擎与支付"
+      ]
+    },
+    {
+      "station": "08_qc",
+      "scores": {
+        "commercial": 3,
+        "handoff": 4.0,
+        "craft": 5.0,
+        "benchmark": 2
+      },
+      "total": 3.6,
+      "notes": [
+        "商业价值 3/5：把「哪里不能信」写成了机器可查的报告；但 Lighthouse 没跑成",
+        "衔接 4.0/5：10/10 项 QA 通过；schema=缺；sha 校验=是",
+        "工艺 5.0/5：QA 通过率 10/10",
+        "标杆 2/5：真实 Lighthouse 要 Chrome，本机跑不了；静态启发式只能算替身"
+      ]
+    },
+    {
+      "station": "09_support",
+      "scores": {
+        "commercial": 5,
+        "handoff": 5.0,
+        "craft": 5.0,
+        "benchmark": 3
+      },
+      "total": 4.7,
+      "notes": [
+        "商业价值 5/5：25 条 FAQ + 9 篇知识包，密码类问题 100% 拒答",
+        "衔接 5.0/5：5/5 项 QA 通过；schema=是；sha 校验=是",
+        "工艺 5.0/5：QA 通过率 5/5",
+        "标杆 3/5：规则检索不是 RAG；小助手接入后建议换向量检索"
+      ]
+    }
+  ],
+  "overall": 4.03,
+  "axis_average": {
+    "commercial": 3.9,
+    "handoff": 4.5,
+    "craft": 4.5,
+    "benchmark": 2.8
+  },
+  "weights": {
+    "commercial": 0.35,
+    "handoff": 0.25,
+    "craft": 0.25,
+    "benchmark": 0.15
+  }
+}

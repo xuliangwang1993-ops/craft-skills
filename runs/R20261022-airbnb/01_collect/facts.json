@@ -1,0 +1,295 @@
+{
+  "listing_id": "RGVtYW5kU3RheUxpc3Rpbmc6MTI4Njc4OTkzNDgwOTYyODQ3OA==",
+  "generated_at": "2026-10-22T09:31:48+00:00",
+  "facts": {
+    "listing_id": {
+      "value": "RGVtYW5kU3RheUxpc3Rpbmc6MTI4Njc4OTkzNDgwOTYyODQ3OA==",
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "platform": {
+      "value": "Airbnb",
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "url": {
+      "value": "https://www.airbnb.com.au/rooms/1286789934809628478",
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "share_title": {
+      "value": "Home in Rosebery · ★4.6 · 1 bedroom · 1 bed · 1 shared bath",
+      "source_id": "src_airbnb_pdp",
+      "status": "verified",
+      "note": "Airbnb 自动生成的分享标题，非房东自定标题"
+    },
+    "host_title": {
+      "value": null,
+      "source_id": "src_owner_pending",
+      "status": "pending_owner",
+      "note": "正式标题待房东提供"
+    },
+    "room_type": {
+      "value": "Private room in home（整屋中的独立房间）",
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "property_type": {
+      "value": "HOUSE",
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "space_type": {
+      "value": "PRIVATE_ROOM",
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "suburb": {
+      "value": "Rosebery",
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "state": {
+      "value": "New South Wales",
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "country": {
+      "value": "Australia",
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "coordinates": {
+      "value": {
+        "lat": -33.91718,
+        "lng": 151.20399
+      },
+      "source_id": "src_airbnb_pdp",
+      "status": "verified",
+      "note": "仅用于计算距离/街区级地图，任何公开产出不得输出精确坐标或门牌"
+    },
+    "address": {
+      "value": null,
+      "source_id": "src_policy",
+      "status": "pending_owner",
+      "note": "具体地址不公开、不入任何公开产出"
+    },
+    "max_guests": {
+      "value": 2,
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "bedrooms": {
+      "value": 1,
+      "source_id": "src_airbnb_pdp",
+      "status": "verified",
+      "note": "页面标注 1 bedroom"
+    },
+    "beds": {
+      "value": [
+        "1 queen bed"
+      ],
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "bathrooms": {
+      "value": "1 shared bathroom（共用）",
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "description_public": {
+      "value": "Relax with the whole family at this peaceful place to stay.   Registration details  Exempt",
+      "source_id": "src_airbnb_pdp",
+      "status": "verified",
+      "note": "Airbnb 模板句，且『whole family』与 2 人房不符"
+    },
+    "description_full": {
+      "value": null,
+      "source_id": "src_owner_pending",
+      "status": "pending_owner",
+      "note": "完整描述待房东提供"
+    },
+    "amenities_included": {
+      "value": [
+        "Hair dryer",
+        "Washing machine",
+        "TV",
+        "Piano",
+        "Air conditioning",
+        "Lock on bedroom door",
+        "Smoke alarm",
+        "Carbon monoxide alarm",
+        "Fire extinguisher",
+        "First aid kit",
+        "Wi-Fi",
+        "Dedicated workspace",
+        "Kitchen",
+        "Outdoor dining area",
+        "BBQ",
+        "Free parking on premises",
+        "Pets allowed"
+      ],
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "amenities_not_included": {
+      "value": [
+        "Exterior security cameras on property",
+        "Dryer",
+        "Essentials",
+        "Heating",
+        "Hot water"
+      ],
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "house_rules": {
+      "value": [
+        "Up to 2 overnight guests",
+        "Pets allowed"
+      ],
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "safety_devices": {
+      "value": [
+        "Carbon monoxide alarm installed",
+        "Smoke alarm installed"
+      ],
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "checkin_time": {
+      "value": null,
+      "source_id": "src_owner_pending",
+      "status": "pending_owner"
+    },
+    "checkout_time": {
+      "value": null,
+      "source_id": "src_owner_pending",
+      "status": "pending_owner"
+    },
+    "min_nights": {
+      "value": null,
+      "source_id": "src_owner_pending",
+      "status": "pending_owner"
+    },
+    "max_nights": {
+      "value": null,
+      "source_id": "src_owner_pending",
+      "status": "pending_owner"
+    },
+    "cancellation_policy": {
+      "value": null,
+      "source_id": "src_owner_pending",
+      "status": "pending_owner"
+    },
+    "nightly_price_aud": {
+      "value": null,
+      "source_id": "src_owner_pending",
+      "status": "pending_owner",
+      "note": "页面未选日期不显示价格"
+    },
+    "rating": {
+      "value": 4.6,
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "reviews_count": {
+      "value": "25",
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "superhost": {
+      "value": false,
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "host_display_name": {
+      "value": "Liping",
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "registration_details": {
+      "value": "Exempt",
+      "source_id": "src_airbnb_pdp",
+      "status": "unverified",
+      "note": "页面写 Exempt，豁免依据待房东确认（同住型/其他）"
+    },
+    "hot_water_listed": {
+      "value": false,
+      "source_id": "src_airbnb_pdp",
+      "status": "conflict",
+      "note": "平台把热水标为『无』，与可住人事实矛盾，极可能漏勾；确认前不宣传"
+    },
+    "essentials_listed": {
+      "value": false,
+      "source_id": "src_airbnb_pdp",
+      "status": "conflict",
+      "note": "平台把 Essentials 标为『无』，确认前不宣传"
+    },
+    "heating_listed": {
+      "value": false,
+      "source_id": "src_airbnb_pdp",
+      "status": "verified",
+      "note": "平台未列暖气（仅有空调）；冬季卖点缺口，需房东确认是否有取暖设备"
+    },
+    "wifi_available": {
+      "value": true,
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    },
+    "wifi_password": {
+      "value": "{{WIFI_PASSWORD}}",
+      "source_id": "src_policy",
+      "status": "pending_owner",
+      "note": "占位符，真实值仅房东本地填写"
+    },
+    "door_code": {
+      "value": "{{DOOR_CODE}}",
+      "source_id": "src_policy",
+      "status": "pending_owner"
+    },
+    "keybox_code": {
+      "value": "{{KEYBOX_CODE}}",
+      "source_id": "src_policy",
+      "status": "pending_owner"
+    },
+    "guest_highlights": {
+      "value": [],
+      "source_id": "src_airbnb_pdp",
+      "status": "verified"
+    }
+  },
+  "sources": [
+    {
+      "id": "src_airbnb_pdp",
+      "kind": "airbnb_public_pdp",
+      "url": "https://www.airbnb.com.au/rooms/1286789934809628478",
+      "retrieved_at": "2026-10-22T09:31:48+00:00",
+      "note": "公开页面内嵌 JSON（data-deferred-state-0）",
+      "sha256": "e68c3f45222ec526e46e13740a0ad755d093b430442597b979cef25e5ca4b031"
+    },
+    {
+      "id": "src_airbnb_robots",
+      "kind": "robots_txt",
+      "url": "https://www.airbnb.com.au/robots.txt",
+      "retrieved_at": "2026-10-22T09:31:48+00:00",
+      "sha256": "ebc0ec13bfede3e131fd28d73907ae6775c94ab3d6cee69eca93ee3463be94b6"
+    },
+    {
+      "id": "src_owner_pending",
+      "kind": "owner_input",
+      "url": "pending://owner",
+      "retrieved_at": "2026-10-22T09:31:48+00:00",
+      "note": "待房东提供，本站不猜"
+    },
+    {
+      "id": "src_policy",
+      "kind": "task_policy",
+      "url": "task://v4",
+      "retrieved_at": "2026-10-22T09:31:48+00:00",
+      "note": "任务书硬约束：地址不公开、密码一律占位"
+    }
+  ]
+}

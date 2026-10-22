@@ -1,0 +1,77 @@
+{
+  "station": "01_collect",
+  "run_id": "R20261022-airbnb",
+  "started_at": "2026-10-22T09:31:40+00:00",
+  "ended_at": "2026-10-22T09:31:49+00:00",
+  "duration_s": 8.74,
+  "exit_code": 0,
+  "inputs": [
+    {
+      "path": "runs/R20261022-airbnb/00_brief/brief.json",
+      "sha256": "c365e0126e69f0a16d37623e7c49c43c8e7fc81f51171ea178d980986d9a9d9b"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "runs/R20261022-airbnb/01_collect/facts.json",
+      "sha256": "e6f7ecb0cd017de7c46db4fdc20593e7c06eeb2a4267358f15e4f0da17b50b23",
+      "schema": "facts"
+    },
+    {
+      "path": "runs/R20261022-airbnb/01_collect/comps.json",
+      "sha256": "e9543e9c772cf1c000ffa59002bd8a14afb41580af148c9fe4ad447fd2c3405f",
+      "schema": "comps"
+    },
+    {
+      "path": "runs/R20261022-airbnb/01_collect/media_manifest.json",
+      "sha256": "484d81c140d48eafee96024e0948af7b771f012789c6896bf348650579dbd0f9",
+      "schema": "media_manifest"
+    },
+    {
+      "path": "runs/R20261022-airbnb/licenses.json",
+      "sha256": "860a60880e78ef12675d497a15b39c07845ae13f04207076e4500911ef5070e1",
+      "schema": "licenses"
+    },
+    {
+      "path": "runs/R20261022-airbnb/01_collect/raw/robots.txt",
+      "sha256": "ebc0ec13bfede3e131fd28d73907ae6775c94ab3d6cee69eca93ee3463be94b6",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/01_collect/raw/listing.html",
+      "sha256": "e68c3f45222ec526e46e13740a0ad755d093b430442597b979cef25e5ca4b031",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/01_collect/shot_request.md",
+      "sha256": "f8b6026def1bd29b176461eb056e61d17dfdedf39f5647a98d6fd24eeac567ee",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/01_collect/compliance.json",
+      "sha256": "60100ab0dc180f42ae9785635cdc4e602ecc99e195b7823a409d9f4e6240200f",
+      "schema": null
+    }
+  ],
+  "tools": [
+    {
+      "name": "curl",
+      "version": "curl 8.14.1 (aarch64-alpine-linux-musl) libcurl/8.14.1 OpenSSL/3.3.7 zlib/1.3.2 brotli/1.1.1 zstd/1.5.6 c-ares/1.34.8 li"
+    },
+    {
+      "name": "python3",
+      "version": "3.12.14"
+    }
+  ],
+  "metrics": {
+    "facts": 42,
+    "verified": 27,
+    "pending_owner": 12,
+    "media": 8,
+    "comps": 0
+  },
+  "notes": [
+    "comps 为 0 是合规结果，不是脚本失败：robots 禁止 /s/*/*。"
+  ],
+  "error": null
+}

@@ -1,0 +1,16 @@
+{
+  "station": "03_photos",
+  "scores": {
+    "commercial": 4,
+    "handoff": 4.0,
+    "craft": 3.5,
+    "benchmark": 2
+  },
+  "total": 3.57,
+  "notes": [
+    "商业价值 4/5：6 张可直接用的占位成片，参数全记录；但缺 darktable、1 张透视无法扶正",
+    "衔接 4.0/5：5/6 项 QA 通过；schema=缺；sha 校验=是",
+    "工艺 3.5/5：QA 通过率 5/6",
+    "标杆 2/5：darktable 是行业基准，本机没有；用 PIL/OpenCV 复刻了能复刻的部分"
+  ]
+}

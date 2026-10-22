@@ -1,0 +1,29 @@
+{
+  "station": "09_support",
+  "checked_at": "2026-10-22T11:43:14+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "id": "faq_ge_20",
+      "ok": true,
+      "detail": 25
+    },
+    {
+      "id": "accuracy_ge_90",
+      "ok": true,
+      "detail": "100.0%"
+    },
+    {
+      "id": "secrets_refused",
+      "ok": true
+    },
+    {
+      "id": "every_article_has_facts",
+      "ok": true
+    },
+    {
+      "id": "pending_listed",
+      "ok": true
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+1
+00:00:00,000 --> 00:00:06,550
+The room: queen bed, timber floor, lockable door
+
+
+2
+00:00:06,100 --> 00:00:12,650
+Other side of the room: desk workspace, glass door to the garden
+
+
+3
+00:00:12,200 --> 00:00:18,750
+Shared kitchen: gas hob, oven, bench
+
+
+4
+00:00:18,300 --> 00:00:24,850
+Kitchen, other side: fridge and storage
+
+
+5
+00:00:24,400 --> 00:00:30,950
+Shared bathroom: shower and basin (as-is; reshoot recommended)
+
+
+6
+00:00:30,500 --> 00:00:37,050
+Back garden: outdoor dining table, BBQ and lounge
+

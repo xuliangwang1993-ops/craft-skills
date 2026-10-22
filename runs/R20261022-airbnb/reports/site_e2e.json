@@ -1,0 +1,42 @@
+{
+  "steps": [
+    {
+      "step": "load",
+      "ok": true,
+      "detail": "minis://workspace/craft-skills/runs/R20261022-airbnb/07_site/site/index.html?e2e=1792676292"
+    },
+    {
+      "step": "render",
+      "ok": true,
+      "detail": {
+        "h1": "一间安静的独立房间，书桌对着后院",
+        "images": 7,
+        "broken": 0,
+        "lang": "zh-Hans"
+      }
+    },
+    {
+      "step": "language_toggle",
+      "ok": true,
+      "detail": "A quiet room with a desk, and a garden behind it"
+    },
+    {
+      "step": "calendar_mount",
+      "ok": true,
+      "detail": "一二三四五六日12345678910111213141516171819202122232425262728293031还没有导入日历，先在右侧提交日期申请。"
+    },
+    {
+      "step": "form_validation_empty",
+      "ok": true,
+      "detail": "请填姓名 · 邮箱格式不对 · 退房要晚于入住"
+    },
+    {
+      "step": "form_submit_valid",
+      "ok": true,
+      "detail": "已发出。房东通常 12 小时内回复。"
+    }
+  ],
+  "passed": true,
+  "screenshots": [],
+  "url": "minis://workspace/craft-skills/runs/R20261022-airbnb/07_site/site/index.html?e2e=1792676292"
+}

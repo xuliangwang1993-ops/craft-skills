@@ -1,0 +1,16 @@
+{
+  "station": "02_pricing",
+  "scores": {
+    "commercial": 3,
+    "handoff": 5.0,
+    "craft": 3.0,
+    "benchmark": 1
+  },
+  "total": 3.2,
+  "notes": [
+    "商业价值 3/5：给出可执行的价位与「直订省多少」算式，但全部是假设，不能对外报价",
+    "衔接 5.0/5：3/5 项 QA 通过；schema=是；sha 校验=是",
+    "工艺 3.0/5：QA 通过率 3/5",
+    "标杆 1/5：duckdb 不可用、无 PriceLabs/Beyond 类动态定价数据源；这是全链最弱的一格"
+  ]
+}

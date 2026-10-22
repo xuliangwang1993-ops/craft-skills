@@ -1,0 +1,11 @@
+{
+  "status": "not_run",
+  "reason": "lighthouse 需要 Chrome；本机（iOS/iSH）没有可用的 Chromium，playwright 也没有 musl/aarch64 构建。",
+  "substitute": {
+    "performance": 98,
+    "accessibility": 100,
+    "best_practices": 100,
+    "seo": 100,
+    "method": "static heuristics (size/alt/labels/meta/h1) — NOT Lighthouse"
+  }
+}

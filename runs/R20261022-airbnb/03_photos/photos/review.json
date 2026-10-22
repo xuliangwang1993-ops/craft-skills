@@ -1,0 +1,100 @@
+{
+  "generated_at": "2026-10-22T10:24:11+00:00",
+  "method": "自动去重(dhash<=4) + Apple Vision 人脸 -> 人工逐张复核(review_overrides.json)",
+  "items": [
+    {
+      "source": {
+        "path": "runs/R20261022-airbnb/01_collect/owner_media_placeholder/cover_hosting-1283706907365221679.jpeg",
+        "sha256": "75e392fed35b4c9deb10aefdcdff983268fb77cdd8adcb46af2968a4cd64ffee",
+        "bytes": 299638,
+        "width": 1179,
+        "height": 2556,
+        "role": "placeholder",
+        "origin": "Airbnb 平台公开图（muscache CDN）",
+        "license": "placeholder-only",
+        "note": "占位样片：不得进入交付版；成片需房东原图"
+      },
+      "decision": "keep"
+    },
+    {
+      "source": {
+        "path": "runs/R20261022-airbnb/01_collect/owner_media_placeholder/p1_1b6df255.jpeg",
+        "sha256": "52edfc119c95ad314b9605522376667375c5c00b6e985e82c50952c1c401387a",
+        "bytes": 292835,
+        "width": 1179,
+        "height": 2556,
+        "role": "placeholder",
+        "origin": "Airbnb 平台公开图（muscache CDN）",
+        "license": "placeholder-only",
+        "note": "占位样片：不得进入交付版；成片需房东原图"
+      },
+      "decision": "keep"
+    },
+    {
+      "source": {
+        "path": "runs/R20261022-airbnb/01_collect/owner_media_placeholder/p3_3fd3c755.jpeg",
+        "sha256": "c51ffe1c1fcf6d8ff23849605bb4a1976eb15ef4097976a1565dd40b1e515026",
+        "bytes": 363648,
+        "width": 1200,
+        "height": 1600,
+        "role": "placeholder",
+        "origin": "Airbnb 平台公开图（muscache CDN）",
+        "license": "placeholder-only",
+        "note": "占位样片：不得进入交付版；成片需房东原图"
+      },
+      "decision": "keep"
+    },
+    {
+      "source": {
+        "path": "runs/R20261022-airbnb/01_collect/owner_media_placeholder/p5_fee86606.png",
+        "sha256": "e10ae43ae370a60ebc19b835081362d043e849a4e5d5e0eeb1c01917f00b6f45",
+        "bytes": 149673,
+        "width": 1179,
+        "height": 2556,
+        "role": "placeholder",
+        "origin": "Airbnb 平台公开图（muscache CDN）",
+        "license": "placeholder-only",
+        "note": "占位样片：不得进入交付版；成片需房东原图"
+      },
+      "decision": "keep"
+    },
+    {
+      "source": {
+        "path": "runs/R20261022-airbnb/01_collect/owner_media_placeholder/p6_749131ed.png",
+        "sha256": "0814587f9f2ae23f139eea3b1ad186c48a0090a241926ecdcb4a9917dc433baa",
+        "bytes": 213471,
+        "width": 1179,
+        "height": 2556,
+        "role": "placeholder",
+        "origin": "Airbnb 平台公开图（muscache CDN）",
+        "license": "placeholder-only",
+        "note": "占位样片：不得进入交付版；成片需房东原图"
+      },
+      "decision": "keep"
+    },
+    {
+      "source": {
+        "path": "runs/R20261022-airbnb/01_collect/owner_media_placeholder/p7_9bd5dbc1.png",
+        "sha256": "33454caa5f626933e2f9787cc512f4646a8cc495959a123afb19f4bf3385d04f",
+        "bytes": 229619,
+        "width": 1179,
+        "height": 2556,
+        "role": "placeholder",
+        "origin": "Airbnb 平台公开图（muscache CDN）",
+        "license": "placeholder-only",
+        "note": "占位样片：不得进入交付版；成片需房东原图"
+      },
+      "decision": "keep"
+    },
+    {
+      "source": "runs/R20261022-airbnb/01_collect/owner_media_placeholder/p2_5627d0d0.jpeg",
+      "reason": "duplicate",
+      "of": "runs/R20261022-airbnb/01_collect/owner_media_placeholder/cover_hosting-1283706907365221679.jpeg"
+    },
+    {
+      "source": "runs/R20261022-airbnb/01_collect/owner_media_placeholder/p4_eb3aa7f1.png",
+      "reason": "manual_review",
+      "detail": "画面内有一名人物（手持纸张遮脸），隐私与专业度均不合格，不能进任何公开产出"
+    }
+  ]
+}

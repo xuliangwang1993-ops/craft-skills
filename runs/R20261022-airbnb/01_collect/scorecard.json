@@ -1,0 +1,16 @@
+{
+  "station": "01_collect",
+  "scores": {
+    "commercial": 3,
+    "handoff": 5.0,
+    "craft": 3.5,
+    "benchmark": 2
+  },
+  "total": 3.47,
+  "notes": [
+    "商业价值 3/5：事实表完整可追溯（42 条），但竞品 0 个：定价与定位都缺参照",
+    "衔接 5.0/5：6/7 项 QA 通过；schema=是；sha 校验=是",
+    "工艺 3.5/5：QA 通过率 6/7",
+    "标杆 2/5：curl 合规但采集能力弱；crawl4ai 装不上，真正的行业做法是 crawl4ai/Playwright + 代理池"
+  ]
+}

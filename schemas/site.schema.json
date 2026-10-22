@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "required": [
+    "root",
+    "pages",
+    "form",
+    "no_payment",
+    "generated_at"
+  ],
+  "properties": {
+    "root": {
+      "type": "string"
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "form": {
+      "type": "object"
+    },
+    "no_payment": {
+      "const": true
+    },
+    "generated_at": {
+      "type": "string"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "site"
+}

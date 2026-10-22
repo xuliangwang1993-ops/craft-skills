@@ -1,0 +1,35 @@
+{
+  "lang": "en",
+  "pdf": "runs/R20261022-airbnb/06_guide/guide/guide_en.pdf",
+  "sections": [
+    "1. Arrival",
+    "2. Parking",
+    "3. Door",
+    "4. Wi-Fi",
+    "5. Appliances",
+    "6. Rubbish (NSW general)",
+    "7. Quiet hours",
+    "8. Emergencies",
+    "9. Check-out"
+  ],
+  "placeholders": [
+    "{{AC_REMOTE}}",
+    "{{ADDRESS}}",
+    "{{CHECKOUT_TIME}}",
+    "{{DOOR_CODE}}",
+    "{{HOST_PHONE}}",
+    "{{KEYBOX_CODE}}",
+    "{{KEY_RETURN}}",
+    "{{LAUNDRY_TABLET}}",
+    "{{LOCK_TYPE}}",
+    "{{NEAREST_HOSPITAL}}",
+    "{{PARKING_SPOT}}",
+    "{{QUIET_HOURS}}",
+    "{{TV_REMOTE}}",
+    "{{WIFI_PASSWORD}}",
+    "{{WIFI_ROUTER_LOCATION}}",
+    "{{WIFI_SSID}}"
+  ],
+  "generated_at": "2026-10-22T13:13:50+00:00",
+  "bytes": 18688
+}

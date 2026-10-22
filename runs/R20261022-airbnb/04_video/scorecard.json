@@ -1,0 +1,16 @@
+{
+  "station": "04_video",
+  "scores": {
+    "commercial": 4,
+    "handoff": 4.0,
+    "craft": 5.0,
+    "benchmark": 4
+  },
+  "total": 4.25,
+  "notes": [
+    "商业价值 4/5：双尺寸 40s 成片，响度 -13.8 LUFS、真峰 -5.2 dBTP，可直接发",
+    "衔接 4.0/5：5/5 项 QA 通过；schema=缺；sha 校验=是",
+    "工艺 5.0/5：QA 通过率 5/5",
+    "标杆 4/5：ffmpeg 是事实标准；因本机 worker 锁死改到电脑端编码，链路仍可复现"
+  ]
+}

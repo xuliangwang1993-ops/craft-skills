@@ -1,0 +1,65 @@
+{
+  "station": "06_guide",
+  "run_id": "R20261022-airbnb",
+  "started_at": "2026-10-22T13:12:49+00:00",
+  "ended_at": "2026-10-22T13:13:57+00:00",
+  "duration_s": 68.11,
+  "exit_code": 0,
+  "inputs": [
+    {
+      "path": "runs/R20261022-airbnb/01_collect/facts.json",
+      "sha256": "e6f7ecb0cd017de7c46db4fdc20593e7c06eeb2a4267358f15e4f0da17b50b23"
+    },
+    {
+      "path": "runs/R20261022-airbnb/05_copy/listing_copy/zh.json",
+      "sha256": "658781a57da5af0267d709dbd016f0e41b0892a5b305551ef104eea3abf015b7"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "runs/R20261022-airbnb/06_guide/guide/guide_en.html",
+      "sha256": "1c701a92d1befa4a0b03c174cf9112b72091847bf60c8bc8fcf1cb2ac71a3a84",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/06_guide/guide/guide_en.json",
+      "sha256": "c675f4353c55d6e5de414cd35a129d4f37c4a2e8377cde0d4452d9b5e3f27e25",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/06_guide/guide/guide_en.pdf",
+      "sha256": "cd6927ad51fd66c39541cf9e141380e8e3df72d44cf0ed679ef380637f85e36d",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/06_guide/guide/guide_zh.html",
+      "sha256": "b9c5bc6c3b649b41c1c0e02b6a6165b3cee3ebb4f4f8df864aed3580e9ee8dc2",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/06_guide/guide/guide_zh.json",
+      "sha256": "f6cc7c816daff891549dd230b66d454e338175472b0259667f791ee8e7d9469e",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/06_guide/guide/guide_zh.pdf",
+      "sha256": "2140bc4950e661cd3ac97a7c97b41e64bb24d070e33061bb764f440b3e4a9626",
+      "schema": null
+    }
+  ],
+  "tools": [
+    {
+      "name": "weasyprint",
+      "version": "WeasyPrint version 63.0"
+    }
+  ],
+  "metrics": {
+    "pdf_bytes": {
+      "zh": 75478,
+      "en": 18688
+    },
+    "sections": 9
+  },
+  "notes": [],
+  "error": null
+}

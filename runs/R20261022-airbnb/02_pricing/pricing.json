@@ -1,0 +1,238 @@
+{
+  "status": "insufficient_market_data",
+  "currency": "AUD",
+  "generated_at": "2026-10-22T09:34:31+00:00",
+  "recommendations": {
+    "weekday": {
+      "low": 50.0,
+      "high": 65.0,
+      "point": 58.0,
+      "currency": "AUD",
+      "basis": [
+        "A1",
+        "A2",
+        "facts.rating"
+      ]
+    },
+    "weekend": {
+      "low": 67,
+      "high": 77,
+      "point": 70,
+      "currency": "AUD",
+      "basis": [
+        "A2",
+        "A6"
+      ]
+    },
+    "peak": {
+      "low": 90,
+      "high": 113,
+      "point": 99,
+      "currency": "AUD",
+      "basis": [
+        "A2",
+        "A6"
+      ]
+    },
+    "min_nights": {
+      "standard": 2,
+      "peak": 3,
+      "gap_fill": 1,
+      "note": "空档 48 小时内可放 1 晚，其余 2 晚起"
+    },
+    "weekend_definition": "周五、周六夜"
+  },
+  "confidence": "low",
+  "provisional": true,
+  "comps_used": 0,
+  "scenarios": [
+    {
+      "rate": 55.0,
+      "occ_pct": 40.0,
+      "gross_year": 8030.0,
+      "net_platform_year": 6661.0,
+      "net_direct_year": 7889.0,
+      "fee_year": 1369.0
+    },
+    {
+      "rate": 55.0,
+      "occ_pct": 55.0,
+      "gross_year": 11041.0,
+      "net_platform_year": 9159.0,
+      "net_direct_year": 10848.0,
+      "fee_year": 1883.0
+    },
+    {
+      "rate": 55.0,
+      "occ_pct": 70.0,
+      "gross_year": 14053.0,
+      "net_platform_year": 11657.0,
+      "net_direct_year": 13807.0,
+      "fee_year": 2396.0
+    },
+    {
+      "rate": 65.0,
+      "occ_pct": 40.0,
+      "gross_year": 9490.0,
+      "net_platform_year": 7872.0,
+      "net_direct_year": 9324.0,
+      "fee_year": 1618.0
+    },
+    {
+      "rate": 65.0,
+      "occ_pct": 55.0,
+      "gross_year": 13049.0,
+      "net_platform_year": 10824.0,
+      "net_direct_year": 12820.0,
+      "fee_year": 2225.0
+    },
+    {
+      "rate": 65.0,
+      "occ_pct": 70.0,
+      "gross_year": 16608.0,
+      "net_platform_year": 13776.0,
+      "net_direct_year": 16317.0,
+      "fee_year": 2832.0
+    },
+    {
+      "rate": 75.0,
+      "occ_pct": 40.0,
+      "gross_year": 10950.0,
+      "net_platform_year": 9083.0,
+      "net_direct_year": 10758.0,
+      "fee_year": 1867.0
+    },
+    {
+      "rate": 75.0,
+      "occ_pct": 55.0,
+      "gross_year": 15056.0,
+      "net_platform_year": 12489.0,
+      "net_direct_year": 14793.0,
+      "fee_year": 2567.0
+    },
+    {
+      "rate": 75.0,
+      "occ_pct": 70.0,
+      "gross_year": 19163.0,
+      "net_platform_year": 15895.0,
+      "net_direct_year": 18827.0,
+      "fee_year": 3267.0
+    },
+    {
+      "rate": 85.0,
+      "occ_pct": 40.0,
+      "gross_year": 12410.0,
+      "net_platform_year": 10294.0,
+      "net_direct_year": 12193.0,
+      "fee_year": 2116.0
+    },
+    {
+      "rate": 85.0,
+      "occ_pct": 55.0,
+      "gross_year": 17064.0,
+      "net_platform_year": 14154.0,
+      "net_direct_year": 16765.0,
+      "fee_year": 2909.0
+    },
+    {
+      "rate": 85.0,
+      "occ_pct": 70.0,
+      "gross_year": 21718.0,
+      "net_platform_year": 18015.0,
+      "net_direct_year": 21337.0,
+      "fee_year": 3703.0
+    },
+    {
+      "rate": 95.0,
+      "occ_pct": 40.0,
+      "gross_year": 13870.0,
+      "net_platform_year": 11505.0,
+      "net_direct_year": 13627.0,
+      "fee_year": 2365.0
+    },
+    {
+      "rate": 95.0,
+      "occ_pct": 55.0,
+      "gross_year": 19071.0,
+      "net_platform_year": 15820.0,
+      "net_direct_year": 18738.0,
+      "fee_year": 3252.0
+    },
+    {
+      "rate": 95.0,
+      "occ_pct": 70.0,
+      "gross_year": 24273.0,
+      "net_platform_year": 20134.0,
+      "net_direct_year": 23848.0,
+      "fee_year": 4138.0
+    }
+  ],
+  "fee_math": {
+    "platform_fee_rate": 0.1705,
+    "example": "A$68 × 2 晚 = A$136/单；平台抽 17.05% ≈ A$23.2；直订同等价格多留 A$23.2/单，10 单 ≈ A$232",
+    "ten_bookings_2nights_saving": 198.0
+  },
+  "evidence": [
+    {
+      "claim": "悉尼内南（Rosebery/Mascot/Zetland）2 人独立房间、共用卫浴的公开挂牌价多在 A$55–95/晚",
+      "source_id": "assumption:A1",
+      "strength": "assumption"
+    },
+    {
+      "claim": "基准入住率 55%（无历史订单，按同城独立房间常态取值）",
+      "source_id": "assumption:A2",
+      "strength": "assumption"
+    },
+    {
+      "claim": "Airbnb 房东服务费 15.5% + GST ≈ 17.05% 有效费率",
+      "source_id": "assumption:A3",
+      "strength": "assumption"
+    },
+    {
+      "claim": "每次入住清洁/布草成本 A$25（房东自做则为时间成本）",
+      "source_id": "assumption:A4",
+      "strength": "assumption"
+    },
+    {
+      "claim": "直订收款手续费按 1.75% + A$0.30/笔 计（Stripe 标准价，未验证商户费率）",
+      "source_id": "assumption:A5",
+      "strength": "assumption"
+    },
+    {
+      "claim": "旺季 = 12/20–1/5、Mardi Gras 周末、NSW 学校假期；其余为平日/周末",
+      "source_id": "assumption:A6",
+      "strength": "assumption"
+    },
+    {
+      "claim": "评分 4.6 / 25 条评价",
+      "source_id": "src_airbnb_pdp",
+      "strength": "verified"
+    },
+    {
+      "claim": "设施含：Hair dryer, Washing machine, TV, Piano, Air conditioning, Lock on bedroom door…",
+      "source_id": "src_airbnb_pdp",
+      "strength": "verified"
+    },
+    {
+      "claim": "价格调整 评分 4.6 < 4.7，扣 A$3",
+      "source_id": "assumption:A1",
+      "strength": "assumption"
+    },
+    {
+      "claim": "价格调整 共用卫浴，扣 A$4",
+      "source_id": "assumption:A1",
+      "strength": "assumption"
+    },
+    {
+      "claim": "价格调整 平台未列暖气（冬季风险），扣 A$3",
+      "source_id": "assumption:A1",
+      "strength": "assumption"
+    }
+  ],
+  "gaps": [
+    "comps=0：Airbnb 搜索结果页被 robots.txt 禁止，未绕过 → 阈值『每价 ≥3 个可比房源』不达标。",
+    "无房东历史订单导出（入住率、实际成交价、退改率均未知），A2 入住率为假设。",
+    "旺季日期表 A6 为通用日历，未用悉尼 2027 年具体活动/假期校核。",
+    "结论标 provisional=true：只可用于内部试算，对外报价前必须补 comps 重跑。"
+  ]
+}

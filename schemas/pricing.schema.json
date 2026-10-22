@@ -1,0 +1,71 @@
+{
+  "type": "object",
+  "required": [
+    "status",
+    "currency",
+    "generated_at",
+    "recommendations",
+    "evidence",
+    "gaps"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "ok",
+        "degraded",
+        "insufficient_market_data"
+      ]
+    },
+    "currency": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "recommendations": {
+      "type": "object",
+      "required": [
+        "weekday",
+        "weekend",
+        "peak",
+        "min_nights"
+      ]
+    },
+    "scenarios": {
+      "type": "array"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "claim",
+          "source_id",
+          "strength"
+        ],
+        "properties": {
+          "claim": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "strength": {
+            "enum": [
+              "verified",
+              "assumption"
+            ]
+          }
+        }
+      }
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "pricing"
+}

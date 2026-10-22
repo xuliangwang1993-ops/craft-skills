@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-10-22T10:24:11+00:00",
+  "items": [
+    {
+      "rank": 1,
+      "file": "runs/R20261022-airbnb/03_photos/photos/edited/img_06.jpg",
+      "caption_zh": "房间：1.5 米双人床（queen），木地板，房门可锁",
+      "caption_en": "The room: queen bed, timber floor, lockable door",
+      "tags": [
+        "bed",
+        "doorlock"
+      ]
+    },
+    {
+      "rank": 2,
+      "file": "runs/R20261022-airbnb/03_photos/photos/edited/img_01.jpg",
+      "caption_zh": "房间另一侧：书桌工作区，玻璃门通往后院",
+      "caption_en": "Other side of the room: desk workspace, glass door to the garden",
+      "tags": [
+        "workspace"
+      ]
+    },
+    {
+      "rank": 3,
+      "file": "runs/R20261022-airbnb/03_photos/photos/edited/img_05.jpg",
+      "caption_zh": "共用厨房：燃气灶、烤箱、操作台",
+      "caption_en": "Shared kitchen: gas hob, oven, bench",
+      "tags": [
+        "kitchen"
+      ]
+    },
+    {
+      "rank": 4,
+      "file": "runs/R20261022-airbnb/03_photos/photos/edited/img_04.jpg",
+      "caption_zh": "共用厨房另一侧：冰箱与储物",
+      "caption_en": "Kitchen, other side: fridge and storage",
+      "tags": [
+        "kitchen"
+      ]
+    },
+    {
+      "rank": 5,
+      "file": "runs/R20261022-airbnb/03_photos/photos/edited/img_03.jpg",
+      "caption_zh": "共用卫生间：淋浴、洗手台（现状，建议整理后重拍）",
+      "caption_en": "Shared bathroom: shower and basin (as-is; reshoot recommended)",
+      "tags": [
+        "bath"
+      ]
+    },
+    {
+      "rank": 6,
+      "file": "runs/R20261022-airbnb/03_photos/photos/edited/img_02.jpg",
+      "caption_zh": "后院：户外餐桌、BBQ 与沙发区",
+      "caption_en": "Back garden: outdoor dining table, BBQ and lounge",
+      "tags": [
+        "outdoor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "station": "08_qc",
+  "scores": {
+    "commercial": 3,
+    "handoff": 4.0,
+    "craft": 5.0,
+    "benchmark": 2
+  },
+  "total": 3.6,
+  "notes": [
+    "商业价值 3/5：把「哪里不能信」写成了机器可查的报告；但 Lighthouse 没跑成",
+    "衔接 4.0/5：10/10 项 QA 通过；schema=缺；sha 校验=是",
+    "工艺 5.0/5：QA 通过率 10/10",
+    "标杆 2/5：真实 Lighthouse 要 Chrome，本机跑不了；静态启发式只能算替身"
+  ]
+}

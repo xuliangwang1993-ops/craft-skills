@@ -1,0 +1,192 @@
+{
+  "38f81b2b7c3e": {
+    "lang": "zh",
+    "station": "05_copy",
+    "text": "这是一间位于 Rosebery 的独立房间，位于一栋住宅内，最多住 2 人。",
+    "sources": [
+      "facts.room_type",
+      "facts.max_guests",
+      "facts.suburb"
+    ]
+  },
+  "0607eb2e192c": {
+    "lang": "zh",
+    "station": "05_copy",
+    "text": "房间配一张 1.5 米双人床（queen），房门可以上锁。",
+    "sources": [
+      "facts.beds",
+      "facts.amenities_included"
+    ]
+  },
+  "2f025486189a": {
+    "lang": "zh",
+    "station": "05_copy",
+    "text": "卫生间与其他人共用，房源页面已如实标注。",
+    "sources": [
+      "facts.bathrooms"
+    ]
+  },
+  "72ef13925f96": {
+    "lang": "zh",
+    "station": "05_copy",
+    "text": "房间里有书桌工作区和空调，适合白天办公、晚上休息。",
+    "sources": [
+      "facts.amenities_included"
+    ]
+  },
+  "b1fdb491da68": {
+    "lang": "zh",
+    "station": "05_copy",
+    "text": "现有的房间照片是实拍，你也可以要求看更多角度。",
+    "sources": [
+      "facts.description_public"
+    ]
+  },
+  "6073c518d9b4": {
+    "lang": "zh",
+    "station": "05_copy",
+    "text": "你可以使用厨房、洗衣机、电视、钢琴，以及 Wi-Fi 和专用工作区。",
+    "sources": [
+      "facts.amenities_included"
+    ]
+  },
+  "b0db24e5c99b": {
+    "lang": "zh",
+    "station": "05_copy",
+    "text": "门外有免费的院内停车位；后院有户外用餐区和 BBQ。",
+    "sources": [
+      "facts.amenities_included"
+    ]
+  },
+  "50dd24fa871e": {
+    "lang": "zh",
+    "station": "05_copy",
+    "text": "房屋守则：最多 2 位过夜住客，可以带宠物。",
+    "sources": [
+      "facts.house_rules"
+    ]
+  },
+  "464852d4fa8a": {
+    "lang": "zh",
+    "station": "05_copy",
+    "text": "房间有空调；如果你对冬季取暖有要求，请在预订前先问一句。",
+    "sources": [
+      "facts.amenities_included",
+      "facts.heating_listed"
+    ]
+  },
+  "cb52bb03dd22": {
+    "lang": "zh",
+    "station": "05_copy",
+    "text": "入住与退房时间、Wi-Fi 与门锁方式，会在确认预订后由房东直接发送。",
+    "sources": [
+      "facts.checkin_time",
+      "facts.wifi_password",
+      "facts.door_code"
+    ]
+  },
+  "29b772a4e2a0": {
+    "lang": "zh",
+    "station": "05_copy",
+    "text": "卫生间里有吹风机；房内配烟雾报警器、一氧化碳报警器、灭火器和急救箱。",
+    "sources": [
+      "facts.amenities_included",
+      "facts.safety_devices"
+    ]
+  },
+  "b9154a986c66": {
+    "lang": "en",
+    "station": "05_copy",
+    "text": "A private room in a house in Rosebery, sleeping up to 2 guests.",
+    "sources": [
+      "facts.room_type",
+      "facts.max_guests",
+      "facts.suburb"
+    ]
+  },
+  "3305c3af164a": {
+    "lang": "en",
+    "station": "05_copy",
+    "text": "The room has one queen bed and a lock on the bedroom door.",
+    "sources": [
+      "facts.beds",
+      "facts.amenities_included"
+    ]
+  },
+  "9c074f9db07c": {
+    "lang": "en",
+    "station": "05_copy",
+    "text": "The bathroom is shared, and the listing says so plainly.",
+    "sources": [
+      "facts.bathrooms"
+    ]
+  },
+  "e6de6046ff00": {
+    "lang": "en",
+    "station": "05_copy",
+    "text": "There is a dedicated desk and air conditioning — fine for a workday, quiet at night.",
+    "sources": [
+      "facts.amenities_included"
+    ]
+  },
+  "e201b536dd44": {
+    "lang": "en",
+    "station": "05_copy",
+    "text": "The room photos are real; ask and we will send more angles.",
+    "sources": [
+      "facts.description_public"
+    ]
+  },
+  "c288717d39ed": {
+    "lang": "en",
+    "station": "05_copy",
+    "text": "You can use the kitchen, washing machine, TV and piano, plus Wi-Fi and the dedicated workspace.",
+    "sources": [
+      "facts.amenities_included"
+    ]
+  },
+  "1727a8015dd7": {
+    "lang": "en",
+    "station": "05_copy",
+    "text": "Free parking on the premises; the back garden has an outdoor dining area and a BBQ.",
+    "sources": [
+      "facts.amenities_included"
+    ]
+  },
+  "de4c90741659": {
+    "lang": "en",
+    "station": "05_copy",
+    "text": "House rules: up to 2 overnight guests; pets are allowed.",
+    "sources": [
+      "facts.house_rules"
+    ]
+  },
+  "8e943177a5d6": {
+    "lang": "en",
+    "station": "05_copy",
+    "text": "The room has air conditioning. If winter warmth matters to you, please ask before booking.",
+    "sources": [
+      "facts.amenities_included",
+      "facts.heating_listed"
+    ]
+  },
+  "4a770064c4ca": {
+    "lang": "en",
+    "station": "05_copy",
+    "text": "Check-in and check-out times, Wi-Fi and door access are sent by the host after booking.",
+    "sources": [
+      "facts.checkin_time",
+      "facts.wifi_password",
+      "facts.door_code"
+    ]
+  },
+  "ddc2346711fb": {
+    "lang": "en",
+    "station": "05_copy",
+    "text": "There is a hair dryer in the bathroom; the room has a smoke alarm, a carbon monoxide alarm, a fire extinguisher and a fi",
+    "sources": [
+      "facts.amenities_included",
+      "facts.safety_devices"
+    ]
+  }
+}
