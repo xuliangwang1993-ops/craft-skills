@@ -32,7 +32,8 @@ license: GPL-2.0+
 ## 安装
 
 ```sh
-sudo apt install pandoc  # macOS: brew install pandoc；PDF 另需 texlive-xetex
+sudo apt install pandoc  # macOS: brew install pandoc
+# 出中文 PDF 另需：sudo apt install texlive-xetex texlive-lang-chinese texlive-fonts-recommended fonts-noto-cjk（缺 fonts-recommended 会报 pzdr 字体错）
 ```
 
 ## 核心用法

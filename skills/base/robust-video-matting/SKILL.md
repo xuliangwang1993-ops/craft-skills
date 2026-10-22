@@ -32,18 +32,27 @@ license: GPL-3.0
 ## 安装
 
 ```sh
-git clone https://github.com/PeterL1n/RobustVideoMatting && pip install -r RobustVideoMatting/requirements_inference.txt
+git clone https://github.com/PeterL1n/RobustVideoMatting
+# requirements_inference.txt 锁定 torch==1.9 / av==8.0.3，新版 Python 装不上；直接装新版依赖即可：
+pip install torch torchvision av pims tqdm
+# 权重直接下载（torch.hub 走 GitHub API，容易卡住）
+curl -L -o RobustVideoMatting/rvm_mobilenetv3.pth https://github.com/PeterL1n/RobustVideoMatting/releases/download/v1.0.0/rvm_mobilenetv3.pth
 ```
 
 ## 核心用法
 
 ```
 import torch
-from inference import convert_video     # 在 RobustVideoMatting 目录下运行
-model = torch.hub.load("PeterL1n/RobustVideoMatting", "mobilenetv3").eval().cuda()
-convert_video(model, input_source="in.mp4", output_type="video",
-              output_composition="com.mp4", output_alpha="pha.mp4",
-              downsample_ratio=None, seq_chunk=12)
+from model import MattingNetwork        # 在 RobustVideoMatting 目录下运行
+from inference import convert_video
+device = "cuda" if torch.cuda.is_available() else "cpu"
+model = MattingNetwork("mobilenetv3").eval().to(device)
+model.load_state_dict(torch.load("rvm_mobilenetv3.pth", map_location=device))
+# PyAV ≥10 下 output_type="video" 会报 to_avrational 错，统一输出 PNG 序列再用 ffmpeg 合成
+convert_video(model, input_source="in.mp4", output_type="png_sequence",
+              output_composition="com", output_alpha="pha",
+              downsample_ratio=None, seq_chunk=12, device=device)
+# ffmpeg -framerate <源帧率> -i pha/%04d.png -c:v libx264 -pix_fmt yuv420p pha.mp4
 ```
 
 ## 输入/输出校验

@@ -40,7 +40,7 @@ sudo apt install darktable  # macOS: brew install --cask darktable
 ```
 darktable-cli in.CR3 out.jpg --width 2048 --height 2048 --hq true
 darktable-cli in.CR3 style.xmp out.jpg                      # 套用 XMP 参数
-darktable-cli raws/ out/ --style "我的风格" --out-ext jpg     # 整目录套风格
+darktable-cli raws/ out/ --style "我的风格" --out-ext jpg     # 整目录套风格；风格必须已在 darktable 里保存过，名字不存在会导出失败
 darktable-cli in.NEF out.tif --core --conf plugins/imageio/format/tiff/bpp=16
 ```
 

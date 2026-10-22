@@ -40,7 +40,8 @@ pip install -U demucs
 ```
 demucs --two-stems=vocals song.mp3 -o separated/        # 输出 separated/htdemucs/song/vocals.wav + no_vocals.wav
 demucs -n htdemucs_ft song.mp3 -o separated/              # 四轨、更高质量（更慢）
-demucs --mp3 --two-stems=vocals song.mp3                  # 直接出 mp3
+demucs --mp3 --two-stems=vocals song.mp3                  # 直接出 mp3（默认输出到 separated/）
+# 注意：输入文件不存在时 demucs 仍返回 0，跑完要检查输出 wav 是否存在
 ```
 
 ## 输入/输出校验
