@@ -1,0 +1,26 @@
+{
+  "run_id": "R20261022-airbnb",
+  "sentence": "给我家 Airbnb（Home in Rosebery · 独立房间）做全套上架包",
+  "listing_id": "1286789934809628478",
+  "deliverable": [
+    "photos",
+    "tour_video_9x16",
+    "tour_video_16x9",
+    "listing_copy",
+    "guest_guide_pdf",
+    "direct_booking_site",
+    "support_kb"
+  ],
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "video": {
+    "sizes": [
+      "9:16",
+      "16:9"
+    ],
+    "duration_s": 40
+  },
+  "created_at": "2026-10-22T09:31:38+00:00"
+}

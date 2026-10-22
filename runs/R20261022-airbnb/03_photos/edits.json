@@ -1,0 +1,300 @@
+{
+  "generated_at": "2026-10-22T10:24:11+00:00",
+  "edits": [
+    {
+      "source": "runs/R20261022-airbnb/01_collect/owner_media_placeholder/cover_hosting-1283706907365221679.jpeg",
+      "output": "runs/R20261022-airbnb/03_photos/photos/edited/img_01.jpg",
+      "source_size": [
+        1179,
+        2556
+      ],
+      "letterbox_crop": [
+        2,
+        496,
+        1177,
+        2062
+      ],
+      "rotate_deg": 4.51,
+      "vertical_dev_before": -4.51,
+      "vertical_dev_after": -0.52,
+      "vertical_lines_detected": [
+        134,
+        120
+      ],
+      "wb_gains": [
+        0.9048,
+        0.9772,
+        1.1474
+      ],
+      "output_size": [
+        2048,
+        1536
+      ],
+      "sha256": "add022a4d1438fc31d198a639a676092a46c734644fc902d3432ad25516300e7",
+      "upscaled": true,
+      "vertical_ok": true,
+      "needs_reshoot": false,
+      "ops": [
+        "letterbox_crop",
+        "rotate",
+        "gray_world",
+        "contrast+4%",
+        "saturation+3%",
+        "crop_4x3",
+        "lanczos_resize(降级，非 real-esrgan)",
+        "unsharp(1.2,60,3)",
+        "jpeg_q88"
+      ],
+      "placeholder": true,
+      "note": "平台图占位；成片需房东原图重跑本站"
+    },
+    {
+      "source": "runs/R20261022-airbnb/01_collect/owner_media_placeholder/p1_1b6df255.jpeg",
+      "output": "runs/R20261022-airbnb/03_photos/photos/edited/img_02.jpg",
+      "source_size": [
+        1179,
+        2556
+      ],
+      "letterbox_crop": [
+        2,
+        838,
+        1177,
+        1718
+      ],
+      "rotate_deg": 0.0,
+      "vertical_dev_before": 0.0,
+      "vertical_dev_after": 0.0,
+      "vertical_lines_detected": [
+        89,
+        89
+      ],
+      "wb_gains": [
+        0.9452,
+        0.9458,
+        1.1303
+      ],
+      "output_size": [
+        2048,
+        1536
+      ],
+      "sha256": "1aeb3b5e7c96b8ef2cdc75dd65460342a5dbe20b482effdf9d6c9b172ba582b8",
+      "upscaled": true,
+      "vertical_ok": true,
+      "needs_reshoot": false,
+      "ops": [
+        "letterbox_crop",
+        "rotate",
+        "gray_world",
+        "contrast+4%",
+        "saturation+3%",
+        "crop_4x3",
+        "lanczos_resize(降级，非 real-esrgan)",
+        "unsharp(1.2,60,3)",
+        "jpeg_q88"
+      ],
+      "placeholder": true,
+      "note": "平台图占位；成片需房东原图重跑本站"
+    },
+    {
+      "source": "runs/R20261022-airbnb/01_collect/owner_media_placeholder/p3_3fd3c755.jpeg",
+      "output": "runs/R20261022-airbnb/03_photos/photos/edited/img_03.jpg",
+      "source_size": [
+        1200,
+        1600
+      ],
+      "letterbox_crop": [
+        2,
+        2,
+        1198,
+        1598
+      ],
+      "rotate_deg": 6.59,
+      "vertical_dev_before": -6.59,
+      "vertical_dev_after": 0.98,
+      "vertical_lines_detected": [
+        51,
+        67
+      ],
+      "wb_gains": [
+        0.914,
+        0.9913,
+        1.1148
+      ],
+      "output_size": [
+        2048,
+        1536
+      ],
+      "sha256": "8e61ea391a2f5fffad03eca0a331f8dfc8087b2e5d26f616a6fa7c28185246cb",
+      "upscaled": true,
+      "vertical_ok": true,
+      "needs_reshoot": false,
+      "ops": [
+        "letterbox_crop",
+        "rotate",
+        "gray_world",
+        "contrast+4%",
+        "saturation+3%",
+        "crop_4x3",
+        "lanczos_resize(降级，非 real-esrgan)",
+        "unsharp(1.2,60,3)",
+        "jpeg_q88"
+      ],
+      "placeholder": true,
+      "note": "平台图占位；成片需房东原图重跑本站"
+    },
+    {
+      "source": "runs/R20261022-airbnb/01_collect/owner_media_placeholder/p5_fee86606.png",
+      "output": "runs/R20261022-airbnb/03_photos/photos/edited/img_04.jpg",
+      "source_size": [
+        1179,
+        2556
+      ],
+      "letterbox_crop": [
+        2,
+        838,
+        1177,
+        1718
+      ],
+      "rotate_deg": 0.0,
+      "vertical_dev_before": -2.43,
+      "vertical_dev_after": -2.43,
+      "vertical_lines_detected": [
+        72,
+        72
+      ],
+      "wb_gains": [
+        0.9216,
+        0.9892,
+        1.1062
+      ],
+      "output_size": [
+        2048,
+        1536
+      ],
+      "sha256": "38228f84502af3cf7935492e1d12e24feb41b9a4c6c2cadde94f5879741289d8",
+      "upscaled": true,
+      "vertical_ok": false,
+      "needs_reshoot": true,
+      "ops": [
+        "letterbox_crop",
+        "rotate",
+        "gray_world",
+        "contrast+4%",
+        "saturation+3%",
+        "crop_4x3",
+        "lanczos_resize(降级，非 real-esrgan)",
+        "unsharp(1.2,60,3)",
+        "jpeg_q88"
+      ],
+      "placeholder": true,
+      "note": "平台图占位；成片需房东原图重跑本站"
+    },
+    {
+      "source": "runs/R20261022-airbnb/01_collect/owner_media_placeholder/p6_749131ed.png",
+      "output": "runs/R20261022-airbnb/03_photos/photos/edited/img_05.jpg",
+      "source_size": [
+        1179,
+        2556
+      ],
+      "letterbox_crop": [
+        2,
+        838,
+        1177,
+        1718
+      ],
+      "rotate_deg": 2.9,
+      "vertical_dev_before": -2.9,
+      "vertical_dev_after": 0.4,
+      "vertical_lines_detected": [
+        59,
+        50
+      ],
+      "wb_gains": [
+        0.9449,
+        0.9822,
+        1.0828
+      ],
+      "output_size": [
+        2048,
+        1536
+      ],
+      "sha256": "360f462ec40a9593e8b0ad97faea23d63a1d76e34ff4b8675b360359d222db95",
+      "upscaled": true,
+      "vertical_ok": true,
+      "needs_reshoot": false,
+      "ops": [
+        "letterbox_crop",
+        "rotate",
+        "gray_world",
+        "contrast+4%",
+        "saturation+3%",
+        "crop_4x3",
+        "lanczos_resize(降级，非 real-esrgan)",
+        "unsharp(1.2,60,3)",
+        "jpeg_q88"
+      ],
+      "placeholder": true,
+      "note": "平台图占位；成片需房东原图重跑本站"
+    },
+    {
+      "source": "runs/R20261022-airbnb/01_collect/owner_media_placeholder/p7_9bd5dbc1.png",
+      "output": "runs/R20261022-airbnb/03_photos/photos/edited/img_06.jpg",
+      "source_size": [
+        1179,
+        2556
+      ],
+      "letterbox_crop": [
+        2,
+        496,
+        1177,
+        2062
+      ],
+      "rotate_deg": 2.52,
+      "vertical_dev_before": -2.93,
+      "vertical_dev_after": 0.0,
+      "vertical_lines_detected": [
+        72,
+        52
+      ],
+      "wb_gains": [
+        0.8675,
+        0.9902,
+        1.18
+      ],
+      "output_size": [
+        2048,
+        1536
+      ],
+      "sha256": "82fd15cadedcd03a4b135da264cb534cede2330ba59c3c4d3a143b49aef3eefb",
+      "upscaled": true,
+      "vertical_ok": true,
+      "needs_reshoot": false,
+      "ops": [
+        "letterbox_crop",
+        "rotate",
+        "gray_world",
+        "contrast+4%",
+        "saturation+3%",
+        "crop_4x3",
+        "lanczos_resize(降级，非 real-esrgan)",
+        "unsharp(1.2,60,3)",
+        "jpeg_q88"
+      ],
+      "placeholder": true,
+      "note": "平台图占位；成片需房东原图重跑本站"
+    }
+  ],
+  "excluded": [
+    {
+      "source": "runs/R20261022-airbnb/01_collect/owner_media_placeholder/p2_5627d0d0.jpeg",
+      "reason": "duplicate",
+      "of": "runs/R20261022-airbnb/01_collect/owner_media_placeholder/cover_hosting-1283706907365221679.jpeg"
+    },
+    {
+      "source": "runs/R20261022-airbnb/01_collect/owner_media_placeholder/p4_eb3aa7f1.png",
+      "reason": "manual_review",
+      "detail": "画面内有一名人物（手持纸张遮脸），隐私与专业度均不合格，不能进任何公开产出"
+    }
+  ],
+  "tool": "PIL+OpenCV (darktable-cli unavailable on this host)"
+}

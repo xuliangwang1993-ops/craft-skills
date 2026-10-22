@@ -1,0 +1,51 @@
+{
+  "station": "02_pricing",
+  "run_id": "R20261022-airbnb",
+  "started_at": "2026-10-22T09:34:23+00:00",
+  "ended_at": "2026-10-22T09:34:41+00:00",
+  "duration_s": 17.97,
+  "exit_code": 0,
+  "inputs": [
+    {
+      "path": "runs/R20261022-airbnb/01_collect/comps.json",
+      "sha256": "e9543e9c772cf1c000ffa59002bd8a14afb41580af148c9fe4ad447fd2c3405f"
+    },
+    {
+      "path": "runs/R20261022-airbnb/01_collect/facts.json",
+      "sha256": "e6f7ecb0cd017de7c46db4fdc20593e7c06eeb2a4267358f15e4f0da17b50b23"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "runs/R20261022-airbnb/02_pricing/pricing.json",
+      "sha256": "d8e32e40b0acad429848674963d4531187f64abf9a71f2cb67c9980405d47c7f",
+      "schema": "pricing"
+    },
+    {
+      "path": "runs/R20261022-airbnb/02_pricing/pricing_report.pdf",
+      "sha256": "5ccf31973af81669107849eab5cad68b3ed762e70aa5dc5f197d997febd4775a",
+      "schema": null
+    }
+  ],
+  "tools": [
+    {
+      "name": "sqlite3(python)",
+      "version": "3.48.0"
+    },
+    {
+      "name": "duckdb",
+      "version": "unavailable: no musllinux/aarch64 wheel; CLI needs glibc __res_init"
+    },
+    {
+      "name": "weasyprint",
+      "version": "WeasyPrint version 63.0"
+    }
+  ],
+  "metrics": {
+    "comps": 0,
+    "base": 58.0,
+    "status": "insufficient_market_data"
+  },
+  "notes": [],
+  "error": null
+}

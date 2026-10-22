@@ -1,0 +1,16 @@
+{
+  "generated_by": "operator manual review (2026-10-22, 8 张占位图逐张看)",
+  "note": "自动人脸检测对本批无效：p4 里人物用纸张遮脸，Haar 与 Apple Vision 均返回 0；靠人工抽查抓出。这就是为什么『前后对比 100% 人工抽查』不能省。",
+  "decisions": [
+    {
+      "match": "p4_eb3aa7f1",
+      "action": "exclude",
+      "reason": "画面内有一名人物（手持纸张遮脸），隐私与专业度均不合格，不能进任何公开产出"
+    },
+    {
+      "match": "p2_5627d0d0",
+      "action": "exclude",
+      "reason": "与封面同一构图，重复；同一房间只保留信息量更大的一张"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "audit": {
+    "title_len": 43,
+    "has_meta_description": true,
+    "has_viewport": true,
+    "lang": "zh-Hans",
+    "h1_count": 1,
+    "images": 7,
+    "images_missing_alt": 0,
+    "external_requests": [],
+    "text_words": 224,
+    "total_bytes": 30177962,
+    "critical_bytes": 403360,
+    "has_form_labels": true,
+    "payment_mentions": 0
+  },
+  "links": {
+    "refs": 13,
+    "missing": [],
+    "ok": true
+  }
+}

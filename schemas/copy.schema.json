@@ -1,0 +1,70 @@
+{
+  "type": "object",
+  "required": [
+    "lang",
+    "title",
+    "sections",
+    "generated_at"
+  ],
+  "properties": {
+    "lang": {
+      "enum": [
+        "zh",
+        "en",
+        "ja",
+        "ko"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "title_len": {
+      "type": "integer"
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "heading",
+          "paragraphs"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "heading": {
+            "type": "string"
+          },
+          "paragraphs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "text",
+                "sources"
+              ],
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "sources": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "generated_at": {
+      "type": "string"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "copy"
+}

@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-10-22T12:46:36+00:00",
+  "host": {
+    "platform": "Linux-4.20.69-ish-aarch64-with",
+    "machine": "aarch64",
+    "libc": "musl (Alpine/iSH)",
+    "python": "3.12.14"
+  },
+  "summary": {
+    "pass": [
+      "jq",
+      "weasyprint",
+      "icalendar",
+      "typst"
+    ],
+    "fail": [
+      "duckdb",
+      "argos-translate",
+      "crawl4ai",
+      "playwright",
+      "lighthouse"
+    ]
+  },
+  "tools": [
+    {
+      "tool": "jq",
+      "cmd": "jq -n --arg x 1 '{v:$x}'",
+      "version": "jq-1.7.1",
+      "exit_code": 0,
+      "seconds": 0.07,
+      "result": "pass",
+      "note": "站 0 用它构造 brief.json；输出可被后续站直接解析"
+    },
+    {
+      "tool": "weasyprint",
+      "cmd": "weasyprint a.html a.pdf",
+      "version": "WeasyPrint version 63.0",
+      "exit_code": 0,
+      "seconds": 22.24,
+      "result": "pass",
+      "note": "站 6 出中英双语入住指南 PDF（CJK 字体已内嵌）"
+    },
+    {
+      "tool": "icalendar",
+      "cmd": "python3 -c 'build calendar'",
+      "version": "7.3.0",
+      "exit_code": 0,
+      "seconds": 1.79,
+      "result": "pass",
+      "note": "站 7 的日历解析走 iCal；本次房东未导出，页面内联空日历并显示「未连接」"
+    },
+    {
+      "tool": "duckdb",
+      "cmd": "pip install duckdb / pip download --platform musllinux_1_2_aarch64",
+      "version": "n/a",
+      "exit_code": 1,
+      "seconds": 18.63,
+      "result": "fail",
+      "note": "本机是 musl/aarch64：没有 wheel，源码构建失败；官方 CLI 是 glibc 二进制，运行报 __res_init symbol not found。站 2 改用 Python 内置 sqlite3，SQL 逻辑一致。",
+      "evidence": "ERROR: Could not find a version that satisfies the requirement duckdb (from versions: none)\nERROR: No matching distribution found for duckdb\n"
+    },
+    {
+      "tool": "argos-translate",
+      "cmd": "pip install argostranslate",
+      "version": "n/a",
+      "exit_code": 0,
+      "seconds": 97.28,
+      "result": "fail",
+      "note": "依赖 ctranslate2，本平台无 musl/aarch64 轮子，构建失败。站 5 的 zh/en 由人工撰写，没有机翻后冒充校对；ja/ko 因此不交付。",
+      "evidence": "note: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+    },
+    {
+      "tool": "crawl4ai",
+      "cmd": "pip install crawl4ai",
+      "version": "n/a",
+      "exit_code": 0,
+      "seconds": 148.9,
+      "result": "fail",
+      "note": "依赖解析失败（ResolutionImpossible）。站 1 改为 curl + 内嵌 JSON 解析，没有绕过 robots，反而因为遵守 robots 丢了竞品数据。",
+      "evidence": "\nERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts\n"
+    },
+    {
+      "tool": "playwright",
+      "cmd": "pip install playwright",
+      "version": "n/a",
+      "exit_code": 0,
+      "seconds": 12.35,
+      "result": "fail",
+      "note": "PyPI 没有 musl/aarch64 构建，安装即失败；站 8 改用内置 WebKit（minis-browser-use）跑真实交互。",
+      "evidence": "ERROR: Could not find a version that satisfies the requirement playwright (from versions: none)\nERROR: No matching distribution found for playwright\n"
+    },
+    {
+      "tool": "lighthouse",
+      "cmd": "npm view lighthouse version",
+      "version": "13.5.0",
+      "exit_code": 0,
+      "seconds": 12.61,
+      "result": "fail",
+      "note": "包存在（13.5.0），但本机没有 Chrome/Chromium，跑不了真实审计。站 8 用静态启发式打分，在 lighthouse.json 里明确标 not_run，不冒充。",
+      "chrome": null
+    },
+    {
+      "tool": "typst",
+      "cmd": "typst --version",
+      "version": "typst 0.12.0",
+      "exit_code": 0,
+      "seconds": 0.1,
+      "result": "pass",
+      "note": "PDF 备选路径；本次用 weasyprint"
+    }
+  ]
+}

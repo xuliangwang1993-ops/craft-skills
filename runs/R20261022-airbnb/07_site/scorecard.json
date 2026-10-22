@@ -1,0 +1,16 @@
+{
+  "station": "07_site",
+  "scores": {
+    "commercial": 4,
+    "handoff": 5.0,
+    "craft": 5.0,
+    "benchmark": 3
+  },
+  "total": 4.35,
+  "notes": [
+    "商业价值 4/5：能收申请、不收款、移动端可用；但日历还没接房东真实 iCal",
+    "衔接 5.0/5：8/8 项 QA 通过；schema=是；sha 校验=是",
+    "工艺 5.0/5：QA 通过率 8/8",
+    "标杆 3/5：原生静态站性能好，但功能对标 Lodgify/Hostaway 还差预订引擎与支付"
+  ]
+}

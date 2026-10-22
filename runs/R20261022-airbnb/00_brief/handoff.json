@@ -1,0 +1,25 @@
+{
+  "station": "00_brief",
+  "run_id": "R20261022-airbnb",
+  "started_at": "2026-10-22T09:31:37+00:00",
+  "ended_at": "2026-10-22T09:31:38+00:00",
+  "duration_s": 0.13,
+  "exit_code": 0,
+  "inputs": [],
+  "outputs": [
+    {
+      "path": "runs/R20261022-airbnb/00_brief/brief.json",
+      "sha256": "c365e0126e69f0a16d37623e7c49c43c8e7fc81f51171ea178d980986d9a9d9b",
+      "schema": "brief"
+    }
+  ],
+  "tools": [
+    {
+      "name": "jq",
+      "version": "jq-1.7.1"
+    }
+  ],
+  "metrics": {},
+  "notes": [],
+  "error": null
+}

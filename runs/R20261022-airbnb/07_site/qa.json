@@ -1,0 +1,39 @@
+{
+  "station": "07_site",
+  "checked_at": "2026-10-22T12:22:56+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "id": "no_payment",
+      "ok": true
+    },
+    {
+      "id": "no_coordinates",
+      "ok": true
+    },
+    {
+      "id": "no_password_literal",
+      "ok": true
+    },
+    {
+      "id": "images_have_alt",
+      "ok": true
+    },
+    {
+      "id": "lang_toggle",
+      "ok": true
+    },
+    {
+      "id": "legal_notice",
+      "ok": true
+    },
+    {
+      "id": "calendar_file",
+      "ok": true
+    },
+    {
+      "id": "form_fields",
+      "ok": true
+    }
+  ]
+}

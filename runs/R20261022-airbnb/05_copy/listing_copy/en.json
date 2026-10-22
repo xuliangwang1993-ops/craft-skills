@@ -1,0 +1,109 @@
+{
+  "lang": "en",
+  "title": "Private room in Rosebery · desk & garden",
+  "title_len": 40,
+  "sections": [
+    {
+      "id": "about",
+      "heading": "About this space",
+      "paragraphs": [
+        {
+          "text": "A private room in a house in Rosebery, sleeping up to 2 guests.",
+          "sources": [
+            "facts.room_type",
+            "facts.max_guests",
+            "facts.suburb"
+          ]
+        },
+        {
+          "text": "The room has one queen bed and a lock on the bedroom door.",
+          "sources": [
+            "facts.beds",
+            "facts.amenities_included"
+          ]
+        },
+        {
+          "text": "The bathroom is shared, and the listing says so plainly.",
+          "sources": [
+            "facts.bathrooms"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the_room",
+      "heading": "The room",
+      "paragraphs": [
+        {
+          "text": "There is a dedicated desk and air conditioning — fine for a workday, quiet at night.",
+          "sources": [
+            "facts.amenities_included"
+          ]
+        },
+        {
+          "text": "The room photos are real; ask and we will send more angles.",
+          "sources": [
+            "facts.description_public"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "access",
+      "heading": "Guest access",
+      "paragraphs": [
+        {
+          "text": "You can use the kitchen, washing machine, TV and piano, plus Wi-Fi and the dedicated workspace.",
+          "sources": [
+            "facts.amenities_included"
+          ]
+        },
+        {
+          "text": "Free parking on the premises; the back garden has an outdoor dining area and a BBQ.",
+          "sources": [
+            "facts.amenities_included"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "notes",
+      "heading": "Other things to note",
+      "paragraphs": [
+        {
+          "text": "House rules: up to 2 overnight guests; pets are allowed.",
+          "sources": [
+            "facts.house_rules"
+          ]
+        },
+        {
+          "text": "The room has air conditioning. If winter warmth matters to you, please ask before booking.",
+          "sources": [
+            "facts.amenities_included",
+            "facts.heating_listed"
+          ]
+        },
+        {
+          "text": "Check-in and check-out times, Wi-Fi and door access are sent by the host after booking.",
+          "sources": [
+            "facts.checkin_time",
+            "facts.wifi_password",
+            "facts.door_code"
+          ]
+        },
+        {
+          "text": "There is a hair dryer in the bathroom; the room has a smoke alarm, a carbon monoxide alarm, a fire extinguisher and a first aid kit.",
+          "sources": [
+            "facts.amenities_included",
+            "facts.safety_devices"
+          ]
+        }
+      ]
+    }
+  ],
+  "generated_at": "2026-10-22T11:42:05+00:00",
+  "pricing_ref": {
+    "status": "insufficient_market_data",
+    "note": "价格不写进文案：pricing 仍为 provisional"
+  }
+}

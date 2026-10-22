@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-10-22T09:31:49+00:00",
+  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+  "min_interval_s": 3,
+  "fetches": [
+    {
+      "url": "https://www.airbnb.com.au/robots.txt",
+      "http": "200",
+      "bytes": 20933
+    },
+    {
+      "url": "https://www.airbnb.com.au/rooms/1286789934809628478",
+      "http": "200",
+      "bytes": 486691
+    }
+  ],
+  "robots_rules_useragent_star": 63,
+  "decisions": [
+    {
+      "path": "/rooms/1286789934809628478",
+      "allowed": true,
+      "reason": "robots 只禁 /rooms/*/photos|reviews|location 等子路径"
+    },
+    {
+      "path": "/s/Rosebery--NSW--Australia/homes",
+      "allowed": false,
+      "reason": "Disallow: /s/*/* → 不抓竞品搜索页"
+    }
+  ],
+  "not_logged_in": true,
+  "private_api_calls": 0
+}

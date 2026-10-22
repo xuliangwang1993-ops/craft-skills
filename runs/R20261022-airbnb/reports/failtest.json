@@ -1,0 +1,29 @@
+{
+  "run": "R20261022-airbnb",
+  "generated_at": "2026-10-22T13:36:13+00:00",
+  "cases": [
+    {
+      "case": "A_unverified_claim",
+      "injected": "文案追加『房间有暖气，冬天也很暖。』",
+      "expected": "trace_check 退出码 2，报 unverified_claim",
+      "exit_code": 2,
+      "caught": true,
+      "evidence": []
+    },
+    {
+      "case": "B_real_password",
+      "injected": "指南里把 {{WIFI_PASSWORD}} 换成一个像真的 12 位密码（本报告不保留其原文）",
+      "expected": "secret_scan 退出码 2，报 assigned_secret",
+      "exit_code": 2,
+      "caught": true,
+      "evidence": [
+        {
+          "file": "06_guide/guide/guide_zh.html",
+          "rule": "assigned_secret"
+        }
+      ]
+    }
+  ],
+  "passed": true,
+  "note": "闸门有效：两个污染都会被拦在交付前。原 run 未被修改（failtest 用软链 + 替换文件）。"
+}

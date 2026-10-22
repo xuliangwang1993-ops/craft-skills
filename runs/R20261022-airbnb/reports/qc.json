@@ -1,0 +1,121 @@
+{
+  "generated_at": "2026-10-22T13:38:23+00:00",
+  "secret_scan": {
+    "clean": true,
+    "files": 81,
+    "hits": 0
+  },
+  "trace": {
+    "inconsistencies": 0,
+    "coverage": {
+      "amenities_total": 17,
+      "site_missing": [],
+      "kb_missing": [],
+      "copy_missing": [],
+      "kb_articles": 9,
+      "copy_paragraphs_traced": 22
+    },
+    "passed": true
+  },
+  "html": {
+    "title_len": 43,
+    "has_meta_description": true,
+    "has_viewport": true,
+    "lang": "zh-Hans",
+    "h1_count": 1,
+    "images": 7,
+    "images_missing_alt": 0,
+    "external_requests": [],
+    "text_words": 224,
+    "total_bytes": 30177962,
+    "critical_bytes": 403360,
+    "has_form_labels": true,
+    "payment_mentions": 0
+  },
+  "links": {
+    "refs": 13,
+    "missing": [],
+    "ok": true
+  },
+  "video": {
+    "tour_9x16.mp4": {
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "duration": 40.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "bytes": 12109932,
+      "frames": 1200,
+      "loudness_lufs": -13.8,
+      "true_peak_dbtp": -5.2
+    },
+    "tour_16x9.mp4": {
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 40.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "bytes": 14126036,
+      "frames": 1200,
+      "loudness_lufs": -13.8,
+      "true_peak_dbtp": -5.2
+    }
+  },
+  "e2e": {
+    "passed": true,
+    "steps": [
+      {
+        "step": "load",
+        "ok": true,
+        "detail": "minis://workspace/craft-skills/runs/R20261022-airbnb/07_site/site/index.html?e2e=1792676292"
+      },
+      {
+        "step": "render",
+        "ok": true,
+        "detail": {
+          "h1": "一间安静的独立房间，书桌对着后院",
+          "images": 7,
+          "broken": 0,
+          "lang": "zh-Hans"
+        }
+      },
+      {
+        "step": "language_toggle",
+        "ok": true,
+        "detail": "A quiet room with a desk, and a garden behind it"
+      },
+      {
+        "step": "calendar_mount",
+        "ok": true,
+        "detail": "一二三四五六日12345678910111213141516171819202122232425262728293031还没有导入日历，先在右侧提交日期申请。"
+      },
+      {
+        "step": "form_validation_empty",
+        "ok": true,
+        "detail": "请填姓名 · 邮箱格式不对 · 退房要晚于入住"
+      },
+      {
+        "step": "form_submit_valid",
+        "ok": true,
+        "detail": "已发出。房东通常 12 小时内回复。"
+      }
+    ]
+  },
+  "lighthouse": {
+    "status": "not_run",
+    "substitute": {
+      "performance": 98,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 100,
+      "method": "static heuristics (size/alt/labels/meta/h1) — NOT Lighthouse"
+    }
+  },
+  "tools": {
+    "playwright": "install failed (no musl/aarch64 wheel)",
+    "lighthouse": "not run (no Chrome)",
+    "browser": "in-app WebKit via minis-browser-use"
+  }
+}

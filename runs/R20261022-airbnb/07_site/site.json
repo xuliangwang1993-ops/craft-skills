@@ -1,0 +1,26 @@
+{
+  "root": "runs/R20261022-airbnb/07_site/site",
+  "pages": [
+    "index.html"
+  ],
+  "form": {
+    "fields": [
+      "name",
+      "email",
+      "checkin",
+      "checkout",
+      "guests",
+      "message"
+    ],
+    "endpoint": "mailto fallback / config.formEndpoint",
+    "payment": false
+  },
+  "no_payment": true,
+  "calendar_events": 0,
+  "generated_at": "2026-10-22T12:22:53+00:00",
+  "assets": {
+    "images": 12,
+    "videos": 2,
+    "srt": 2
+  }
+}

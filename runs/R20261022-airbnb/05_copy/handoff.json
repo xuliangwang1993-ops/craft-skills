@@ -1,0 +1,64 @@
+{
+  "station": "05_copy",
+  "run_id": "R20261022-airbnb",
+  "started_at": "2026-10-22T11:42:05+00:00",
+  "ended_at": "2026-10-22T11:42:06+00:00",
+  "duration_s": 0.52,
+  "exit_code": 0,
+  "inputs": [
+    {
+      "path": "runs/R20261022-airbnb/01_collect/facts.json",
+      "sha256": "e6f7ecb0cd017de7c46db4fdc20593e7c06eeb2a4267358f15e4f0da17b50b23"
+    },
+    {
+      "path": "runs/R20261022-airbnb/02_pricing/pricing.json",
+      "sha256": "d8e32e40b0acad429848674963d4531187f64abf9a71f2cb67c9980405d47c7f"
+    },
+    {
+      "path": "runs/R20261022-airbnb/03_photos/photos/order.json",
+      "sha256": "14f7dcd17cbe3f7d723af71260f07ea4c5d72b03be9c46b6908b58fc9564fe64"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "runs/R20261022-airbnb/05_copy/listing_copy/en.json",
+      "sha256": "d58c49ca6d3839d9efc7f5cf23d7d4f6885ab37833ee930d879b05b90531dbda",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/05_copy/listing_copy/en.md",
+      "sha256": "3c9149dc8df3f2a154aca508e83b52f4f989892c339c7dbd55286b38ee4c98cd",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/05_copy/listing_copy/zh.json",
+      "sha256": "658781a57da5af0267d709dbd016f0e41b0892a5b305551ef104eea3abf015b7",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/05_copy/listing_copy/zh.md",
+      "sha256": "dcb72619e8588c12188fadbe995dd0da59edf49bfb6febc169108e85156c5557",
+      "schema": null
+    }
+  ],
+  "tools": [
+    {
+      "name": "python3",
+      "version": "3.12.14"
+    }
+  ],
+  "metrics": {
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "title_len": {
+      "zh": 27,
+      "en": 40
+    },
+    "words_en": 252,
+    "chars_zh": 603
+  },
+  "notes": [],
+  "error": null
+}

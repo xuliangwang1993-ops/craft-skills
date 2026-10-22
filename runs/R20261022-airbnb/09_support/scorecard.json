@@ -1,0 +1,16 @@
+{
+  "station": "09_support",
+  "scores": {
+    "commercial": 5,
+    "handoff": 5.0,
+    "craft": 5.0,
+    "benchmark": 3
+  },
+  "total": 4.7,
+  "notes": [
+    "商业价值 5/5：25 条 FAQ + 9 篇知识包，密码类问题 100% 拒答",
+    "衔接 5.0/5：5/5 项 QA 通过；schema=是；sha 校验=是",
+    "工艺 5.0/5：QA 通过率 5/5",
+    "标杆 3/5：规则检索不是 RAG；小助手接入后建议换向量检索"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "type": "object",
+  "required": [
+    "listing_id",
+    "generated_at",
+    "facts",
+    "sources"
+  ],
+  "properties": {
+    "listing_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "facts": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "value",
+          "source_id",
+          "status"
+        ],
+        "properties": {
+          "value": {},
+          "source_id": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "verified",
+              "unverified",
+              "conflict",
+              "pending_owner"
+            ]
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "url",
+          "retrieved_at"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "retrieved_at": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "facts"
+}

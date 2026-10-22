@@ -1,0 +1,43 @@
+{
+  "station": "04_video",
+  "checked_at": "2026-10-22T13:11:48+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "id": "duration_30_45",
+      "ok": true,
+      "detail": {
+        "tour_9x16.mp4": 40.0,
+        "tour_16x9.mp4": 40.0
+      }
+    },
+    {
+      "id": "resolutions",
+      "ok": true,
+      "detail": {
+        "tour_9x16.mp4": [
+          1080,
+          1920
+        ],
+        "tour_16x9.mp4": [
+          1920,
+          1080
+        ]
+      }
+    },
+    {
+      "id": "decode_clean",
+      "ok": true,
+      "detail": "电脑端 ffmpeg -f null 全程解码"
+    },
+    {
+      "id": "subtitles_both_langs",
+      "ok": true
+    },
+    {
+      "id": "music_licensed",
+      "ok": true,
+      "detail": "自制 CC0"
+    }
+  ]
+}

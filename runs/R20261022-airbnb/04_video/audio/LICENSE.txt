@@ -1,0 +1,2 @@
+Ambient bed synthesised in-house with SoX 14.4.2 (sine oscillators + reverb).
+No third-party samples. Released CC0-1.0 by the pipeline operator.

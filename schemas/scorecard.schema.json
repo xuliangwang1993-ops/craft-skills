@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "required": [
+    "station",
+    "scores",
+    "total",
+    "notes"
+  ],
+  "properties": {
+    "station": {
+      "type": "string"
+    },
+    "scores": {
+      "type": "object",
+      "required": [
+        "commercial",
+        "handoff",
+        "benchmark",
+        "craft"
+      ]
+    },
+    "total": {
+      "type": "number"
+    },
+    "notes": {
+      "type": "array"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "scorecard"
+}

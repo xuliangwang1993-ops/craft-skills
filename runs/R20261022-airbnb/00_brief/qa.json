@@ -1,0 +1,29 @@
+{
+  "station": "00_brief",
+  "checked_at": "2026-10-22T09:31:38+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "id": "listing_id_present",
+      "ok": true,
+      "detail": "1286789934809628478"
+    },
+    {
+      "id": "deliverables_ge_5",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "id": "languages",
+      "ok": true,
+      "detail": [
+        "zh",
+        "en"
+      ]
+    },
+    {
+      "id": "video_sizes",
+      "ok": true
+    }
+  ]
+}

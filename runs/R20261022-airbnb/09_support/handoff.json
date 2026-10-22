@@ -1,0 +1,88 @@
+{
+  "station": "09_support",
+  "run_id": "R20261022-airbnb",
+  "started_at": "2026-10-22T11:43:13+00:00",
+  "ended_at": "2026-10-22T11:43:14+00:00",
+  "duration_s": 0.69,
+  "exit_code": 0,
+  "inputs": [
+    {
+      "path": "runs/R20261022-airbnb/01_collect/facts.json",
+      "sha256": "e6f7ecb0cd017de7c46db4fdc20593e7c06eeb2a4267358f15e4f0da17b50b23"
+    },
+    {
+      "path": "runs/R20261022-airbnb/05_copy/listing_copy/en.json",
+      "sha256": "d58c49ca6d3839d9efc7f5cf23d7d4f6885ab37833ee930d879b05b90531dbda"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "runs/R20261022-airbnb/09_support/kb/kb_manifest.json",
+      "sha256": "1105377375c39107450f5e7a573945b06635177888370c0a267e7f99deae2ab9",
+      "schema": "kb"
+    },
+    {
+      "path": "runs/R20261022-airbnb/09_support/kb/01_facts.md",
+      "sha256": "5fbc40970b25f0401dce4e8b0028d597faa1fbe7370f356ea8952c77694e98a3",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/09_support/kb/02_checkin.md",
+      "sha256": "62eabbd372f37d4b31ddf09c022a04592f3e696b414f8c6beb92ea7807582da9",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/09_support/kb/03_amenities.md",
+      "sha256": "cdec129be5316649a97587e0253d513797dc6a54be93d300de043277206e55ce",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/09_support/kb/04_transport.md",
+      "sha256": "65c836a4ba7ab73ce8ff03202b9af6aa5010d0f70cf4827ce7cf6d17a6e6131c",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/09_support/kb/05_rules.md",
+      "sha256": "c6ed2a854ed6cc879da03585201bd3e5aeceef56f03ea73d1b355a0813286490",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/09_support/kb/06_booking.md",
+      "sha256": "bd6466ce7602f3a53f630ee70fd84a3df228d7e5a5ae49dcd21c9ac2c05b01b0",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/09_support/kb/07_never_answer.md",
+      "sha256": "de08067ebefadc98df17b1bc232f8a3f5e147e6a18f085791efc671e287a4b7c",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/09_support/kb/08_faq.md",
+      "sha256": "36bcfe3140d219e16ada7c43e736a7c0eed1c02b1f67b96f56579ee337cc954d",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/09_support/kb/09_pending.md",
+      "sha256": "8fc181f11ee01c158f4b7105437223fe18c8ca326063289bdd3ecdc8f70acb48",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/09_support/kb/kb_manifest.json",
+      "sha256": "1105377375c39107450f5e7a573945b06635177888370c0a267e7f99deae2ab9",
+      "schema": null
+    },
+    {
+      "path": "runs/R20261022-airbnb/09_support/support_test.json",
+      "sha256": "e594a9e51cd532e043a47fe9377586b673a4e43d2ffe7acc3c722e4f714843fd",
+      "schema": null
+    }
+  ],
+  "tools": [],
+  "metrics": {
+    "faq": 25,
+    "accuracy": 100.0,
+    "articles": 9
+  },
+  "notes": [],
+  "error": null
+}

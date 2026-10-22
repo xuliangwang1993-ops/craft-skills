@@ -1,0 +1,54 @@
+{
+  "station": "03_photos",
+  "checked_at": "2026-10-22T10:24:15+00:00",
+  "passed": false,
+  "checks": [
+    {
+      "id": "long_edge_ge_1920",
+      "ok": true,
+      "detail": [
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048
+      ]
+    },
+    {
+      "id": "vertical_after_le_1deg",
+      "ok": false,
+      "detail": {
+        "measured": [
+          0.52,
+          0.0,
+          0.98,
+          2.43,
+          0.4,
+          0.0
+        ],
+        "unmeasurable": 0
+      }
+    },
+    {
+      "id": "no_face_in_output",
+      "ok": true,
+      "detail": "2 张被排除（重复/人脸）"
+    },
+    {
+      "id": "watermark_placeholder",
+      "ok": true,
+      "detail": "占位图全部打样片水印"
+    },
+    {
+      "id": "structure_untouched",
+      "ok": true,
+      "detail": "只做裁切/白平衡/曝光/垂直校正/锐化，无机内容替换；改动仅 9 项参数可见 edits.json"
+    },
+    {
+      "id": "count_ge_5",
+      "ok": true,
+      "detail": 6
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "type": "object",
+  "required": [
+    "run_id",
+    "sentence",
+    "listing_id",
+    "deliverable",
+    "languages",
+    "video",
+    "created_at"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "sentence": {
+      "type": "string"
+    },
+    "listing_id": {
+      "type": "string",
+      "pattern": "^[0-9]{10,}$"
+    },
+    "deliverable": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "string"
+      }
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "zh",
+          "en",
+          "ja",
+          "ko"
+        ]
+      }
+    },
+    "video": {
+      "type": "object",
+      "required": [
+        "sizes",
+        "duration_s"
+      ],
+      "properties": {
+        "sizes": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "9:16",
+              "16:9"
+            ]
+          }
+        },
+        "duration_s": {
+          "type": "integer",
+          "minimum": 30,
+          "maximum": 45
+        }
+      }
+    },
+    "created_at": {
+      "type": "string"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "brief"
+}

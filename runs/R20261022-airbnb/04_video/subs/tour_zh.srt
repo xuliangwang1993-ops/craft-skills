@@ -1,0 +1,29 @@
+1
+00:00:00,000 --> 00:00:06,550
+房间：1.5 米双人床（queen），木地板，房门可锁
+The room: queen bed, timber floor, lockable door
+
+2
+00:00:06,100 --> 00:00:12,650
+房间另一侧：书桌工作区，玻璃门通往后院
+Other side of the room: desk workspace, glass door to the garden
+
+3
+00:00:12,200 --> 00:00:18,750
+共用厨房：燃气灶、烤箱、操作台
+Shared kitchen: gas hob, oven, bench
+
+4
+00:00:18,300 --> 00:00:24,850
+共用厨房另一侧：冰箱与储物
+Kitchen, other side: fridge and storage
+
+5
+00:00:24,400 --> 00:00:30,950
+共用卫生间：淋浴、洗手台（现状，建议整理后重拍）
+Shared bathroom: shower and basin (as-is; reshoot recommended)
+
+6
+00:00:30,500 --> 00:00:37,050
+后院：户外餐桌、BBQ 与沙发区
+Back garden: outdoor dining table, BBQ and lounge

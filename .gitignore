@@ -1,0 +1,10 @@
+
+# trial run: 大二进制不入库（见 runs/*/README.md）
+runs/*/04_video/*.mp4
+runs/*/04_video/_build/
+runs/*/04_video/audio/*.wav
+runs/*/07_site/site/assets/
+runs/*/01_collect/raw/
+runs/*-failtest/
+reports/__pycache__/
+*.pyc

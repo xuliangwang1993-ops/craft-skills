@@ -1,0 +1,109 @@
+{
+  "lang": "zh",
+  "title": "Rosebery 独立房间 · 2 人 · 书桌与后院",
+  "title_len": 27,
+  "sections": [
+    {
+      "id": "about",
+      "heading": "关于这个空间",
+      "paragraphs": [
+        {
+          "text": "这是一间位于 Rosebery 的独立房间，位于一栋住宅内，最多住 2 人。",
+          "sources": [
+            "facts.room_type",
+            "facts.max_guests",
+            "facts.suburb"
+          ]
+        },
+        {
+          "text": "房间配一张 1.5 米双人床（queen），房门可以上锁。",
+          "sources": [
+            "facts.beds",
+            "facts.amenities_included"
+          ]
+        },
+        {
+          "text": "卫生间与其他人共用，房源页面已如实标注。",
+          "sources": [
+            "facts.bathrooms"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the_room",
+      "heading": "房间",
+      "paragraphs": [
+        {
+          "text": "房间里有书桌工作区和空调，适合白天办公、晚上休息。",
+          "sources": [
+            "facts.amenities_included"
+          ]
+        },
+        {
+          "text": "现有的房间照片是实拍，你也可以要求看更多角度。",
+          "sources": [
+            "facts.description_public"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "access",
+      "heading": "住客可用区域",
+      "paragraphs": [
+        {
+          "text": "你可以使用厨房、洗衣机、电视、钢琴，以及 Wi-Fi 和专用工作区。",
+          "sources": [
+            "facts.amenities_included"
+          ]
+        },
+        {
+          "text": "门外有免费的院内停车位；后院有户外用餐区和 BBQ。",
+          "sources": [
+            "facts.amenities_included"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "notes",
+      "heading": "其他注意事项",
+      "paragraphs": [
+        {
+          "text": "房屋守则：最多 2 位过夜住客，可以带宠物。",
+          "sources": [
+            "facts.house_rules"
+          ]
+        },
+        {
+          "text": "房间有空调；如果你对冬季取暖有要求，请在预订前先问一句。",
+          "sources": [
+            "facts.amenities_included",
+            "facts.heating_listed"
+          ]
+        },
+        {
+          "text": "入住与退房时间、Wi-Fi 与门锁方式，会在确认预订后由房东直接发送。",
+          "sources": [
+            "facts.checkin_time",
+            "facts.wifi_password",
+            "facts.door_code"
+          ]
+        },
+        {
+          "text": "卫生间里有吹风机；房内配烟雾报警器、一氧化碳报警器、灭火器和急救箱。",
+          "sources": [
+            "facts.amenities_included",
+            "facts.safety_devices"
+          ]
+        }
+      ]
+    }
+  ],
+  "generated_at": "2026-10-22T11:42:05+00:00",
+  "pricing_ref": {
+    "status": "insufficient_market_data",
+    "note": "价格不写进文案：pricing 仍为 provisional"
+  }
+}

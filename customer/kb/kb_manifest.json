@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-10-22T11:43:14+00:00",
+  "faq_count": 25,
+  "articles": [
+    {
+      "id": "01_facts",
+      "title": "房源基本信息",
+      "path": "runs/R20261022-airbnb/09_support/kb/01_facts.md"
+    },
+    {
+      "id": "02_checkin",
+      "title": "入住与退房",
+      "path": "runs/R20261022-airbnb/09_support/kb/02_checkin.md"
+    },
+    {
+      "id": "03_amenities",
+      "title": "设施清单（只列平台标注为「有」的）",
+      "path": "runs/R20261022-airbnb/09_support/kb/03_amenities.md"
+    },
+    {
+      "id": "04_transport",
+      "title": "交通与周边",
+      "path": "runs/R20261022-airbnb/09_support/kb/04_transport.md"
+    },
+    {
+      "id": "05_rules",
+      "title": "房屋守则",
+      "path": "runs/R20261022-airbnb/09_support/kb/05_rules.md"
+    },
+    {
+      "id": "06_booking",
+      "title": "预订、付款与取消",
+      "path": "runs/R20261022-airbnb/09_support/kb/06_booking.md"
+    },
+    {
+      "id": "07_never_answer",
+      "title": "不能回答的问题",
+      "path": "runs/R20261022-airbnb/09_support/kb/07_never_answer.md"
+    },
+    {
+      "id": "08_faq",
+      "title": "常见问题 FAQ",
+      "path": "runs/R20261022-airbnb/09_support/kb/08_faq.md"
+    },
+    {
+      "id": "09_pending",
+      "title": "待房东确认清单",
+      "path": "runs/R20261022-airbnb/09_support/kb/09_pending.md"
+    }
+  ],
+  "sync": {
+    "target": "小X 知识库",
+    "how": "把 customer/kb/*.md 整目录导入，front matter 的 facts 字段用于溯源"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "station": "02_pricing",
+  "checked_at": "2026-10-22T09:34:41+00:00",
+  "passed": false,
+  "checks": [
+    {
+      "id": "comps_ge_10",
+      "ok": false,
+      "detail": "实际 0"
+    },
+    {
+      "id": "every_price_has_3_comps",
+      "ok": false,
+      "detail": "0 个可比房源，全部建议价仅有假设支撑"
+    },
+    {
+      "id": "ranges_sane",
+      "ok": true,
+      "detail": "weekday 50.0-65.0, peak 90-113"
+    },
+    {
+      "id": "evidence_tagged",
+      "ok": true
+    },
+    {
+      "id": "degraded_declared",
+      "ok": true
+    }
+  ]
+}
