@@ -1,0 +1,61 @@
+---
+name: gpt-sovits
+name_zh: 声音克隆/变声（GPT-SoVITS）
+description: 用 gpt-sovits 开源工具完成「声音克隆/变声」。当任务需要 声音克隆/变声 且希望用开源、可独立运行的底层工具时使用。
+triggers: [gpt-sovits, 声音克隆/变声]
+inputs:
+  - name: input
+    description: 输入文件路径、URL 或查询
+    required: true
+tools: [shell]
+mcp: []
+permissions: [read_file, write_file, shell]
+category: audio
+layer: base
+backs: 声音克隆/变声
+wave: 2
+stage: 入库
+version: 1
+license: "MIT（底模另见各自许可）"
+---
+
+# gpt-sovits · 声音克隆/变声（GPT-SoVITS）
+
+**它让我们能做什么：** 几秒到一分钟样本克隆音色，做配音、变声。
+
+## 定位
+
+- 槽位：声音克隆/变声（一格一个最强工具，本格只放 gpt-sovits）
+- 三条标准：领域标杆 · 可独立使用 · 输出可接下一个工具的输入
+- 许可：MIT（底模另见各自许可）
+- 阶段：入库（文档已写，尚未落地验证）
+
+## 安装
+
+```sh
+git clone https://github.com/RVC-Boss/GPT-SoVITS && cd GPT-SoVITS && bash install.sh
+# 按 README 下载预训练模型
+```
+
+## 核心用法
+
+```
+python api_v2.py -a 127.0.0.1 -p 9880
+curl -G 'http://127.0.0.1:9880/tts' --data-urlencode 'text=你好' --data-urlencode 'text_lang=zh' --data-urlencode 'ref_audio_path=ref.wav' --data-urlencode 'prompt_lang=zh' -o out.wav
+```
+
+## 输入/输出（串联）
+
+- 输入参考音频 wav + 文本 → 输出 wav，接 sox 归一 / mlt 合轨。**只克隆本人或已获授权的声音。**
+
+## 输入/输出校验
+
+- 先侦察输入，再处理。
+- 输出非空、格式可被下一个工具读取；生成类任务固定 seed，同输入跑两遍结果一致。
+
+## 硬规则
+
+- **不覆盖原文件**，一律输出新文件。
+- 批量操作先拿一个样本跑通、校验，再全量。
+- 密钥只从环境变量读取，不写进命令历史或仓库。
+- 输出格式要能直接作为下一个工具的输入（见 README「底层工具」串联说明）。
