@@ -153,14 +153,14 @@ claude mcp add wordcraft -- wordcraft-cli mcp
 | [`practical-rife`](skills/base/practical-rife/) | 慢动作补帧（Practical-RIFE） | 慢动作补帧 | MIT | `git clone https://github.com/hzwer/Practical-RIFE && cd Practical-RIFE && pip install -r requirements.txt` |
 | [`iopaint`](skills/base/iopaint/) | 图片修复/消除路人（LaMa · IOPaint） | 图片修复/消除路人 | Apache-2.0（LaMa 模型 Apache-2.0） | `pip install iopaint` |
 | [`mediapipe`](skills/base/mediapipe/) | 人脸/人体关键点（MediaPipe） | 人脸/人体关键点 | Apache-2.0 | `pip install mediapipe` |
-| [`ultralytics-yolo`](skills/base/ultralytics-yolo/) | 目标检测/跟踪（Ultralytics YOLO） | 目标检测/跟踪 | ⚠️ AGPL-3.0（闭源商用需 Ultralytics 企业许可） | `pip install ultralytics` |
+| [`rf-detr`](skills/base/rf-detr/) | 目标检测/分割（RF-DETR） | 目标检测/跟踪 | Apache-2.0（仅用 Apache 档权重；Plus 档为 PML，不装） | `pip install rfdetr supervision` |
 | [`gpt-sovits`](skills/base/gpt-sovits/) | 声音克隆/变声（GPT-SoVITS） | 声音克隆/变声 | MIT（底模另见各自许可） | `git clone https://github.com/RVC-Boss/GPT-SoVITS && cd GPT-SoVITS && bash install.sh` |
 | [`whisperx`](skills/base/whisperx/) | 逐字时间对齐（WhisperX） | 逐字时间对齐 | BSD-2-Clause（说话人分离用 pyannote，需 HF token 并同意模型条款） | `pip install whisperx` |
-| [`liveportrait`](skills/base/liveportrait/) | 数字人口型/表情驱动（LivePortrait） | 数字人口型/表情驱动 | ⚠️ 代码 MIT，但依赖的 InsightFace 人脸模型仅限非商用（商用须替换检测模型或取得授权） | `git clone https://github.com/KwaiVGI/LivePortrait && cd LivePortrait && pip install -r requirements.txt` |
+| [`musetalk`](skills/base/musetalk/) | 数字人口型驱动（MuseTalk） | 数字人口型/表情驱动 | MIT（代码+权重可商用；依赖 whisper/DWPose Apache-2.0、sd-vae MIT、BiSeNet MIT、S3FD BSD） | `git clone https://github.com/TMElyralab/MuseTalk && cd MuseTalk && pip install -r requirements.txt` |
 | [`wan`](skills/base/wan/) | 文生视频（Wan 2.x） | 文生视频 | Apache-2.0（⚠️ 需大显存 GPU） | `git clone https://github.com/Wan-Video/Wan2.2 && cd Wan2.2 && pip install -r requirements.txt` |
 | [`llama-cpp`](skills/base/llama-cpp/) | 本地大模型推理（llama.cpp） | 本地大模型推理 | MIT（模型权重另见各自许可） | `git clone https://github.com/ggml-org/llama.cpp && cd llama.cpp && cmake -B build && cmake --build build -j` |
 | [`meilisearch`](skills/base/meilisearch/) | 全文检索引擎（Meilisearch） | 全文检索引擎 | MIT（社区版；部分企业功能为商业许可） | `docker run -d -p 7700:7700 -e MEILI_MASTER_KEY=$MEILI_KEY -v $PWD/meili:/meili_data getmeili/meilisearch` |
-| [`n8n`](skills/base/n8n/) | 工作流编排（n8n） | 工作流编排 | ⚠️ Sustainable Use License（源码可见，非 OSI 开源；不得作为托管服务转售） | `docker run -d -p 5678:5678 -v $PWD/n8n:/home/node/.n8n docker.n8n.io/n8nio/n8n` |
+| [`node-red`](skills/base/node-red/) | 流程编排（Node-RED） | 工作流编排 | Apache-2.0 | `docker run -d -p 1880:1880 -v $PWD/node-red:/data nodered/node-red` |
 | [`vl-convert`](skills/base/vl-convert/) | 图表绘制（Vega-Lite · vl-convert） | 图表绘制 | BSD-3-Clause（Vega-Lite）/ BSD-3-Clause（vl-convert） | `pip install vl-convert-python` |
 | [`calibre`](skills/base/calibre/) | 电子书转换（Calibre） | 电子书 | GPL-3.0 | `sudo apt install calibre` |
 | [`fonttools`](skills/base/fonttools/) | 字体子集/处理（fontTools） | 字体子集/处理 | MIT | `pip install fonttools brotli` |
@@ -168,7 +168,7 @@ claude mcp add wordcraft -- wordcraft-cli mcp
 | [`7zip`](skills/base/7zip/) | 压缩归档（7-Zip） | 压缩归档 | LGPL-2.1（部分 BSD-3；unRAR 代码受 unRAR 许可限制，不得用于制作 RAR 压缩器） | `sudo apt install 7zip   # 提供 7zz；旧发行版 p7zip-full 提供 7z` |
 | [`exiftool`](skills/base/exiftool/) | 文件元数据（ExifTool） | 文件元数据 | Artistic License / GPL-1.0+（Perl 同款双许可） | `sudo apt install libimage-exiftool-perl` |
 
-> 第 2 批许可提醒：⚠️ Ultralytics YOLO 为 **AGPL-3.0**（闭源商用需企业许可）；⚠️ n8n 为 **Sustainable Use License，非 OSI 开源**；⚠️ LivePortrait 代码 MIT，但依赖的 **InsightFace 模型仅限非商用**；Calibre 为 GPL-3.0；7-Zip 的 unRAR 部分有额外限制；WhisperX 说话人分离需同意 pyannote 模型条款；Meilisearch 企业功能为商业许可；Wan、LivePortrait、RIFE、GPT-SoVITS 建议/需要 GPU。
+> 第 2 批许可提醒：2026-10-22 已把 YOLO（AGPL）、n8n（非 OSI）、LivePortrait（InsightFace 非商用）换成 RF-DETR（Apache-2.0，禁用 Plus/PML 档）、Node-RED（Apache-2.0）、MuseTalk（MIT，测试数据勿用）；Calibre 为 GPL-3.0；7-Zip 的 unRAR 部分有额外限制；WhisperX 说话人分离需同意 pyannote 模型条款；Meilisearch 企业功能为商业许可；Wan、MuseTalk、RIFE、GPT-SoVITS 建议/需要 GPU。
 
 > 许可提醒：PyMuPDF、SearXNG 为 **AGPL-3.0**；Blender、ComfyUI 为 GPL；ComfyUI 需要 GPU。PyMuPDF 为 **AGPL-3.0**（网络服务对外提供须开源，商用闭源需买商业许可或换 pypdf）；SoX、darktable、Inkscape、Pandoc、RobustVideoMatting 为 GPL，改代码后分发须开源；只作为独立命令行调用一般不受影响。
 
@@ -180,7 +180,7 @@ claude mcp add wordcraft -- wordcraft-cli mcp
 
 1. **模板与素材生态** —— 剪映的模板、贴纸、音乐、特效库是护城河，只能自建或接免版权素材库。
 2. **一键成片** —— PySceneDetect 切镜头 + 大模型挑片段 + MLT 成片，需要自己串成完整流程。
-3. **美颜 / 数字人精修** —— MediaPipe、LivePortrait、MuseTalk 能做但质量不够，需重写到剪映水准。
+3. **美颜 / 数字人精修** —— MediaPipe、MuseTalk 能做但质量不够，需重写到剪映水准。
 
 ---
 
