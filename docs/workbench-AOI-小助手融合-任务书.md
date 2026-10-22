@@ -18,13 +18,29 @@
 - **P2**：小助手（前台接待）做好。
 - 其余（立项/入库/落地/主页样板/每周推进）在后。
 
-## 1. Hans 的 Workbench 骨架（结构层）
+## 1. Workbench 骨架（结构层，已有真实代码）
 
-> ⚠️ 假设说明：账号下没有找到明确描述 Hans workbench 的仓库/README，以下按需求描述；动手前若找到 Hans 的原始骨架代码，以其为准并在回报中说明差异。
+**真实位置**：仓库 `xuliangwang1993-ops/xconnect-landing`，分支 `factory/integrate-workbench`，目录 `workbench/`。README 中称其为 **X-connect Workbench (PWA)**，是在 Render 上的网页 bot 基础上升级而来。
 
-- Workbench 是整站的**骨架/结构层**：统一布局（顶栏、左侧导航/技能目录、主工作区、右侧小助手面板）、路由、状态管理。
-- 工作区按"工厂流水线"组织：输入 → 批处理 → 生产 → 后测 → 交付/客服。
-- 技能目录从 craft-skills 的 Skill 元数据（名称、格子、简介、输入/输出类型）生成，不手写。
+目录结构：
+- `server.mjs`、`server-voice.mjs`（入口）、`voice-auth.mjs`
+- `public/`：`index.html`、`app.js`、`styles.css`、`sw.js`、`manifest.webmanifest`、`xc-handshake.js`
+- `integrations/`：`slack.mjs`、`event-to-card.mjs`
+- `test/`、`slack-app-manifest.yaml`、`README.md`
+- `desktop/`：Electron 27 桌面壳（README 写明**尚未构建、未验证**）
+
+技术栈：
+- **后端**：纯 Node.js（ESM，无框架），Node ≥ 18，唯一依赖 `ws`；启动命令 `node server-voice.mjs`。
+- **前端**：手写 PWA，原生 JS/HTML/CSS + service worker，卡片优先（card-first）的工作台。
+- **数据**：卡片存储在 Supabase。
+- **聊天**：走网关 `/v1/chat/completions`（api.x-connect.ai）或 Subrouter key。
+- **语音**：豆包实时语音（WebSocket）。
+
+**要求**：
+- **在这套现有代码上做**，不要换框架重写，保持现有技术栈（不引入 React/Vue 等框架和构建链）。
+- AOI 展示（第 2 节）和小助手讲解（第 3 节）作为新增模块/卡片加进这个 workbench。
+- 从 `factory/integrate-workbench` **新建分支**开发，完成后开 PR（目标分支 `factory/integrate-workbench`），**不要合并**。
+- 工作区按"工厂流水线"组织：输入 → 批处理 → 生产 → 后测 → 交付/客服；技能目录从 craft-skills 的 Skill 元数据生成，不手写。
 - 骨架只负责"台子"，不写死展示内容。
 
 ## 2. AOI 展示（展示层）
@@ -44,7 +60,7 @@
   - 分步（step）讲解 + 滚动联动：讲到哪一步，页面对应区域高亮/滚动到位。
   - 自动推进（auto-advance），每步有进度条；客户可暂停、上一步、**跳过**。
   - 讲解与批处理真实进度联动（批处理完成某步时讲解同步推进）。
-  - 动画用 CSS/Framer Motion 一类轻量方案，尊重 `prefers-reduced-motion`。
+  - 动画用原生 CSS（transition/animation）与少量原生 JS 实现，不引入框架，尊重 `prefers-reduced-motion`。
 - 小助手的回答依据 **knowledge 包**（见第 5 节），不得编造。
 
 ## 4. "搭台你唱戏"融合思路
@@ -65,7 +81,7 @@
 
 ## 6. 交付物
 
-1. Workbench 骨架布局与路由改造。
+1. 在现有 workbench（`xconnect-landing` / `factory/integrate-workbench` / `workbench/`）上接入新模块。
 2. AOI 展示层：能力墙 + 验收样品卡片。
 3. 小助手前台：分步动画讲解（自动推进/暂停/跳过）+ 与批处理进度联动。
 4. 讲解脚本与锚点数据化。
@@ -91,9 +107,9 @@
 ## 9. 回报内容
 
 完成后请回报：
-1. PR 链接与分支名；
+1. PR 链接与分支名（基于 `factory/integrate-workbench` 新建）；
 2. 改动文件清单与每项一句话说明；
-3. 对第 1 节假设的处理（是否找到 Hans 原骨架、差异在哪）；
+3. 在现有 workbench 代码上改了哪些模块、新增了哪些文件（确认未换框架、未改技术栈）；
 4. 验收清单逐项结果（通过/未通过/原因）；
 5. 预览地址或截图/录屏（小助手讲解全流程）；
 6. 遗留问题与下一步建议。
