@@ -1,6 +1,8 @@
 # craft-skills
 
-**34 个技能 = 13 个 Craft 应用技能 + 21 个开源底层工具技能 —— 一条 AI 流水线。**
+**56 个技能 = 13 个 Craft 应用技能 + 43 个开源底层工具技能（第 0 批 21 + 第 1 批 22）—— 一条 AI 流水线。**
+
+扩库计划与格子总表见 [`docs/扩库立项.md`](docs/扩库立项.md)：入库一批、落地一批、立项一批，滚动推进。
 
 （另有 8 条跨应用工作流；Craft 家族共 14 个仓库，其中 `artcraft` 是核心引擎、无独立 CLI，故无独立技能。）
 
@@ -66,7 +68,7 @@ claude mcp add wordcraft -- wordcraft-cli mcp
 
 13 个 Craft 应用各一份 SKILL.md（核心引擎 `artcraft` 是底层库，无独立 CLI，故无独立技能），写明：该应用暴露哪些 MCP 工具、标准作业流程、硬规则、路径注意。
 
-### `skills/base/` — 底层工具 / 开源替代（21 个）
+### `skills/base/` — 底层工具 / 开源替代（43 个）
 
 **做法是工厂化：一格一个最强工具，全覆盖不留空格，输出稳定，工具之间输出接输入串联。** 每个工具都要过三条标准：
 
@@ -116,7 +118,34 @@ claude mcp add wordcraft -- wordcraft-cli mcp
 | [`libvips`](skills/base/libvips/) | 高速批量图片处理（libvips） | photocraft 批处理开源替代 | LGPL-2.1+ | `sudo apt install libvips-tools` |
 | [`imagemagick`](skills/base/imagemagick/) | 通用图片处理（ImageMagick） | photocraft 批处理开源替代 | ImageMagick License（Apache-2.0 风格） | `sudo apt install imagemagick` |
 
-> 许可提醒：PyMuPDF 为 **AGPL-3.0**（网络服务对外提供须开源，商用闭源需买商业许可或换 pypdf）；SoX、darktable、Inkscape、Pandoc、RobustVideoMatting 为 GPL，改代码后分发须开源；只作为独立命令行调用一般不受影响。
+**第 1 批（扩库，阶段：入库，未实测）— 22 个新格子：**
+
+| 技能 | 名称 | 格子 | 许可 | 安装 |
+|------|------|------|------|------|
+| [`playwright`](skills/base/playwright/) | 浏览器自动化（Playwright） | 浏览器自动化 | Apache-2.0 | `pip install playwright` |
+| [`crawl4ai`](skills/base/crawl4ai/) | 网页抓取与正文提取（Crawl4AI） | 网页抓取/正文提取 | Apache-2.0 | `pip install -U crawl4ai` |
+| [`searxng`](skills/base/searxng/) | 元搜索（SearXNG，自托管） | 网页搜索 | AGPL-3.0 | `docker run -d -p 8888:8080 --name searxng searxng/searxng` |
+| [`paddleocr`](skills/base/paddleocr/) | 图片 OCR（PaddleOCR，中文最强） | 图片文字识别（中英文） | Apache-2.0 | `pip install paddlepaddle paddleocr` |
+| [`postgresql`](skills/base/postgresql/) | 关系数据库（PostgreSQL / psql） | 关系数据库 | PostgreSQL License（类 MIT） | `sudo apt install postgresql-client` |
+| [`duckdb`](skills/base/duckdb/) | 嵌入式分析（DuckDB） | 数据分析/SQL on 文件 | MIT | `pip install duckdb` |
+| [`blender`](skills/base/blender/) | 3D 建模与渲染（Blender 无界面） | 3D 建模/渲染 | GPL-2.0+ | `sudo apt install blender` |
+| [`gdal`](skills/base/gdal/) | 地图与地理数据（GDAL/OGR） | GIS/地理数据 | MIT | `sudo apt install gdal-bin` |
+| [`graphviz`](skills/base/graphviz/) | 图表与流程图（Graphviz） | 流程图/关系图 | EPL-1.0 | `sudo apt install graphviz` |
+| [`tectonic`](skills/base/tectonic/) | LaTeX 排版（Tectonic） | 数学公式/学术排版 | MIT | `cargo install tectonic` |
+| [`ripgrep`](skills/base/ripgrep/) | 代码与文本搜索（ripgrep） | 全文/代码搜索 | MIT OR Unlicense | `sudo apt install ripgrep` |
+| [`jq`](skills/base/jq/) | JSON 处理（jq） | JSON 处理 | MIT | `sudo apt install jq` |
+| [`yt-dlp`](skills/base/yt-dlp/) | 媒体下载（yt-dlp） | 在线音视频下载 | Unlicense | `pip install -U yt-dlp` |
+| [`docker`](skills/base/docker/) | 容器运行（Docker） | 容器/环境隔离 | Apache-2.0（Docker Engine / Moby） | `curl -fsSL https://get.docker.com | sh` |
+| [`qdrant`](skills/base/qdrant/) | 向量检索（Qdrant） | 向量数据库/语义检索 | Apache-2.0 | `docker run -d -p 6333:6333 -v $PWD/qdrant:/qdrant/storage qdrant/qdrant` |
+| [`argos-translate`](skills/base/argos-translate/) | 离线翻译（Argos Translate） | 机器翻译（离线） | MIT | `pip install argostranslate` |
+| [`zbar`](skills/base/zbar/) | 二维码/条码识别（ZBar） | 二维码/条码 | LGPL-2.1 | `sudo apt install zbar-tools` |
+| [`himalaya`](skills/base/himalaya/) | 命令行邮件（Himalaya） | 邮件收发 | MIT | `cargo install himalaya` |
+| [`comfyui`](skills/base/comfyui/) | 本地图像生成（ComfyUI，需 GPU） | AI 图像生成 | GPL-3.0（模型权重另见各自许可） | `git clone https://github.com/comfyanonymous/ComfyUI` |
+| [`rembg`](skills/base/rembg/) | 图片去背景（rembg） | 图片抠图/去背景 | MIT | `pip install "rembg[cli]"` |
+| [`pyscenedetect`](skills/base/pyscenedetect/) | 镜头切分（PySceneDetect） | 镜头/场景检测 | BSD-3-Clause | `pip install "scenedetect[opencv]"` |
+| [`librosa`](skills/base/librosa/) | 音乐节拍分析（librosa） | 节拍/音乐分析（卡点） | ISC | `pip install librosa soundfile` |
+
+> 许可提醒：PyMuPDF、SearXNG 为 **AGPL-3.0**；Blender、ComfyUI 为 GPL；ComfyUI 需要 GPU。PyMuPDF 为 **AGPL-3.0**（网络服务对外提供须开源，商用闭源需买商业许可或换 pypdf）；SoX、darktable、Inkscape、Pandoc、RobustVideoMatting 为 GPL，改代码后分发须开源；只作为独立命令行调用一般不受影响。
 
 **刻意没收的**：Ardour、Natron、Penpot、Scribus、LibreCAD、FreeCAD、GIMP —— 都需要再包一层接口才能给 AI 稳定调用，不满足「可独立使用」；Natron 另外基本停更。
 
