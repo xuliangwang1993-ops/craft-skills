@@ -32,7 +32,10 @@ license: BSD-3-Clause
 ## 安装
 
 ```sh
-pip install realesrgan basicsr  # 或下载 realesrgan-ncnn-vulkan 免 Python 版
+# 推荐：ncnn 便携版（pip install realesrgan basicsr 在新版 Python/torchvision 上构建失败，不推荐）
+curl -LO https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesrgan-ncnn-vulkan-20220424-ubuntu.zip
+unzip realesrgan-ncnn-vulkan-20220424-ubuntu.zip && chmod +x realesrgan-ncnn-vulkan   # 自带 models/
+# 无显卡机器：sudo apt install mesa-vulkan-drivers，再 export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/lvp_icd.json（CPU 软件渲染，慢但可用）
 ```
 
 ## 核心用法
@@ -42,7 +45,11 @@ pip install realesrgan basicsr  # 或下载 realesrgan-ncnn-vulkan 免 Python �
 realesrgan-ncnn-vulkan -i in.jpg -o out.png -n realesrgan-x4plus -s 4
 realesrgan-ncnn-vulkan -i frames/ -o up/ -n realesr-animevideov3 -s 2   # 动漫/视频帧
 # 视频：ffmpeg 拆帧 → 放大 → 合帧
-ffmpeg -i in.mp4 frames/%06d.png && ffmpeg -framerate 30 -i up/%06d.png -i in.mp4 -map 0:v -map 1:a? -c:v libx264 -crf 18 out.mp4
+mkdir -p frames up    # 目录必须先建好
+FPS=$(ffprobe -v error -select_streams v:0 -show_entries stream=r_frame_rate -of csv=p=0 in.mp4)   # 用源帧率，写死 30 会变速
+ffmpeg -i in.mp4 frames/%06d.png
+realesrgan-ncnn-vulkan -i frames/ -o up/ -n realesr-animevideov3 -s 2
+ffmpeg -framerate "$FPS" -i up/%06d.png -i in.mp4 -map 0:v -map 1:a? -c:v libx264 -crf 18 -pix_fmt yuv420p out.mp4
 ```
 
 ## 输入/输出校验

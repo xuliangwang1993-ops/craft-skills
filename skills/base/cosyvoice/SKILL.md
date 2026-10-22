@@ -32,7 +32,11 @@ license: Apache-2.0
 ## 安装
 
 ```sh
+# requirements.txt 锁定 torch==2.3.1、onnxruntime-gpu、TensorRT、deepspeed，只支持 Python 3.10，需独立 conda 环境
+conda create -n cosyvoice -y python=3.10 && conda activate cosyvoice
 git clone --recursive https://github.com/FunAudioLLM/CosyVoice && cd CosyVoice && pip install -r requirements.txt
+# 模型需单独下载（数 GB），否则下面的 pretrained_models 路径不存在
+python -c "from modelscope import snapshot_download; snapshot_download('iic/CosyVoice2-0.5B', local_dir='pretrained_models/CosyVoice2-0.5B')"
 ```
 
 ## 核心用法
