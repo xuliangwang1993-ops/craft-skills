@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "craft-skills/script.schema.json",
+  "title": "script",
+  "type": "object",
+  "required": [
+    "duration_s",
+    "shots"
+  ],
+  "properties": {
+    "duration_s": {
+      "type": "number"
+    },
+    "shots": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "required": [
+          "shot_id",
+          "start",
+          "end",
+          "visual",
+          "media_id",
+          "sub_zh",
+          "sub_en",
+          "refs"
+        ],
+        "properties": {
+          "shot_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "start": {
+            "type": "number"
+          },
+          "end": {
+            "type": "number"
+          },
+          "visual": {
+            "type": "string",
+            "minLength": 1
+          },
+          "media_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "customer_shot_slot": {
+            "type": "string"
+          },
+          "sub_zh": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sub_en": {
+            "type": "string",
+            "minLength": 1
+          },
+          "refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^(facts|menu):"
+            }
+          }
+        }
+      }
+    }
+  }
+}

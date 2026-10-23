@@ -1,0 +1,126 @@
+{
+  "engine": "本地检索式问答桩（非线上小X，仅用 KB 内容作答）",
+  "accuracy": 1.0,
+  "results": [
+    {
+      "q": "你们电话多少",
+      "matched": "电话是多少？",
+      "answer": "02 9663 3817（来源：官网 tel 链接）。",
+      "expect": "phone",
+      "correct": true,
+      "fabricated": false
+    },
+    {
+      "q": "请问地址是哪",
+      "matched": "地址在哪里？",
+      "answer": "地址请向店家确认（第三方目录有记录，但官网未写，未核实）。",
+      "expect": "ask",
+      "correct": true,
+      "fabricated": false
+    },
+    {
+      "q": "晚上几点关门",
+      "matched": "营业时间是几点到几点？",
+      "answer": "营业时间请向店家确认：两个第三方来源相互冲突，我们不提供具体时间。",
+      "expect": "ask",
+      "correct": true,
+      "fabricated": false
+    },
+    {
+      "q": "米线什么价格",
+      "matched": "店名叫什么？",
+      "answer": "Slurp Slurp Noodle。中文店名请向店家确认（客户口头说法为「小锅米线」，未书面确认）。",
+      "expect": "ask",
+      "correct": true,
+      "fabricated": false
+    },
+    {
+      "q": "店名是什么",
+      "matched": "店名叫什么？",
+      "answer": "Slurp Slurp Noodle。中文店名请向店家确认（客户口头说法为「小锅米线」，未书面确认）。",
+      "expect": "name",
+      "correct": true,
+      "fabricated": false
+    },
+    {
+      "q": "周一营业吗",
+      "matched": "周一开门吗？",
+      "answer": "是否周一营业请向店家确认，可致电 02 9663 3817。",
+      "expect": "ask",
+      "correct": true,
+      "fabricated": false
+    },
+    {
+      "q": "招牌菜是什么",
+      "matched": "有什么招牌菜？",
+      "answer": "招牌菜请向店家确认（第三方平台有提及，未核实，不对外宣称）。",
+      "expect": "ask",
+      "correct": true,
+      "fabricated": false
+    },
+    {
+      "q": "能不能外卖",
+      "matched": "可以外卖吗？",
+      "answer": "外卖渠道请向店家确认。",
+      "expect": "ask",
+      "correct": true,
+      "fabricated": false
+    },
+    {
+      "q": "视频交付哪些尺寸",
+      "matched": "这支视频交付了什么？",
+      "answer": "30 秒宣传短视频 9:16、1:1、16:9 三个尺寸，各带封面；中英文字幕（烧录版 + 外挂 srt）。",
+      "expect": "三个尺寸",
+      "correct": true,
+      "fabricated": false
+    },
+    {
+      "q": "现在能直接发布吗",
+      "matched": "现在的视频能直接发吗？",
+      "answer": "不能。当前是样片：画面用官网占位图并带「样片 · 未授权」水印，需店家提供实拍素材并书面授权后出交付版。",
+      "expect": "不能",
+      "correct": true,
+      "fabricated": false
+    },
+    {
+      "q": "要拍哪些素材",
+      "matched": "要店家拍什么素材？",
+      "answer": "见拍摄清单 shot_request.md：铜锅沸腾、加料、挑面、店门、招牌菜特写，每段 5–10 秒，竖拍和横拍各一份。",
+      "expect": "shot_request",
+      "correct": true,
+      "fabricated": false
+    },
+    {
+      "q": "想修改视频怎么办",
+      "matched": "怎么修改视频？",
+      "answer": "基础包含 1 次修改：把修改意见（第几秒、改什么）发给我们，2 个工作日内出修改版。",
+      "expect": "修改",
+      "correct": true,
+      "fabricated": false
+    },
+    {
+      "q": "字幕有错字",
+      "matched": "字幕错了怎么办？",
+      "answer": "字幕由脚本逐字生成并自动核对；发现错字告诉我们镜头编号，改脚本后全链重跑，不手工改片。",
+      "expect": "镜头编号",
+      "correct": true,
+      "fabricated": false
+    },
+    {
+      "q": "音乐会侵权吗",
+      "matched": "视频的音乐有版权问题吗？",
+      "answer": "没有。垫乐由流水线合成，CC0；字体为 Noto Sans CJK（SIL OFL）。",
+      "expect": "CC0",
+      "correct": true,
+      "fabricated": false
+    },
+    {
+      "q": "为什么没放logo",
+      "matched": "logo 为什么没用？",
+      "answer": "官网的 logo 文件画面是「上座 SHANG ZUO」字样，与店名不符，已暂停使用，请店家提供正确 logo。",
+      "expect": "上座",
+      "correct": true,
+      "fabricated": false
+    }
+  ]
+}

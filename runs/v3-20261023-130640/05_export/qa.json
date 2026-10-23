@@ -1,0 +1,13 @@
+{
+  "station": "05_export",
+  "pass": true,
+  "checks": [
+    {
+      "check": "三尺寸 + 封面 + 外挂 srt 齐全",
+      "pass": true,
+      "value": true,
+      "threshold": null,
+      "note": ""
+    }
+  ]
+}

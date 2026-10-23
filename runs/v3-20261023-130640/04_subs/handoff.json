@@ -1,0 +1,50 @@
+{
+  "station": "04_subs",
+  "inputs": [
+    {
+      "path": "02_script/script.json",
+      "sha256": "b663711507be827a103953069d11b902e565a03f92a75166be728fbed6a24b54"
+    },
+    {
+      "path": "03_grade/audio/mix.wav",
+      "sha256": "2d60260daae50bb7d868283953c81c1c244acdceb38b9a460aee0e5bc1e42914"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "04_subs/subs/zh.srt",
+      "sha256": "9e3d0193fdd81ea20fae27d06d1cf511a6fc53472ed35cf9da871bfaae9ee1f9",
+      "schema": null
+    },
+    {
+      "path": "04_subs/subs/en.srt",
+      "sha256": "86c69258776deaa534c0bb4caab3cfa16f129de86d7add74cda62bf0e9081a34",
+      "schema": null
+    },
+    {
+      "path": "04_subs/subs/en_mt.srt",
+      "sha256": "f87238583103abc0c9a844df3ac0ebc1e67decff1159003cbcb6d63015d960fb",
+      "schema": null
+    },
+    {
+      "path": "04_subs/subs/review.json",
+      "sha256": "77558d802d01d834eeba09118449514c8f9b07daf38389361022cb8e354eb316",
+      "schema": null
+    }
+  ],
+  "tools": [
+    {
+      "name": "argos-translate",
+      "version": "1.11.0"
+    },
+    {
+      "name": "whisper",
+      "version": "20250625"
+    }
+  ],
+  "elapsed_s": 2.34,
+  "exit_code": 0,
+  "started_at": "2026-10-23T13:11:53+11:00",
+  "ended_at": "2026-10-23T13:11:55+11:00",
+  "cpu_s": 5.11
+}

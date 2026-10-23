@@ -1,0 +1,61 @@
+{
+  "media": [
+    {
+      "media_id": "logo",
+      "path": "customer_media/placeholder/Slur-Slurp-New-Logo.png",
+      "sha256": "a7b5a0ad40248c49bf03fbe467cd9a6edad39b23a76f8abb778e2db0a8a86c5b",
+      "origin": "placeholder",
+      "license": "© Slurp Slurp Noodle（官网素材），仅限占位",
+      "permission": "pending",
+      "kind": "image",
+      "width": 500,
+      "height": 500,
+      "duration_s": null,
+      "fps": null,
+      "source_id": "S1-official",
+      "note": "图像内容为「上座 SHANG ZUO」字样，与店名 Slurp Slurp Noodle 不符 → conflict，不入片，待客户提供正确 logo"
+    },
+    {
+      "media_id": "store",
+      "path": "customer_media/placeholder/75513371_2388668874794660_3434699996744646656_n.jpg",
+      "sha256": "6402e2fa85e210f02d5825dd4c14687dd7597c76979da71daa8ea92f26c7f853",
+      "origin": "placeholder",
+      "license": "© Slurp Slurp Noodle（官网素材），仅限占位",
+      "permission": "pending",
+      "kind": "image",
+      "width": 680,
+      "height": 510,
+      "duration_s": null,
+      "fps": null,
+      "source_id": "S1-official"
+    },
+    {
+      "media_id": "wordmark",
+      "path": "runs/v3-20261023-130640/01_ingest/wordmark.png",
+      "sha256": "da8c2095eb0d53f7c65293632c84bb61d9f5e9d28d96f24bd9db5910fc6dc607",
+      "origin": "generated",
+      "license": "本流水线生成（店名文字 + Noto Sans CJK, OFL）",
+      "permission": "n/a",
+      "kind": "image",
+      "width": 1145,
+      "height": 162,
+      "duration_s": null,
+      "fps": null,
+      "source_id": "S1-official"
+    },
+    {
+      "media_id": "font_noto_cjk",
+      "path": "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
+      "sha256": "faa5f3656a78b2e2d450d27fe8382c778bc2b6bb5ea29c986664a6a435056ceb",
+      "origin": "generated",
+      "license": "SIL OFL 1.1",
+      "permission": "n/a",
+      "kind": "font",
+      "width": 0,
+      "height": 0,
+      "duration_s": null,
+      "fps": null,
+      "source_id": "OSS"
+    }
+  ]
+}

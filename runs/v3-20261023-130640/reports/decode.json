@@ -1,0 +1,23 @@
+{
+  "9x16": {
+    "errors": "",
+    "duration": 30.0,
+    "width": 1080,
+    "height": 1920,
+    "codec": "h264"
+  },
+  "1x1": {
+    "errors": "",
+    "duration": 30.0,
+    "width": 1080,
+    "height": 1080,
+    "codec": "h264"
+  },
+  "16x9": {
+    "errors": "",
+    "duration": 30.0,
+    "width": 1920,
+    "height": 1080,
+    "codec": "h264"
+  }
+}

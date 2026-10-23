@@ -1,0 +1,7 @@
+==> 00_brief
+==> 01_ingest
+==> 02_script
+
+✗ 停在 02_script / fact-check
+  sh5 字幕含未核实事实型内容: ['铜锅米线', '$1', '$1']
+{"run_id": "fault-price", "status": "failed", "failed_station": "02_script", "failed_step": "fact-check", "elapsed_s": 2.7}

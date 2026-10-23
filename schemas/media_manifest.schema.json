@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "craft-skills/media_manifest.schema.json",
+  "title": "media_manifest",
+  "type": "object",
+  "required": [
+    "media"
+  ],
+  "properties": {
+    "media": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "media_id",
+          "path",
+          "sha256",
+          "origin",
+          "license",
+          "kind",
+          "width",
+          "height"
+        ],
+        "properties": {
+          "media_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "note": {
+            "type": "string"
+          },
+          "origin": {
+            "enum": [
+              "customer-supplied",
+              "placeholder",
+              "generated"
+            ]
+          },
+          "license": {
+            "type": "string",
+            "minLength": 1
+          },
+          "permission": {
+            "enum": [
+              "granted",
+              "pending",
+              "n/a"
+            ]
+          },
+          "kind": {
+            "enum": [
+              "image",
+              "video",
+              "audio",
+              "font"
+            ]
+          },
+          "width": {
+            "type": "integer"
+          },
+          "height": {
+            "type": "integer"
+          },
+          "duration_s": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "fps": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "source_id": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

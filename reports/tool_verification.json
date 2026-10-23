@@ -1,0 +1,75 @@
+{
+  "generated": "2026-10-23T01:53:47Z",
+  "tools": [
+    {
+      "tool": "jq",
+      "version": "jq-1.7",
+      "install": "apt install jq（系统已装）",
+      "example": "echo {\"a\":[1,2,3]} | jq -e \".a|length==3\"",
+      "exit_code": 0,
+      "seconds": 0.01,
+      "status": "pass",
+      "note": "第 0/2 站用于断言 brief.json"
+    },
+    {
+      "tool": "pyscenedetect",
+      "version": "[PySceneDetect] PySceneDetect 0.7.2",
+      "install": "pip install scenedetect==0.7.2（SKILL.md 写的 [opencv] extra 在 0.7.2 已不存在，opencv 需另装）",
+      "example": "scenedetect -i cut.mp4 detect-content list-scenes（2 段合成片应检出 2 镜）",
+      "exit_code": 0,
+      "seconds": 0.35,
+      "status": "pass",
+      "note": "SKILL.md 安装行需修正"
+    },
+    {
+      "tool": "argos-translate",
+      "version": "1.11.0",
+      "install": "pip install argostranslate==1.11.0 + 安装 zh↔en 模型包",
+      "example": "translate('云南米线很好吃','zh','en') → The Yunnan line is delicious.",
+      "exit_code": 0,
+      "seconds": 3.77,
+      "status": "pass",
+      "note": "可用但中英质量弱，必须人工校对"
+    },
+    {
+      "tool": "crawl4ai",
+      "version": "0.9.5",
+      "install": "pip install -U crawl4ai && crawl4ai-setup（独立 venv）",
+      "example": "AsyncWebCrawler().arun(官网)",
+      "exit_code": 0,
+      "seconds": 1.78,
+      "status": "pass",
+      "note": "PLETE] ● https://revu.website/142620/                                        | ✓ | ⏱: 0.77s  ![Logo Image](https://revu.website/142620/assets/images/Slur-Slurp-New-Logo.png) [**Call Now**](tel:0296633817) ![Logo Image](https://revu.website/142620/assets/images/75513371_2388668874794660_343469 "
+    },
+    {
+      "tool": "librosa",
+      "version": "-",
+      "install": "-",
+      "example": "-",
+      "exit_code": 0,
+      "seconds": 0,
+      "status": "not-used",
+      "note": "本次链路未用到，未验证"
+    },
+    {
+      "tool": "playwright",
+      "version": "-",
+      "install": "-",
+      "example": "-",
+      "exit_code": 0,
+      "seconds": 0,
+      "status": "not-used",
+      "note": "本次链路未用到，未验证"
+    },
+    {
+      "tool": "yt-dlp",
+      "version": "-",
+      "install": "-",
+      "example": "-",
+      "exit_code": 0,
+      "seconds": 0,
+      "status": "not-used",
+      "note": "本次链路未用到，未验证"
+    }
+  ]
+}

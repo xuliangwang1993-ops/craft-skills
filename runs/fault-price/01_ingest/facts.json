@@ -1,0 +1,122 @@
+{
+  "sources": [
+    {
+      "source_id": "S1-official",
+      "url": "https://revu.website/142620/",
+      "retrieved": "2026-10-23",
+      "sha256": "e7a59aefc59b20ff217958d289cd2918e22d3677698068c82bbc874e4258d268"
+    },
+    {
+      "source_id": "S2-directories",
+      "url": "oceaniabiz / Uber Eats / Mate's Table（任务书 2026-10-22 核对）",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "source_id": "S3-ubereats",
+      "url": "Uber Eats 店页摘要（任务书）",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "source_id": "S4-hours",
+      "url": "Mate's Table vs Zmenu（任务书）",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "source_id": "C-pending",
+      "url": "客户待提供",
+      "retrieved": "2026-10-23"
+    }
+  ],
+  "facts": [
+    {
+      "field": "name_en",
+      "value": "Slurp Slurp Noodle",
+      "source_id": "S1-official",
+      "status": "verified",
+      "note": "官网 <title>"
+    },
+    {
+      "field": "phone",
+      "value": "02 9663 3817",
+      "source_id": "S1-official",
+      "status": "verified",
+      "note": "官网 tel: 链接"
+    },
+    {
+      "field": "name_zh",
+      "value": "小锅米线",
+      "source_id": "C-pending",
+      "status": "unverified",
+      "note": "客户口头说法，书面中文店名待提供"
+    },
+    {
+      "field": "address",
+      "value": "Shop 1 / R1, 57 Rothschild Ave, Rosebery NSW 2018",
+      "source_id": "S2-directories",
+      "status": "unverified",
+      "note": "官网未写，待客户确认"
+    },
+    {
+      "field": "cuisine",
+      "value": "云南米线",
+      "source_id": "S3-ubereats",
+      "status": "unverified",
+      "note": ""
+    },
+    {
+      "field": "signature_dishes",
+      "value": [
+        "Slurp Slurp Little Copper Pot",
+        "Signature Minty Beef"
+      ],
+      "source_id": "S3-ubereats",
+      "status": "unverified",
+      "note": ""
+    },
+    {
+      "field": "hours",
+      "value": [
+        "周二–周日 11:00–21:00",
+        "周五–周日 11:00–15:00、16:00–21:00，周一休"
+      ],
+      "source_id": "S4-hours",
+      "status": "conflict",
+      "note": "视频不写时间"
+    },
+    {
+      "field": "menu_prices",
+      "value": null,
+      "source_id": "C-pending",
+      "status": "pending",
+      "note": "官网无菜单"
+    },
+    {
+      "field": "social",
+      "value": null,
+      "source_id": "C-pending",
+      "status": "pending",
+      "note": ""
+    },
+    {
+      "field": "rating",
+      "value": "Uber Eats 4.8（900+）",
+      "source_id": "S3-ubereats",
+      "status": "unverified",
+      "note": "第三方、会变，不入片"
+    },
+    {
+      "field": "logo_content",
+      "value": "官网 Slur-Slurp-New-Logo.png 画面为「上座 SHANG ZUO」",
+      "source_id": "S1-official",
+      "status": "conflict",
+      "note": "与店名不符，不入片"
+    },
+    {
+      "field": "brand_font",
+      "value": null,
+      "source_id": "C-pending",
+      "status": "pending",
+      "note": "用 Noto Sans CJK（OFL）替代"
+    }
+  ]
+}

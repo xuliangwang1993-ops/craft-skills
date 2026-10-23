@@ -1,0 +1,240 @@
+[
+  {
+    "lang": "zh",
+    "line": 1,
+    "text": "Slurp Slurp Noodle",
+    "shot_id": "sh1",
+    "time": [
+      0,
+      4
+    ],
+    "media": {
+      "media_id": "wordmark",
+      "path": "runs/v3-20261023-130640/01_ingest/wordmark.png",
+      "origin": "generated",
+      "permission": "n/a"
+    },
+    "facts": [
+      {
+        "ref": "facts:name_en",
+        "value": "Slurp Slurp Noodle",
+        "source": "https://revu.website/142620/"
+      }
+    ]
+  },
+  {
+    "lang": "zh",
+    "line": 2,
+    "text": "一锅热汤，慢慢吸溜",
+    "shot_id": "sh2",
+    "time": [
+      4,
+      9
+    ],
+    "media": {
+      "media_id": "store",
+      "path": "customer_media/placeholder/75513371_2388668874794660_3434699996744646656_n.jpg",
+      "origin": "placeholder",
+      "permission": "pending"
+    },
+    "facts": []
+  },
+  {
+    "lang": "zh",
+    "line": 3,
+    "text": "热气腾腾，香气扑鼻",
+    "shot_id": "sh3",
+    "time": [
+      9,
+      14
+    ],
+    "media": {
+      "media_id": "store",
+      "path": "customer_media/placeholder/75513371_2388668874794660_3434699996744646656_n.jpg",
+      "origin": "placeholder",
+      "permission": "pending"
+    },
+    "facts": []
+  },
+  {
+    "lang": "zh",
+    "line": 4,
+    "text": "暖胃，也暖心",
+    "shot_id": "sh4",
+    "time": [
+      14,
+      19
+    ],
+    "media": {
+      "media_id": "store",
+      "path": "customer_media/placeholder/75513371_2388668874794660_3434699996744646656_n.jpg",
+      "origin": "placeholder",
+      "permission": "pending"
+    },
+    "facts": []
+  },
+  {
+    "lang": "zh",
+    "line": 5,
+    "text": "约上朋友，来吸一碗",
+    "shot_id": "sh5",
+    "time": [
+      19,
+      24
+    ],
+    "media": {
+      "media_id": "store",
+      "path": "customer_media/placeholder/75513371_2388668874794660_3434699996744646656_n.jpg",
+      "origin": "placeholder",
+      "permission": "pending"
+    },
+    "facts": []
+  },
+  {
+    "lang": "zh",
+    "line": 6,
+    "text": "Slurp Slurp Noodle 电话 02 9663 3817",
+    "shot_id": "sh6",
+    "time": [
+      24,
+      30
+    ],
+    "media": {
+      "media_id": "wordmark",
+      "path": "runs/v3-20261023-130640/01_ingest/wordmark.png",
+      "origin": "generated",
+      "permission": "n/a"
+    },
+    "facts": [
+      {
+        "ref": "facts:name_en",
+        "value": "Slurp Slurp Noodle",
+        "source": "https://revu.website/142620/"
+      },
+      {
+        "ref": "facts:phone",
+        "value": "02 9663 3817",
+        "source": "https://revu.website/142620/"
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "line": 1,
+    "text": "Slurp Slurp Noodle",
+    "shot_id": "sh1",
+    "time": [
+      0,
+      4
+    ],
+    "media": {
+      "media_id": "wordmark",
+      "path": "runs/v3-20261023-130640/01_ingest/wordmark.png",
+      "origin": "generated",
+      "permission": "n/a"
+    },
+    "facts": [
+      {
+        "ref": "facts:name_en",
+        "value": "Slurp Slurp Noodle",
+        "source": "https://revu.website/142620/"
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "line": 2,
+    "text": "A hot pot of broth, slurp it slow",
+    "shot_id": "sh2",
+    "time": [
+      4,
+      9
+    ],
+    "media": {
+      "media_id": "store",
+      "path": "customer_media/placeholder/75513371_2388668874794660_3434699996744646656_n.jpg",
+      "origin": "placeholder",
+      "permission": "pending"
+    },
+    "facts": []
+  },
+  {
+    "lang": "en",
+    "line": 3,
+    "text": "Steaming hot, smells so good",
+    "shot_id": "sh3",
+    "time": [
+      9,
+      14
+    ],
+    "media": {
+      "media_id": "store",
+      "path": "customer_media/placeholder/75513371_2388668874794660_3434699996744646656_n.jpg",
+      "origin": "placeholder",
+      "permission": "pending"
+    },
+    "facts": []
+  },
+  {
+    "lang": "en",
+    "line": 4,
+    "text": "Warms you up, inside and out",
+    "shot_id": "sh4",
+    "time": [
+      14,
+      19
+    ],
+    "media": {
+      "media_id": "store",
+      "path": "customer_media/placeholder/75513371_2388668874794660_3434699996744646656_n.jpg",
+      "origin": "placeholder",
+      "permission": "pending"
+    },
+    "facts": []
+  },
+  {
+    "lang": "en",
+    "line": 5,
+    "text": "Bring a friend, grab a bowl",
+    "shot_id": "sh5",
+    "time": [
+      19,
+      24
+    ],
+    "media": {
+      "media_id": "store",
+      "path": "customer_media/placeholder/75513371_2388668874794660_3434699996744646656_n.jpg",
+      "origin": "placeholder",
+      "permission": "pending"
+    },
+    "facts": []
+  },
+  {
+    "lang": "en",
+    "line": 6,
+    "text": "Slurp Slurp Noodle Call 02 9663 3817",
+    "shot_id": "sh6",
+    "time": [
+      24,
+      30
+    ],
+    "media": {
+      "media_id": "wordmark",
+      "path": "runs/v3-20261023-130640/01_ingest/wordmark.png",
+      "origin": "generated",
+      "permission": "n/a"
+    },
+    "facts": [
+      {
+        "ref": "facts:name_en",
+        "value": "Slurp Slurp Noodle",
+        "source": "https://revu.website/142620/"
+      },
+      {
+        "ref": "facts:phone",
+        "value": "02 9663 3817",
+        "source": "https://revu.website/142620/"
+      }
+    ]
+  }
+]

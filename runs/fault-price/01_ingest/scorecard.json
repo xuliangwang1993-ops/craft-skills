@@ -1,0 +1,12 @@
+{
+  "station": "01_ingest",
+  "commercial": 2,
+  "handoff": 5,
+  "craft": 3,
+  "benchmark": 3,
+  "reasons": {
+    "commercial": "无客户实拍素材，只能出未授权样片，不可交付",
+    "craft": "来源/许可 100% 记录；但素材分辨率不达标（占位）",
+    "benchmark": "curl/ffprobe 是标杆；crawl4ai 本次已验证并用于正文提取（site.md），curl 存原始 HTML 作 sha256 证据"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "station": "06_qa",
+  "inputs": [
+    {
+      "path": "05_export/promo_9x16.mp4",
+      "sha256": "bec82dca3f216afe1bbac791314141598c6ef53d08645c4cb5265269e5de73b6"
+    },
+    {
+      "path": "05_export/promo_1x1.mp4",
+      "sha256": "17e137a27371ba395cf1b26c7ddf113d39cf55d9b471d68c06be30bc648be0b5"
+    },
+    {
+      "path": "05_export/promo_16x9.mp4",
+      "sha256": "6da2d672047e47c29e7e3b2a7dde71452a9c96ddc1de0e7b81f10d9cc5dfb6dc"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "reports/decode.json",
+      "sha256": "65f28f780f23a67a894c7e7e01fea0af0817de5896a401c4ffc30cdbdc161934",
+      "schema": null
+    },
+    {
+      "path": "reports/loudness.json",
+      "sha256": "f8ce2d1d455e37faa9904775dadb6b5223538a821f37cbb340dce28d067f92fc",
+      "schema": null
+    },
+    {
+      "path": "reports/safe_area.json",
+      "sha256": "0b6c83b6eab50a84b41f59e39cc6d6b51c5f725c103b151b9ccaf9b275bb765c",
+      "schema": null
+    },
+    {
+      "path": "reports/cer.json",
+      "sha256": "b00e362f39b3182e4e181b4f848a763dcebc32bf84bdd5155d4aea654d1ae49e",
+      "schema": null
+    },
+    {
+      "path": "reports/trace.json",
+      "sha256": "3a289ebf1117b74cb38dff6b88d5d0931d473201b65278b14acf06e32bfc7980",
+      "schema": null
+    }
+  ],
+  "tools": [
+    {
+      "name": "ffprobe",
+      "version": "ffprobe version 7.1.5-0+deb13u1 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    {
+      "name": "opencv",
+      "version": "5.0.0"
+    }
+  ],
+  "elapsed_s": 6.91,
+  "exit_code": 0,
+  "started_at": "2026-10-23T13:12:38+11:00",
+  "ended_at": "2026-10-23T13:12:45+11:00",
+  "cpu_s": 28.91
+}

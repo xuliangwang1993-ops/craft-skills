@@ -1,0 +1,3 @@
+{"mismatch_count": 2, "missing_count": 0, "lines_checked": 12, "delivery_gate": "BLOCKED: 含 placeholder/permission pending 素材，仅可作样片"}
+  ✗ zh.srt sh6 字幕 'Slurp Slurp Noodle 电话 02 9663 3871' ≠ script 'Slurp Slurp Noodle  电话 02 9663 3817'
+  ✗ zh.srt sh6 电话 02 9663 3871 不在 verified facts

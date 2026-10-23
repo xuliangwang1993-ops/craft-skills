@@ -1,0 +1,14 @@
+{
+  "run_id": "fault-nolicense",
+  "sentence": "给悉尼小锅米线（Slurp Slurp Noodle）做一支 30 秒宣传短视频，配中英字幕和三个社媒尺寸",
+  "fault": "nolicense",
+  "stations": [
+    "00_brief"
+  ],
+  "status": "failed",
+  "exit_code": 2,
+  "failed_station": "01_ingest",
+  "failed_step": "license-check",
+  "why": "素材缺许可，停止（下游不得使用无许可素材）",
+  "elapsed_s": 2.1
+}

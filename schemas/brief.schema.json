@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "craft-skills/brief.schema.json",
+  "title": "brief",
+  "type": "object",
+  "required": [
+    "sentence",
+    "client",
+    "duration_s",
+    "languages",
+    "aspects",
+    "platforms",
+    "deliverables"
+  ],
+  "properties": {
+    "sentence": {
+      "type": "string",
+      "minLength": 1
+    },
+    "client": {
+      "type": "object",
+      "required": [
+        "name_en"
+      ],
+      "properties": {
+        "name_en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name_zh_spoken": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        }
+      }
+    },
+    "duration_s": {
+      "type": "number",
+      "minimum": 5,
+      "maximum": 180
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "zh",
+          "en"
+        ]
+      },
+      "minItems": 1
+    },
+    "aspects": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "9:16",
+          "1:1",
+          "16:9"
+        ]
+      },
+      "minItems": 1
+    },
+    "platforms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "deliverables": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}

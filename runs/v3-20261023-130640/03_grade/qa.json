@@ -1,0 +1,41 @@
+{
+  "station": "03_grade",
+  "pass": true,
+  "checks": [
+    {
+      "check": "照片镜头间曝光差 ΔL ≤ 6",
+      "pass": true,
+      "value": 0.8,
+      "threshold": 6,
+      "note": ""
+    },
+    {
+      "check": "照片镜头间色温差 Δb ≤ 4",
+      "pass": true,
+      "value": 1.8,
+      "threshold": 4,
+      "note": ""
+    },
+    {
+      "check": "切点复核（pyscenedetect）镜头数 = 脚本镜头数",
+      "pass": true,
+      "value": 6,
+      "threshold": 6,
+      "note": ""
+    },
+    {
+      "check": "无爆音 true peak ≤ -1 dBTP",
+      "pass": true,
+      "value": -7.1,
+      "threshold": -1,
+      "note": ""
+    },
+    {
+      "check": "demucs 清音",
+      "pass": true,
+      "value": "skipped",
+      "threshold": null,
+      "note": "无客户原声素材，demucs 不适用；客户视频到后对现场声做 --two-stems=vocals"
+    }
+  ]
+}

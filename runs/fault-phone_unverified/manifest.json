@@ -1,0 +1,15 @@
+{
+  "run_id": "fault-phone_unverified",
+  "sentence": "给悉尼小锅米线（Slurp Slurp Noodle）做一支 30 秒宣传短视频，配中英字幕和三个社媒尺寸",
+  "fault": "phone_unverified",
+  "stations": [
+    "00_brief",
+    "01_ingest"
+  ],
+  "status": "failed",
+  "exit_code": 2,
+  "failed_station": "02_script",
+  "failed_step": "fact-check",
+  "why": "sh6 引用 facts:phone 不存在或非 verified; sh6 字幕含未核实事实型内容: ['02 9663 3817', '02 9663 3817']",
+  "elapsed_s": 2.5
+}

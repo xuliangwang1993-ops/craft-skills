@@ -1,0 +1,76 @@
+{
+  "duration_s": 30,
+  "shots": [
+    {
+      "shot_id": "sh1",
+      "start": 0,
+      "end": 4,
+      "visual": "店名字标开场：由小放大，暖色底",
+      "media_id": "wordmark",
+      "customer_shot_slot": "C-04 店门/招牌",
+      "sub_zh": "Slurp Slurp Noodle",
+      "sub_en": "Slurp Slurp Noodle",
+      "refs": [
+        "facts:name_en"
+      ]
+    },
+    {
+      "shot_id": "sh2",
+      "start": 4,
+      "end": 9,
+      "visual": "店内图缓推（占位；交付版换铜锅沸腾）",
+      "media_id": "store",
+      "customer_shot_slot": "C-01 铜锅沸腾",
+      "sub_zh": "一锅热汤，慢慢吸溜",
+      "sub_en": "A hot pot of broth, slurp it slow",
+      "refs": []
+    },
+    {
+      "shot_id": "sh3",
+      "start": 9,
+      "end": 14,
+      "visual": "店内图左移特写（占位；交付版换加料）",
+      "media_id": "store",
+      "customer_shot_slot": "C-02 加料",
+      "sub_zh": "热气腾腾，香气扑鼻",
+      "sub_en": "Steaming hot, smells so good",
+      "refs": []
+    },
+    {
+      "shot_id": "sh4",
+      "start": 14,
+      "end": 19,
+      "visual": "店内图上摇（占位；交付版换挑面）",
+      "media_id": "store",
+      "customer_shot_slot": "C-03 挑面",
+      "sub_zh": "暖胃，也暖心",
+      "sub_en": "Warms you up, inside and out",
+      "refs": []
+    },
+    {
+      "shot_id": "sh5",
+      "start": 19,
+      "end": 24,
+      "visual": "店内图拉远（占位；交付版换招牌菜特写）",
+      "media_id": "store",
+      "customer_shot_slot": "C-05 招牌菜特写",
+      "sub_zh": "约上朋友，来吸一碗",
+      "sub_en": "Bring a friend, grab a bowl",
+      "refs": []
+    },
+    {
+      "shot_id": "sh6",
+      "start": 24,
+      "end": 30,
+      "visual": "结尾卡：店名字标 + 电话",
+      "media_id": "wordmark",
+      "customer_shot_slot": "C-04 店门/招牌",
+      "sub_zh": "Slurp Slurp Noodle  电话 02 9663 3817",
+      "sub_en": "Slurp Slurp Noodle  Call 02 9663 3817",
+      "refs": [
+        "facts:name_en",
+        "facts:phone"
+      ]
+    }
+  ]
+}

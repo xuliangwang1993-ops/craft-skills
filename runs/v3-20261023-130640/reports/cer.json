@@ -1,0 +1,4 @@
+{
+  "cer": null,
+  "reason": "成片无口播人声，ASR 无识别对象；字幕为脚本直出，文本与 script.json 逐字一致由 trace_check 保证"
+}

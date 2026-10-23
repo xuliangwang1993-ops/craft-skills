@@ -1,0 +1,12 @@
+{
+  "station": "02_script",
+  "commercial": 3,
+  "handoff": 5,
+  "craft": 5,
+  "benchmark": 3,
+  "reasons": {
+    "commercial": "只敢用店名+电话两条已核实事实，文案偏泛，缺菜品/价格卖点",
+    "craft": "引用核对 0 不一致",
+    "benchmark": "python-docx/reportlab 是开源首选；文案生成无工具，人工(AI)写，属弱格"
+  }
+}

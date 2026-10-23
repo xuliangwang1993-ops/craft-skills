@@ -1,0 +1,14 @@
+{
+  "9x16": {
+    "integrated_lufs": -13.9,
+    "true_peak": -7.0
+  },
+  "1x1": {
+    "integrated_lufs": -13.9,
+    "true_peak": -7.0
+  },
+  "16x9": {
+    "integrated_lufs": -13.9,
+    "true_peak": -7.0
+  }
+}

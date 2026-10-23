@@ -1,0 +1,12 @@
+{
+  "station": "06_qa",
+  "commercial": 4,
+  "handoff": 5,
+  "craft": 5,
+  "benchmark": 4,
+  "reasons": {
+    "commercial": "后测全自动，客户可见的问题（时长/响度/安全区/事实）都有证据",
+    "craft": "全部阈值实测",
+    "benchmark": "ffprobe/ebur128/opencv 为开源标杆；CER 无对象不可测"
+  }
+}

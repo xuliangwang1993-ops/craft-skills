@@ -1,0 +1,44 @@
+{
+  "assets": [
+    {
+      "media_id": "logo",
+      "path": "customer_media/placeholder/Slur-Slurp-New-Logo.png",
+      "origin": "placeholder",
+      "license": "© Slurp Slurp Noodle（官网素材），仅限占位",
+      "permission": "pending",
+      "deliverable_ok": false
+    },
+    {
+      "media_id": "store",
+      "path": "customer_media/placeholder/75513371_2388668874794660_3434699996744646656_n.jpg",
+      "origin": "placeholder",
+      "license": "© Slurp Slurp Noodle（官网素材），仅限占位",
+      "permission": "pending",
+      "deliverable_ok": false
+    },
+    {
+      "media_id": "wordmark",
+      "path": "runs/v3-20261023-130640/01_ingest/wordmark.png",
+      "origin": "generated",
+      "license": "本流水线生成（店名文字 + Noto Sans CJK, OFL）",
+      "permission": "n/a",
+      "deliverable_ok": true
+    },
+    {
+      "media_id": "font_noto_cjk",
+      "path": "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
+      "origin": "generated",
+      "license": "SIL OFL 1.1",
+      "permission": "n/a",
+      "deliverable_ok": true
+    },
+    {
+      "media_id": "music_bed",
+      "path": "runs/<run_id>/03_grade/audio/mix.wav",
+      "origin": "generated",
+      "license": "CC0（本流水线用 sox 合成，无第三方音乐）",
+      "permission": "n/a",
+      "deliverable_ok": true
+    }
+  ]
+}
