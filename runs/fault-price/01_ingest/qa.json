@@ -1,0 +1,44 @@
+{
+  "station": "01_ingest",
+  "pass": false,
+  "checks": [
+    {
+      "check": "crawl4ai 正文提取",
+      "pass": true,
+      "value": "ok",
+      "threshold": null,
+      "note": "robots.txt 302 至 revuonline.com，无 Disallow；只抓 1 个公开页"
+    },
+    {
+      "check": "官网可读",
+      "pass": true,
+      "value": "Slurp Slurp Noodle",
+      "threshold": null,
+      "note": "live"
+    },
+    {
+      "check": "客户实拍素材到位",
+      "pass": false,
+      "value": 0,
+      "threshold": ">=1",
+      "note": "未到：全链用占位样片跑通"
+    },
+    {
+      "check": "每个素材有来源+许可",
+      "pass": true,
+      "value": "100%",
+      "threshold": "100%",
+      "note": ""
+    },
+    {
+      "check": "占位素材分辨率（客户素材标准 ≥1080p 不适用占位）",
+      "pass": true,
+      "value": [
+        "500x500",
+        "680x510"
+      ],
+      "threshold": null,
+      "note": "占位图 500x500 / 680x510，远低于 1080p，仅样片"
+    }
+  ]
+}

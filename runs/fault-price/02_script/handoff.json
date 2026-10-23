@@ -1,0 +1,55 @@
+{
+  "station": "02_script",
+  "inputs": [
+    {
+      "path": "01_ingest/facts.json",
+      "sha256": "62a5830c642994267cec506d7a7f1212b8e1dfd74727a72cdf630569361a5774"
+    },
+    {
+      "path": "01_ingest/media_manifest.json",
+      "sha256": "aedbf2270730a6cc13d994ba90c456eb0981ce18f6a5fd749d77fffbf5a6ca54"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "02_script/menu.json",
+      "sha256": "bc0fde9fe2eff888d17c0b1225b0bfa8e06beea6f0dc1dc6a1e8317fbab59320",
+      "schema": "menu"
+    },
+    {
+      "path": "02_script/script.json",
+      "sha256": "7ce4a74cd43a61c51786ffbe11b7e2edd2b1964e67bfeae02baabf5b386dcad0",
+      "schema": "script"
+    },
+    {
+      "path": "02_script/storyboard.pdf",
+      "sha256": "94d0c6e6daf71827b19316d5c604146f087160c6a69755aac29eb568b514a15b",
+      "schema": null
+    },
+    {
+      "path": "02_script/storyboard.docx",
+      "sha256": "7b407da047d314ebd67e0ca222beeefbf8a971efe441bf9a6db61b4f66a4c53b",
+      "schema": null
+    }
+  ],
+  "tools": [
+    {
+      "name": "python-docx",
+      "version": "1.2.0"
+    },
+    {
+      "name": "reportlab",
+      "version": "5.1.0"
+    },
+    {
+      "name": "jq",
+      "version": "jq-1.7"
+    }
+  ],
+  "elapsed_s": 0.12,
+  "exit_code": 2,
+  "started_at": "2026-10-23T13:13:02+11:00",
+  "ended_at": "2026-10-23T13:13:02+11:00",
+  "cpu_s": 0.11,
+  "error": "[02_script] fact-check: sh5 字幕含未核实事实型内容: ['铜锅米线', '$1', '$1']"
+}

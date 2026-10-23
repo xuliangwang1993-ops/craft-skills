@@ -1,0 +1,142 @@
+{
+  "station": "06_qa",
+  "pass": true,
+  "checks": [
+    {
+      "check": "9x16 解码无错",
+      "pass": true,
+      "value": "clean",
+      "threshold": null,
+      "note": ""
+    },
+    {
+      "check": "9x16 时长 30±0.5s",
+      "pass": true,
+      "value": 30.0,
+      "threshold": "30±0.5",
+      "note": ""
+    },
+    {
+      "check": "9x16 分辨率",
+      "pass": true,
+      "value": "1080x1920",
+      "threshold": "1080x1920",
+      "note": ""
+    },
+    {
+      "check": "9x16 响度 -14±1 LUFS",
+      "pass": true,
+      "value": -13.9,
+      "threshold": "-14±1",
+      "note": ""
+    },
+    {
+      "check": "9x16 true peak ≤ -1",
+      "pass": true,
+      "value": -7.0,
+      "threshold": -1,
+      "note": ""
+    },
+    {
+      "check": "9x16 字幕与角标在安全区内",
+      "pass": true,
+      "value": "6 镜全部在内",
+      "threshold": "上下≥250px 左右≥43px",
+      "note": ""
+    },
+    {
+      "check": "1x1 解码无错",
+      "pass": true,
+      "value": "clean",
+      "threshold": null,
+      "note": ""
+    },
+    {
+      "check": "1x1 时长 30±0.5s",
+      "pass": true,
+      "value": 30.0,
+      "threshold": "30±0.5",
+      "note": ""
+    },
+    {
+      "check": "1x1 分辨率",
+      "pass": true,
+      "value": "1080x1080",
+      "threshold": "1080x1080",
+      "note": ""
+    },
+    {
+      "check": "1x1 响度 -14±1 LUFS",
+      "pass": true,
+      "value": -13.9,
+      "threshold": "-14±1",
+      "note": ""
+    },
+    {
+      "check": "1x1 true peak ≤ -1",
+      "pass": true,
+      "value": -7.0,
+      "threshold": -1,
+      "note": ""
+    },
+    {
+      "check": "1x1 字幕与角标在安全区内",
+      "pass": true,
+      "value": "6 镜全部在内",
+      "threshold": "上下≥54px 左右≥43px",
+      "note": ""
+    },
+    {
+      "check": "16x9 解码无错",
+      "pass": true,
+      "value": "clean",
+      "threshold": null,
+      "note": ""
+    },
+    {
+      "check": "16x9 时长 30±0.5s",
+      "pass": true,
+      "value": 30.0,
+      "threshold": "30±0.5",
+      "note": ""
+    },
+    {
+      "check": "16x9 分辨率",
+      "pass": true,
+      "value": "1920x1080",
+      "threshold": "1920x1080",
+      "note": ""
+    },
+    {
+      "check": "16x9 响度 -14±1 LUFS",
+      "pass": true,
+      "value": -13.9,
+      "threshold": "-14±1",
+      "note": ""
+    },
+    {
+      "check": "16x9 true peak ≤ -1",
+      "pass": true,
+      "value": -7.0,
+      "threshold": -1,
+      "note": ""
+    },
+    {
+      "check": "16x9 字幕与角标在安全区内",
+      "pass": true,
+      "value": "6 镜全部在内",
+      "threshold": "上下≥54px 左右≥76px",
+      "note": ""
+    },
+    {
+      "check": "trace_check 不一致 0、丢失 0",
+      "pass": true,
+      "value": {
+        "mismatch": 0,
+        "missing": 0
+      },
+      "threshold": 0,
+      "note": ""
+    }
+  ]
+}

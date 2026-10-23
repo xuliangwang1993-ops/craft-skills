@@ -1,0 +1,12 @@
+{
+  "station": "04_subs",
+  "commercial": 4,
+  "handoff": 5,
+  "craft": 4,
+  "benchmark": 3,
+  "reasons": {
+    "commercial": "中英字幕齐，文案由脚本给定；人工终审未签",
+    "craft": "行长达标；CER 无对象不可测；argos 机翻直接采纳 1/6 行，其余人工改写",
+    "benchmark": "argos-translate 离线开源首选之一，但中英质量明显弱于 DeepL/人工（本次 6 行仅 1 行可直接采纳，例：「一锅热汤，慢慢吸溜」→ 「A pot of hot soup.」）→ 弱格"
+  }
+}

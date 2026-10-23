@@ -1,0 +1,6 @@
+==> 00_brief
+==> 01_ingest
+
+✗ 停在 01_ingest / license-check
+  素材缺许可，停止（下游不得使用无许可素材）
+{"run_id": "fault-nolicense", "status": "failed", "failed_station": "01_ingest", "failed_step": "license-check", "elapsed_s": 2.1}

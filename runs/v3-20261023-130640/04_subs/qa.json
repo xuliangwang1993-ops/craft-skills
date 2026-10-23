@@ -1,0 +1,27 @@
+{
+  "station": "04_subs",
+  "pass": true,
+  "checks": [
+    {
+      "check": "每行 ≤ 2 行、中文 ≤ 16 字/行",
+      "pass": true,
+      "value": [],
+      "threshold": 0,
+      "note": ""
+    },
+    {
+      "check": "英译校对覆盖 100%",
+      "pass": true,
+      "value": "6/6",
+      "threshold": "100%",
+      "note": "AI 校对 100%；人工终审签字待 Martin/客户"
+    },
+    {
+      "check": "CER ≤ 10%",
+      "pass": true,
+      "value": "N/A",
+      "threshold": 0.1,
+      "note": "成片无口播/人声（无已验证 TTS，客户未提供带声素材），funasr/whisper 无识别对象；不计分"
+    }
+  ]
+}

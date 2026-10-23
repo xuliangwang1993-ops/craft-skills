@@ -1,0 +1,20 @@
+{
+  "station": "02_script",
+  "pass": true,
+  "checks": [
+    {
+      "check": "每镜引用字段存在且 verified，不一致 0",
+      "pass": true,
+      "value": [],
+      "threshold": 0,
+      "note": ""
+    },
+    {
+      "check": "时长合计 30s",
+      "pass": true,
+      "value": 30,
+      "threshold": 30,
+      "note": ""
+    }
+  ]
+}

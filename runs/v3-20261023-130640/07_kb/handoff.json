@@ -1,0 +1,65 @@
+{
+  "station": "07_kb",
+  "inputs": [
+    {
+      "path": "01_ingest/facts.json",
+      "sha256": "62a5830c642994267cec506d7a7f1212b8e1dfd74727a72cdf630569361a5774"
+    },
+    {
+      "path": "02_script/menu.json",
+      "sha256": "bc0fde9fe2eff888d17c0b1225b0bfa8e06beea6f0dc1dc6a1e8317fbab59320"
+    },
+    {
+      "path": "06_qa/qa.json",
+      "sha256": "3cba4685c127b66fb9fa7880b08e4f32d9c7c4e1b4d29759cd775d047bd44e82"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "../../customer/kb/店铺事实.md",
+      "sha256": "84a71224daef3bb2666ad2b6bd30f5683b9b6e3259d265da723613a3b0a5d35d",
+      "schema": null
+    },
+    {
+      "path": "../../customer/kb/交付说明.md",
+      "sha256": "1c246b186606bc5d58541752bcf13dec3fe34281aec31d3f0f849eba1fe29765",
+      "schema": null
+    },
+    {
+      "path": "../../customer/kb/修改流程.md",
+      "sha256": "6cb580e544ae91b93fe73c8214470d798b4bff298ea73a5a57c1eaa975a7184d",
+      "schema": null
+    },
+    {
+      "path": "../../customer/kb/发布指南.md",
+      "sha256": "36957d477239eac1a11ee7faf80f41d0d976108d4687236f46414ddea0d54da4",
+      "schema": null
+    },
+    {
+      "path": "../../customer/kb/FAQ.md",
+      "sha256": "0aa11e366693ef765a7394676a27833b05ccb06e698cf4ded570252941c672ea",
+      "schema": null
+    },
+    {
+      "path": "../../customer/kb/kb_manifest.json",
+      "sha256": "952cb0007bc8e1163fce39d82d3009f32e80a32734a39047ba4bf98d883bccbc",
+      "schema": null
+    },
+    {
+      "path": "07_kb/assistant_test.json",
+      "sha256": "9f2cc5c6f2a1895e3671539c72ae4880bac19d70b8aaea9f6ff4b58458d9cd34",
+      "schema": null
+    }
+  ],
+  "tools": [
+    {
+      "name": "python",
+      "version": "3 stdlib（检索式问答桩）"
+    }
+  ],
+  "elapsed_s": 0.01,
+  "exit_code": 0,
+  "started_at": "2026-10-23T13:12:45+11:00",
+  "ended_at": "2026-10-23T13:12:45+11:00",
+  "cpu_s": 0.01
+}

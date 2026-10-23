@@ -1,0 +1,6 @@
+runs/*/03_grade/audio/*.wav
+runs/*/03_grade/clips/
+runs/*/03_grade/preview_master.mp4
+runs/*/05_export/_nosub_*.mp4
+runs/*/05_export/work_master.mp4
+__pycache__/

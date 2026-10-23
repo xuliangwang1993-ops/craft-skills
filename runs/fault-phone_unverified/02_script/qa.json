@@ -1,0 +1,23 @@
+{
+  "station": "02_script",
+  "pass": false,
+  "checks": [
+    {
+      "check": "每镜引用字段存在且 verified，不一致 0",
+      "pass": false,
+      "value": [
+        "sh6 引用 facts:phone 不存在或非 verified",
+        "sh6 字幕含未核实事实型内容: ['02 9663 3817', '02 9663 3817']"
+      ],
+      "threshold": 0,
+      "note": ""
+    },
+    {
+      "check": "时长合计 30s",
+      "pass": true,
+      "value": 30,
+      "threshold": 30,
+      "note": ""
+    }
+  ]
+}

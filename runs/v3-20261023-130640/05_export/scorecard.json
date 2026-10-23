@@ -1,0 +1,12 @@
+{
+  "station": "05_export",
+  "commercial": 2,
+  "handoff": 5,
+  "craft": 4,
+  "benchmark": 4,
+  "reasons": {
+    "commercial": "三尺寸齐、可直接上传，但画面为未授权占位 + 水印，不可交付",
+    "craft": "libass 烧录 + 外挂 srt、透明角标、平台安全边距；见第 6 站实测",
+    "benchmark": "ffmpeg/libass 是开源事实标准；对标 Premiere/CapCut 缺模板化动效（MLT/effectcraft 未接入）"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "station": "00_brief",
+  "inputs": [],
+  "outputs": [
+    {
+      "path": "00_brief/brief.json",
+      "sha256": "af15adfc07409be9108179214f00ffba0c839712018ed038accc025990dce9e3",
+      "schema": "brief"
+    }
+  ],
+  "tools": [
+    {
+      "name": "jq",
+      "version": "jq-1.7"
+    },
+    {
+      "name": "python-re",
+      "version": "stdlib"
+    }
+  ],
+  "elapsed_s": 0.01,
+  "exit_code": 0,
+  "started_at": "2026-10-23T13:13:02+11:00",
+  "ended_at": "2026-10-23T13:13:02+11:00",
+  "cpu_s": 0.04
+}

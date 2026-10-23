@@ -1,0 +1,34 @@
+{
+  "station": "01_ingest",
+  "pass": false,
+  "checks": [
+    {
+      "check": "crawl4ai 正文提取",
+      "pass": true,
+      "value": "ok",
+      "threshold": null,
+      "note": "robots.txt 302 至 revuonline.com，无 Disallow；只抓 1 个公开页"
+    },
+    {
+      "check": "官网可读",
+      "pass": true,
+      "value": "Slurp Slurp Noodle",
+      "threshold": null,
+      "note": "live"
+    },
+    {
+      "check": "客户实拍素材到位",
+      "pass": false,
+      "value": 0,
+      "threshold": ">=1",
+      "note": "未到：全链用占位样片跑通"
+    },
+    {
+      "check": "每个素材有来源+许可",
+      "pass": false,
+      "value": "media_manifest 校验失败: ['media', 1, 'license'] '' should be non-empty",
+      "threshold": "100%",
+      "note": ""
+    }
+  ]
+}

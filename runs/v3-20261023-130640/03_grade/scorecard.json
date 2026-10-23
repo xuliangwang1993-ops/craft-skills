@@ -1,0 +1,12 @@
+{
+  "station": "03_grade",
+  "commercial": 2,
+  "handoff": 5,
+  "craft": 4,
+  "benchmark": 4,
+  "reasons": {
+    "commercial": "占位图推拉，不是真实出餐镜头；垫乐是合成正弦和弦，商业可用性低",
+    "craft": "调色按 Lab 实测拉齐、响度/峰值达标；切点复核见 qa",
+    "benchmark": "ffmpeg/opencv/sox 均为开源标杆；无已验证自动配乐工具 → 弱格（缺口）"
+  }
+}

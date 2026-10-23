@@ -1,0 +1,15 @@
+{
+  "run_id": "v3-20261023-130640",
+  "files": [
+    "FAQ.md",
+    "交付说明.md",
+    "修改流程.md",
+    "发布指南.md",
+    "店铺事实.md"
+  ],
+  "verified_fields": [
+    "name_en",
+    "phone"
+  ],
+  "faq_count": 20
+}

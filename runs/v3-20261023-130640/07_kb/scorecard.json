@@ -1,0 +1,12 @@
+{
+  "station": "07_kb",
+  "commercial": 4,
+  "handoff": 5,
+  "craft": 5,
+  "benchmark": 2,
+  "reasons": {
+    "commercial": "客户常问的价格/时间都能安全兜底，转人工话术一致",
+    "craft": "FAQ 20 问；自测答对率 100%",
+    "benchmark": "测试用的是本地检索桩，不是线上小X；未接入向量检索（qdrant 未落地）→ 弱格"
+  }
+}

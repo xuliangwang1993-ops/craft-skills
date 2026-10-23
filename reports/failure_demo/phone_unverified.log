@@ -1,0 +1,7 @@
+==> 00_brief
+==> 01_ingest
+==> 02_script
+
+✗ 停在 02_script / fact-check
+  sh6 引用 facts:phone 不存在或非 verified; sh6 字幕含未核实事实型内容: ['02 9663 3817', '02 9663 3817']
+{"run_id": "fault-phone_unverified", "status": "failed", "failed_station": "02_script", "failed_step": "fact-check", "elapsed_s": 2.5}

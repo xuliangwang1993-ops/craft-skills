@@ -1,0 +1,78 @@
+{
+  "station": "03_grade",
+  "inputs": [
+    {
+      "path": "02_script/script.json",
+      "sha256": "b663711507be827a103953069d11b902e565a03f92a75166be728fbed6a24b54"
+    },
+    {
+      "path": "01_ingest/media_manifest.json",
+      "sha256": "5e24d112d10e26caac91539ee48fb258afaec7ae00e7fd7edc8df47e129a3306"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "03_grade/clips/sh1.mp4",
+      "sha256": "349d16e299851094b05e3c4ce35e984581d0b53017d0dda959b7c6ea781c5fc3",
+      "schema": null
+    },
+    {
+      "path": "03_grade/clips/sh2.mp4",
+      "sha256": "b61eddf5f669a30cea0a0ad348182283778a434bc79300b4ed7624d3b7d2e05d",
+      "schema": null
+    },
+    {
+      "path": "03_grade/clips/sh3.mp4",
+      "sha256": "c03d12196fdef06f05e4272d14ea96e4d4271b9f89d5336e8fcccf824618bd44",
+      "schema": null
+    },
+    {
+      "path": "03_grade/clips/sh4.mp4",
+      "sha256": "964c9e04468dde9fc7b98656a668ffa1493334dd84a5420056546acacc982b5d",
+      "schema": null
+    },
+    {
+      "path": "03_grade/clips/sh5.mp4",
+      "sha256": "0ea5833dd247a474ce4c29469576ccabb54634843b4977bbe26f7669ff73c791",
+      "schema": null
+    },
+    {
+      "path": "03_grade/clips/sh6.mp4",
+      "sha256": "96d091932bbddbbdbdd39d1bf15b3863647e81d74d2bb24feaffc5aadd8cbede",
+      "schema": null
+    },
+    {
+      "path": "03_grade/grade.json",
+      "sha256": "adabab5c3948b1406f2c2d019a792da83b45fa2ad3af834bb9e9743865dd2854",
+      "schema": null
+    },
+    {
+      "path": "03_grade/audio/mix.wav",
+      "sha256": "2d60260daae50bb7d868283953c81c1c244acdceb38b9a460aee0e5bc1e42914",
+      "schema": null
+    }
+  ],
+  "tools": [
+    {
+      "name": "ffmpeg",
+      "version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    {
+      "name": "opencv",
+      "version": "5.0.0"
+    },
+    {
+      "name": "sox",
+      "version": "sox:      SoX v14.4.2"
+    },
+    {
+      "name": "pyscenedetect",
+      "version": "[PySceneDetect] PySceneDetect 0.7.2"
+    }
+  ],
+  "elapsed_s": 50.1,
+  "exit_code": 0,
+  "started_at": "2026-10-23T13:10:59+11:00",
+  "ended_at": "2026-10-23T13:11:50+11:00",
+  "cpu_s": 193.19
+}

@@ -1,0 +1,20 @@
+{
+  "station": "00_brief",
+  "pass": true,
+  "checks": [
+    {
+      "check": "client name parsed",
+      "pass": true,
+      "value": "Slurp Slurp Noodle",
+      "threshold": null,
+      "note": ""
+    },
+    {
+      "check": "duration parsed",
+      "pass": true,
+      "value": 30,
+      "threshold": 30,
+      "note": ""
+    }
+  ]
+}

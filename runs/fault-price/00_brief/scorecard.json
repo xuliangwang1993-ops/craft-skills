@@ -1,0 +1,12 @@
+{
+  "station": "00_brief",
+  "commercial": 4,
+  "handoff": 5,
+  "craft": 4,
+  "benchmark": 3,
+  "reasons": {
+    "commercial": "需求字段齐全，但平台列表为默认值，客户未确认",
+    "craft": "规则解析，对句式敏感（换说法可能解析失败）",
+    "benchmark": "jq 是 JSON 命令行事实标准；需求解析本身是自写正则，非标杆，属弱格"
+  }
+}

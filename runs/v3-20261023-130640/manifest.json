@@ -1,0 +1,18 @@
+{
+  "run_id": "v3-20261023-130640",
+  "sentence": "给悉尼小锅米线（Slurp Slurp Noodle）做一支 30 秒宣传短视频，配中英字幕和三个社媒尺寸",
+  "fault": null,
+  "stations": [
+    "00_brief",
+    "01_ingest",
+    "02_script",
+    "03_grade",
+    "04_subs",
+    "05_export",
+    "06_qa",
+    "07_kb"
+  ],
+  "status": "ok",
+  "exit_code": 0,
+  "elapsed_s": 109.1
+}

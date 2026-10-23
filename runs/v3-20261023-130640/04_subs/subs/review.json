@@ -1,0 +1,59 @@
+{
+  "coverage": "6/6",
+  "lines": [
+    {
+      "shot_id": "sh1",
+      "zh": "Slurp Slurp Noodle",
+      "mt_en": "Slurp Slurp Noodle",
+      "final_en": "Slurp Slurp Noodle",
+      "accepted_mt": true,
+      "reviewer": "Grok Bot（AI 校对）",
+      "human_signoff": "pending"
+    },
+    {
+      "shot_id": "sh2",
+      "zh": "一锅热汤，慢慢吸溜",
+      "mt_en": "A pot of hot soup.",
+      "final_en": "A hot pot of broth, slurp it slow",
+      "accepted_mt": false,
+      "reviewer": "Grok Bot（AI 校对）",
+      "human_signoff": "pending"
+    },
+    {
+      "shot_id": "sh3",
+      "zh": "热气腾腾，香气扑鼻",
+      "mt_en": "It's hot. It smells good.",
+      "final_en": "Steaming hot, smells so good",
+      "accepted_mt": false,
+      "reviewer": "Grok Bot（AI 校对）",
+      "human_signoff": "pending"
+    },
+    {
+      "shot_id": "sh4",
+      "zh": "暖胃，也暖心",
+      "mt_en": "Warm stomach, warm heart.",
+      "final_en": "Warms you up, inside and out",
+      "accepted_mt": false,
+      "reviewer": "Grok Bot（AI 校对）",
+      "human_signoff": "pending"
+    },
+    {
+      "shot_id": "sh5",
+      "zh": "约上朋友，来吸一碗",
+      "mt_en": "Let's have a drink. Coordinating friends.",
+      "final_en": "Bring a friend, grab a bowl",
+      "accepted_mt": false,
+      "reviewer": "Grok Bot（AI 校对）",
+      "human_signoff": "pending"
+    },
+    {
+      "shot_id": "sh6",
+      "zh": "Slurp Slurp Noodle  电话 02 9663 3817",
+      "mt_en": "for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for For for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for",
+      "final_en": "Slurp Slurp Noodle  Call 02 9663 3817",
+      "accepted_mt": false,
+      "reviewer": "Grok Bot（AI 校对）",
+      "human_signoff": "pending"
+    }
+  ]
+}
