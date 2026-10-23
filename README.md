@@ -1,6 +1,6 @@
 # craft-skills
 
-**56 个技能 = 13 个 Craft 应用技能 + 43 个开源底层工具技能（第 0 批 21 + 第 1 批 22）—— 一条 AI 流水线。**
+**96 个技能 = 13 个 Craft 应用技能 + 83 个开源底层工具技能（第 0 批 21 + 第 1 批 22 + 第 2 批 40）—— 一条 AI 流水线。**
 
 扩库计划与格子总表见 [`docs/扩库立项.md`](docs/扩库立项.md)：入库一批、落地一批、立项一批，滚动推进。
 
@@ -68,7 +68,7 @@ claude mcp add wordcraft -- wordcraft-cli mcp
 
 13 个 Craft 应用各一份 SKILL.md（核心引擎 `artcraft` 是底层库，无独立 CLI，故无独立技能），写明：该应用暴露哪些 MCP 工具、标准作业流程、硬规则、路径注意。
 
-### `skills/base/` — 底层工具 / 开源替代（43 个）
+### `skills/base/` — 底层工具 / 开源替代（83 个）
 
 **做法是工厂化：一格一个最强工具，全覆盖不留空格，输出稳定，工具之间输出接输入串联。** 每个工具都要过三条标准：
 
@@ -144,6 +144,51 @@ claude mcp add wordcraft -- wordcraft-cli mcp
 | [`rembg`](skills/base/rembg/) | 图片去背景（rembg） | 图片抠图/去背景 | MIT | `pip install "rembg[cli]"` |
 | [`pyscenedetect`](skills/base/pyscenedetect/) | 镜头切分（PySceneDetect） | 镜头/场景检测 | BSD-3-Clause | `pip install "scenedetect[opencv]"` |
 | [`librosa`](skills/base/librosa/) | 音乐节拍分析（librosa） | 节拍/音乐分析（卡点） | ISC | `pip install librosa soundfile` |
+
+**第 2 批（宣传短片向，阶段：入库，未实测）— 40 个：**
+
+| [`moviepy`](skills/base/moviepy/) | Python 视频剪辑（MoviePy） | filmcraft 开源替代 | MIT | `pip install moviepy` |
+| [`editly`](skills/base/editly/) | 声明式成片（editly） | filmcraft 开源替代 | MIT | `npm install -g editly` |
+| [`manim`](skills/base/manim/) | 代码动画（Manim） | effectcraft 动效补位 | MIT | `pip install manim` |
+| [`motion-canvas`](skills/base/motion-canvas/) | TypeScript 动效（Motion Canvas） | effectcraft 动效补位 | MIT | `npm init @motion-canvas@latest` |
+| [`revideo`](skills/base/revideo/) | 可无界面渲染的代码动效（Revideo） | effectcraft / filmcraft 开源替代 | MIT | `npm init @revideo@latest` |
+| [`remotion`](skills/base/remotion/) | React 视频（Remotion） | effectcraft / filmcraft 补位 | ⚠️ Remotion License（源码可见；个人/≤3 人公司免费，其余需付费） | `npx create-video@latest` |
+| [`libopenshot`](skills/base/libopenshot/) | 剪辑核心库（libopenshot） | filmcraft 开源替代 | LGPL-3.0 | `sudo apt install python3-openshot` |
+| [`ges`](skills/base/ges/) | 时间线编辑服务（GStreamer Editing Services） | filmcraft 开源替代 | LGPL-2.1+ | `sudo apt install ges1.0-tools gstreamer1.0-plugins-good gstreamer1.0-libav` |
+| [`natron`](skills/base/natron/) | 节点式合成（Natron） | effectcraft 合成补位 | GPL-2.0 | `下载官方 Linux 包：https://github.com/NatronGitHub/Natron/releases` |
+| [`synfig`](skills/base/synfig/) | 2D 矢量动画（Synfig） | effectcraft 动效开源替代 | GPL-3.0 | `sudo apt install synfig` |
+| [`glaxnimate`](skills/base/glaxnimate/) | Lottie 动画（Glaxnimate） | effectcraft / vectorcraft 补位 | GPL-3.0 | `sudo apt install glaxnimate` |
+| [`kdenlive`](skills/base/kdenlive/) | 剪辑工程（Kdenlive + melt 渲染） | filmcraft 开源替代 | GPL-3.0 | `sudo apt install kdenlive` |
+| [`ffmpeg-normalize`](skills/base/ffmpeg-normalize/) | 批量响度归一（ffmpeg-normalize） | soundcraft 开源替代 | MIT | `pip install ffmpeg-normalize` |
+| [`pyloudnorm`](skills/base/pyloudnorm/) | 响度测量（pyloudnorm） | soundcraft 响度校验补位 | MIT | `pip install pyloudnorm soundfile` |
+| [`rubberband`](skills/base/rubberband/) | 变速不变调（Rubber Band） | soundcraft 开源补位 | GPL-2.0（另有商业许可） | `sudo apt install rubberband-cli` |
+| [`audiowaveform`](skills/base/audiowaveform/) | 波形图生成（audiowaveform） | soundcraft / effectcraft 补位 | GPL-3.0 | `sudo add-apt-repository ppa:chris-needham/ppa && sudo apt install audiowaveform` |
+| [`piper`](skills/base/piper/) | 轻量离线配音（Piper） | soundcraft / filmcraft 配音补位 | GPL-3.0（新版 piper1-gpl；旧版 MIT 已归档；各音色模型许可另见模型卡） | `pip install piper-tts` |
+| [`sherpa-onnx`](skills/base/sherpa-onnx/) | 离线语音识别与合成（sherpa-onnx） | soundcraft / filmcraft 字幕与配音补位 | Apache-2.0（模型另见各自许可） | `pip install sherpa-onnx` |
+| [`whisperx`](skills/base/whisperx/) | 逐字时间戳字幕（WhisperX） | filmcraft / soundcraft 字幕补位 | BSD-2-Clause | `pip install whisperx` |
+| [`gpt-sovits`](skills/base/gpt-sovits/) | 中文声音克隆（GPT-SoVITS） | soundcraft 配音补位 | MIT（使用他人声音须授权） | `git clone https://github.com/RVC-Boss/GPT-SoVITS && cd GPT-SoVITS && bash install.sh` |
+| [`f5-tts`](skills/base/f5-tts/) | 零样本声音克隆（F5-TTS） | soundcraft 配音补位 | ⚠️ 代码 MIT；官方权重 CC-BY-NC-4.0（不可商用） | `pip install f5-tts` |
+| [`coqui-tts`](skills/base/coqui-tts/) | 多语种 TTS（Coqui TTS / XTTS） | soundcraft 配音补位 | ⚠️ 代码 MPL-2.0；XTTS-v2 权重 CPML（不可商用） | `pip install coqui-tts` |
+| [`fish-speech`](skills/base/fish-speech/) | 声音克隆（Fish-Speech） | soundcraft 配音补位 | ⚠️ 代码见仓库 LICENSE；权重 CC-BY-NC-SA-4.0（不可商用） | `git clone https://github.com/fishaudio/fish-speech && cd fish-speech && pip install -e .` |
+| [`stable-ts`](skills/base/stable-ts/) | 稳定字幕时间戳（stable-ts） | filmcraft 字幕补位 | MIT（已归档） | `pip install stable-ts` |
+| [`aeneas`](skills/base/aeneas/) | 文本音频强制对齐（aeneas） | filmcraft 字幕补位 | ⚠️ AGPL-3.0 | `sudo apt install espeak libespeak-dev && pip install numpy aeneas` |
+| [`libass`](skills/base/libass/) | ASS 特效字幕渲染（libass） | filmcraft 字幕烧录补位 | ISC | `sudo apt install libass9 ffmpeg` |
+| [`resvg`](skills/base/resvg/) | SVG 渲染（resvg） | figcraft / vectorcraft 开源替代 | Apache-2.0 / MIT | `sudo apt install resvg` |
+| [`typst`](skills/base/typst/) | 现代排版（Typst） | designcraft / wordcraft 补位 | Apache-2.0 | `cargo install --locked typst-cli` |
+| [`satori`](skills/base/satori/) | HTML/CSS 转 SVG（Satori） | designcraft / figcraft 补位 | MPL-2.0 | `npm install satori` |
+| [`pillow`](skills/base/pillow/) | Python 图像处理（Pillow） | photocraft 批处理补位 | MIT-CMU（HPND） | `pip install pillow` |
+| [`sharp`](skills/base/sharp/) | Node 高速图像处理（sharp） | photocraft 批处理补位 | Apache-2.0 | `npm install sharp` |
+| [`gimp`](skills/base/gimp/) | GIMP 批处理 | photocraft 补位 | GPL-3.0 | `sudo apt install gimp` |
+| [`krita`](skills/base/krita/) | Krita 命令行导出 | photocraft / designcraft 补位 | GPL-3.0 | `sudo apt install krita` |
+| [`wan2`](skills/base/wan2/) | AI 视频生成（Wan2.2） | effectcraft / filmcraft 空镜补位 | Apache-2.0 | `git clone https://github.com/Wan-Video/Wan2.2 && cd Wan2.2 && pip install -r requirements.txt` |
+| [`ltx-video`](skills/base/ltx-video/) | AI 视频生成（LTX-Video） | effectcraft / filmcraft 空镜补位 | Apache-2.0（各版本权重另见模型卡许可） | `git clone https://github.com/Lightricks/LTX-Video && cd LTX-Video && pip install -e .[inference]` |
+| [`framepack`](skills/base/framepack/) | 长视频图生视频（FramePack） | effectcraft 补位 | Apache-2.0（底座模型 HunyuanVideo 许可另计 ⚠️） | `git clone https://github.com/lllyasviel/FramePack && cd FramePack && pip install -r requirements.txt` |
+| [`animatediff`](skills/base/animatediff/) | 动画化扩散（AnimateDiff） | effectcraft 补位 | Apache-2.0（SD 底模许可另计） | `git clone https://github.com/guoyww/AnimateDiff && cd AnimateDiff && pip install -r requirements.txt` |
+| [`cogvideox`](skills/base/cogvideox/) | AI 视频生成（CogVideoX） | effectcraft / filmcraft 空镜补位 | ⚠️ 代码 Apache-2.0；2B 权重 Apache-2.0；5B 权重 CogVideoX License（商用须登记） | `pip install diffusers transformers accelerate` |
+| [`hunyuanvideo`](skills/base/hunyuanvideo/) | AI 视频生成（HunyuanVideo） | effectcraft / filmcraft 空镜补位 | ⚠️ Tencent Hunyuan Community License（排除欧盟/英国/韩国；超大规模用户需另授权） | `git clone https://github.com/Tencent-Hunyuan/HunyuanVideo && cd HunyuanVideo && pip install -r requirements.txt` |
+| [`cc0-music-sources`](skills/base/cc0-music-sources/) | 免版权音乐来源（CC0 / 可商用） | soundcraft 素材补位 | 各曲目许可不同，逐首核对 | 无需安装 |
+
+> 第 2 批许可提醒：⚠️ F5-TTS、Coqui XTTS、Fish-Speech 的**模型权重不可商用**；⚠️ Remotion 非 OSI 开源（3 人以上公司需付费）；⚠️ CogVideoX-5B 商用须登记；⚠️ HunyuanVideo 排除欧盟/英国/韩国；⚠️ aeneas 为 AGPL-3.0。AI 视频模型（Wan2.2 / LTX-Video / FramePack / AnimateDiff / CogVideoX / HunyuanVideo）均需 GPU，只用于补空镜，不得替代客户真实素材。Natron、GIMP 此前「刻意没收」，本批仅以无界面批处理方式（NatronRenderer / gimp -i -b）收入；Olive 无命令行，未收。
 
 > 许可提醒：PyMuPDF、SearXNG 为 **AGPL-3.0**；Blender、ComfyUI 为 GPL；ComfyUI 需要 GPU。PyMuPDF 为 **AGPL-3.0**（网络服务对外提供须开源，商用闭源需买商业许可或换 pypdf）；SoX、darktable、Inkscape、Pandoc、RobustVideoMatting 为 GPL，改代码后分发须开源；只作为独立命令行调用一般不受影响。
 
