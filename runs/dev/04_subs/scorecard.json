@@ -1,0 +1,22 @@
+{
+  "station": "04_subs",
+  "scores": {
+    "business": 3.0,
+    "handoff": 5.0,
+    "benchmark": 2.5,
+    "craft": 4.0
+  },
+  "weights": {
+    "business": 0.35,
+    "handoff": 0.25,
+    "benchmark": 0.15,
+    "craft": 0.25
+  },
+  "total": 3.67,
+  "notes": [
+    "funasr / whisper / argos-translate 三件套在本机全部装不上（torch、ctranslate2 无 musllinux-aarch64 轮子），已如实记录，没有假装跑过。",
+    "本片无配音，字幕来源是双语脚本，因此「ASR → 机翻 → 校对」这条链在本项目里本来就不成立；改用「脚本即真相 + 逐行核对」。",
+    "扣分主要在标杆性：没有可用的开源 ASR/MT 实测，属弱格，已进缺口清单。"
+  ],
+  "generated_at": "2026-10-23T10:05:58Z"
+}

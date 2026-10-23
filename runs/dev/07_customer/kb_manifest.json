@@ -1,0 +1,216 @@
+{
+  "run_id": "dev",
+  "generated_at": "2026-10-23T10:02:40Z",
+  "documents": [
+    {
+      "file": "customer/kb/01_店铺事实.md",
+      "title": "店铺事实",
+      "sha256": "c9472ce09f2030d2176904f1131e4dd2687990e608c76d389419182b13d2a3cc",
+      "facts_only": true
+    },
+    {
+      "file": "customer/kb/02_交付说明.md",
+      "title": "交付说明",
+      "sha256": "5be53d32d4de6df080a255db734acc17bc94d401bef9c77c9e891747d53ef65e",
+      "facts_only": true
+    },
+    {
+      "file": "customer/kb/03_修改流程.md",
+      "title": "修改流程",
+      "sha256": "d41386e41a966ca98bca57c1888cff7d08e9e23f2c09e49b42b9b2b452a1f14f",
+      "facts_only": true
+    },
+    {
+      "file": "customer/kb/04_发布指南.md",
+      "title": "发布指南",
+      "sha256": "41c255c748de8064cbcac8997bb40dea5de5f78b3f99628afa6f098e1f43c211",
+      "facts_only": true
+    },
+    {
+      "file": "customer/kb/05_FAQ.md",
+      "title": "FAQ",
+      "sha256": "854b765e495c9d12e2ebe6db23fa2f84ec817af10569382096ed5ee355137469",
+      "facts_only": true
+    }
+  ],
+  "faq_count": 22,
+  "assistant_test": {
+    "questions": 18,
+    "passed": 18,
+    "rate": 100.0,
+    "method": "KB 检索式作答（只用 kb/ 里的文字），非生产小X",
+    "fabricated": [],
+    "results": [
+      {
+        "q": "这家店叫什么？",
+        "a": "英文名是 Slurp Slurp Noodle。中文名还在等客户确认。",
+        "expect_any": [
+          "Slurp Slurp Noodle"
+        ],
+        "pass": true,
+        "flagged_uncertain": true
+      },
+      {
+        "q": "店名英文怎么写？",
+        "a": "Slurp Slurp Noodle（官网标题原文，三个词首字母都大写）。",
+        "expect_any": [
+          "Slurp Slurp Noodle"
+        ],
+        "pass": true,
+        "flagged_uncertain": true
+      },
+      {
+        "q": "中文店名是什么？",
+        "a": "客户口头说的是「小锅米线」，但官网只有英文名，需要客户书面确认后我们才写进片子。",
+        "expect_any": [
+          "待客户确认",
+          "书面确认"
+        ],
+        "pass": true,
+        "flagged_uncertain": true
+      },
+      {
+        "q": "电话是多少？",
+        "a": "02 9663 3817（官网 tel: 链接，可直接点）。",
+        "expect_any": [
+          "9663 3817"
+        ],
+        "pass": true,
+        "flagged_uncertain": true
+      },
+      {
+        "q": "地址在哪？",
+        "a": "第三方目录写的是 Shop 1 / R1, 57 Rothschild Ave, Rosebery NSW 2018，但官网没写，**未经客户确认，片子里没有出现**。",
+        "expect_any": [
+          "待客户确认",
+          "未经客户确认",
+          "没写"
+        ],
+        "pass": true,
+        "flagged_uncertain": true
+      },
+      {
+        "q": "营业时间是几点？",
+        "a": "两个来源冲突（周二–周日 11:00–21:00 / 周五–周日 11:00–15:00、16:00–21:00），**待客户确认**，片子里不写时间。",
+        "expect_any": [
+          "待客户确认",
+          "冲突"
+        ],
+        "pass": true,
+        "flagged_uncertain": true
+      },
+      {
+        "q": "有什么招牌菜？",
+        "a": "Uber Eats 页面提到 Little Copper Pot 和 Signature Minty Beef，但未经客户核实，**没有入片**。",
+        "expect_any": [
+          "待客户确认",
+          "未经客户"
+        ],
+        "pass": true,
+        "flagged_uncertain": true
+      },
+      {
+        "q": "一碗多少钱？",
+        "a": "客户还没给菜单和价格，所以片子里没有任何价格。给了之后 5 分钟就能加。",
+        "expect_any": [
+          "没有",
+          "还没给"
+        ],
+        "pass": true,
+        "flagged_uncertain": true
+      },
+      {
+        "q": "这家店在哪个城市？",
+        "a": "悉尼（客户需求原句「悉尼小锅米线」）；具体门牌待客户确认。",
+        "expect_any": [
+          "悉尼"
+        ],
+        "pass": true,
+        "flagged_uncertain": true
+      },
+      {
+        "q": "片子多长？",
+        "a": "30.0 秒（三个尺寸都是），上下浮动不超过 0.5 秒。",
+        "expect_any": [
+          "30"
+        ],
+        "pass": true,
+        "flagged_uncertain": true
+      },
+      {
+        "q": "有哪几个尺寸？",
+        "a": "1080×1920（竖）、1080×1080（方）、1920×1080（横），各一条，外加三张封面。",
+        "expect_any": [
+          "1920",
+          "1080"
+        ],
+        "pass": true,
+        "flagged_uncertain": true
+      },
+      {
+        "q": "有中文字幕吗？",
+        "a": "有。中文在上、英文在下，两个语种都烧进画面，另外还给外挂 srt。",
+        "expect_any": [
+          "有"
+        ],
+        "pass": true,
+        "flagged_uncertain": true
+      },
+      {
+        "q": "字幕是机器翻译的吗？",
+        "a": "不是。中英都是双语脚本原生撰写，逐行核对过；机器翻译引擎在这台机器上装不上，我们没有用它。",
+        "expect_any": [
+          "不是"
+        ],
+        "pass": true,
+        "flagged_uncertain": true
+      },
+      {
+        "q": "响度是多少？",
+        "a": "-14 LUFS，真峰值 ≤ -1 dBTP，符合 Instagram / TikTok 的播放标准。",
+        "expect_any": [
+          "LUFS"
+        ],
+        "pass": true,
+        "flagged_uncertain": true
+      },
+      {
+        "q": "素材是谁的？能商用吗？",
+        "a": "目前画面是占位板（代码绘制）+ 官网两张图。官网图**未授权**，只出现在带水印的样片里；正式版必须用店家自己拍的素材。",
+        "expect_any": [
+          "未授权",
+          "授权"
+        ],
+        "pass": true,
+        "flagged_uncertain": true
+      },
+      {
+        "q": "我要改一句字幕，多久？",
+        "a": "当天。改字幕不动画面，重渲染三尺寸约 10 分钟。",
+        "expect_any": [
+          "当天"
+        ],
+        "pass": true,
+        "flagged_uncertain": true
+      },
+      {
+        "q": "小红书用哪个文件？",
+        "a": "用 promo_9x16.mp4（1080×1920），封面用 cover_9x16.jpg。",
+        "expect_any": [
+          "promo_9x16.mp4"
+        ],
+        "pass": true,
+        "flagged_uncertain": true
+      },
+      {
+        "q": "能发到电视上播吗？",
+        "a": "用 16:9 那版；电视一般 25fps，需要的话我们转一版，免费。",
+        "expect_any": [
+          "16:9"
+        ],
+        "pass": true,
+        "flagged_uncertain": true
+      }
+    ]
+  }
+}

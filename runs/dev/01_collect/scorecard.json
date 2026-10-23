@@ -1,0 +1,22 @@
+{
+  "station": "01_collect",
+  "scores": {
+    "business": 3.0,
+    "handoff": 5.0,
+    "benchmark": 4.0,
+    "craft": 3.0
+  },
+  "weights": {
+    "business": 0.35,
+    "handoff": 0.25,
+    "benchmark": 0.15,
+    "craft": 0.25
+  },
+  "total": 3.65,
+  "notes": [
+    "事实底账 16 条全部带 source_id；营业时间冲突、地址未核实、菜单缺失都显式落库，下游只能读 verified。",
+    "扣分：客户实拍素材为 0，官网图仅 680x510，达不到 1080p 交付标准 —— 这是本单最大的商业风险。",
+    "crawl4ai 安装失败（见 reports/tool_verification.json），站点抓取降级为 curl + 本地解析，够用且可复现。"
+  ],
+  "generated_at": "2026-10-22T07:13:27Z"
+}

@@ -1,0 +1,78 @@
+{
+  "run_id": "dev",
+  "generated_at": "2026-10-23T10:05:56Z",
+  "method": "bilingual-authoring + line-by-line review（无 TTS/口播，故不走 ASR）",
+  "generated_by": "pipeline/stations/s04_subs.py",
+  "human_review": {
+    "reviewer": "AI 自查（Minis agent）— 非人工签核",
+    "reviewed_at": "2026-10-23T10:05:56Z",
+    "lines_total": 7,
+    "lines_changed": 0,
+    "coverage": 100.0,
+    "changes": [
+      {
+        "shot_id": "s01",
+        "zh": "锅开了。",
+        "en": "The pot is on.",
+        "action": "authored-bilingual",
+        "note": "英文为双语脚本原生撰写，非机翻；逐行核对与中文语义一致"
+      },
+      {
+        "shot_id": "s02",
+        "zh": "一挑，热气跟着上来。",
+        "en": "Lift — the steam follows.",
+        "action": "authored-bilingual",
+        "note": "英文为双语脚本原生撰写，非机翻；逐行核对与中文语义一致"
+      },
+      {
+        "shot_id": "s03",
+        "zh": "这一碗，趁热。",
+        "en": "This bowl. While it's hot.",
+        "action": "kept",
+        "note": "英文为双语脚本原生撰写，非机翻；逐行核对与中文语义一致"
+      },
+      {
+        "shot_id": "s04",
+        "zh": "Slurp Slurp Noodle",
+        "en": "Slurp Slurp Noodle",
+        "action": "authored-bilingual",
+        "note": "英文为双语脚本原生撰写，非机翻；逐行核对与中文语义一致"
+      },
+      {
+        "shot_id": "s05",
+        "zh": "悉尼，来 slurp 一口。",
+        "en": "Sydney — come slurp.",
+        "action": "kept",
+        "note": "英文为双语脚本原生撰写，非机翻；逐行核对与中文语义一致"
+      },
+      {
+        "shot_id": "s06",
+        "zh": "再来一口。",
+        "en": "One more slurp.",
+        "action": "authored-bilingual",
+        "note": "英文为双语脚本原生撰写，非机翻；逐行核对与中文语义一致"
+      },
+      {
+        "shot_id": "s07",
+        "zh": "02 9663 3817",
+        "en": "Slurp Slurp Noodle · Sydney",
+        "action": "authored-bilingual",
+        "note": "英文为双语脚本原生撰写，非机翻；逐行核对与中文语义一致"
+      }
+    ],
+    "human_pending": true,
+    "human_note": "交付前需母语者 10 分钟过一遍；本报告不把它算作已完成"
+  },
+  "mt_engine": "argos-translate",
+  "mt_engine_status": "unavailable（无 musllinux-aarch64 wheel；英文由双语脚本原生撰写）",
+  "asr_engine_status": "unavailable（torch 无 musl 轮子）；本片无口播，ASR 不在关键路径",
+  "audio_speech_check": {
+    "speech_band_rms_db": null,
+    "exit": 1
+  },
+  "cer": {
+    "value": null,
+    "reason": "无口播、无可用 ASR 引擎；改用「字幕文本与 script.json 逐字一致」作为替代指标"
+  },
+  "text_fidelity": 100.0
+}

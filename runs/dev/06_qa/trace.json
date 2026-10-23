@@ -1,0 +1,207 @@
+{
+  "run_id": "dev",
+  "generated_at": "2026-10-23T09:52:27Z",
+  "ok": true,
+  "checked": 18,
+  "mismatches": [],
+  "lines": [
+    {
+      "shot_id": "s01",
+      "start": 0.0,
+      "end": 4.5,
+      "sub_zh": "锅开了。",
+      "sub_en": "The pot is on.",
+      "asset_ids": [
+        "ast_graphics_generated"
+      ],
+      "fact_refs": [],
+      "source_ids": [],
+      "menu_refs": [],
+      "sources": []
+    },
+    {
+      "shot_id": "s02",
+      "start": 4.5,
+      "end": 9.0,
+      "sub_zh": "一挑，热气跟着上来。",
+      "sub_en": "Lift — the steam follows.",
+      "asset_ids": [
+        "ast_graphics_generated"
+      ],
+      "fact_refs": [],
+      "source_ids": [],
+      "menu_refs": [],
+      "sources": []
+    },
+    {
+      "shot_id": "s03",
+      "start": 9.0,
+      "end": 13.5,
+      "sub_zh": "这一碗，趁热。",
+      "sub_en": "This bowl. While it's hot.",
+      "asset_ids": [
+        "ast_graphics_generated"
+      ],
+      "fact_refs": [],
+      "source_ids": [],
+      "menu_refs": [],
+      "sources": []
+    },
+    {
+      "shot_id": "s04",
+      "start": 13.5,
+      "end": 17.5,
+      "sub_zh": "Slurp Slurp Noodle",
+      "sub_en": "Slurp Slurp Noodle",
+      "asset_ids": [
+        "ast_graphics_generated"
+      ],
+      "fact_refs": [
+        "src_web_title"
+      ],
+      "source_ids": [
+        "src_web_title"
+      ],
+      "menu_refs": [],
+      "sources": [
+        {
+          "source_id": "src_web_title",
+          "field": "店名（英文）",
+          "value": "Slurp Slurp Noodle",
+          "status": "verified",
+          "ref": "https://revu.website/142620/"
+        }
+      ]
+    },
+    {
+      "shot_id": "s05",
+      "start": 17.5,
+      "end": 22.0,
+      "sub_zh": "悉尼，来 slurp 一口。",
+      "sub_en": "Sydney — come slurp.",
+      "asset_ids": [
+        "ast_photo_official"
+      ],
+      "fact_refs": [
+        "src_city"
+      ],
+      "source_ids": [
+        "src_city"
+      ],
+      "menu_refs": [],
+      "sources": [
+        {
+          "source_id": "src_city",
+          "field": "城市",
+          "value": "悉尼",
+          "status": "verified",
+          "ref": "需求原句「悉尼小锅米线」"
+        }
+      ]
+    },
+    {
+      "shot_id": "s06",
+      "start": 22.0,
+      "end": 26.0,
+      "sub_zh": "再来一口。",
+      "sub_en": "One more slurp.",
+      "asset_ids": [
+        "ast_graphics_generated"
+      ],
+      "fact_refs": [],
+      "source_ids": [],
+      "menu_refs": [],
+      "sources": []
+    },
+    {
+      "shot_id": "s07",
+      "start": 26.0,
+      "end": 30.0,
+      "sub_zh": "02 9663 3817",
+      "sub_en": "Slurp Slurp Noodle · Sydney",
+      "asset_ids": [
+        "ast_logo_official"
+      ],
+      "fact_refs": [
+        "src_web_tel",
+        "src_web_title"
+      ],
+      "source_ids": [
+        "src_web_tel",
+        "src_web_title"
+      ],
+      "menu_refs": [],
+      "sources": [
+        {
+          "source_id": "src_web_tel",
+          "field": "电话",
+          "value": "02 9663 3817",
+          "status": "verified",
+          "ref": "https://revu.website/142620/"
+        },
+        {
+          "source_id": "src_web_title",
+          "field": "店名（英文）",
+          "value": "Slurp Slurp Noodle",
+          "status": "verified",
+          "ref": "https://revu.website/142620/"
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "9x16": {
+      "duration": 30.0,
+      "shots_covered": 7,
+      "shots_expected": 7,
+      "lost": 0
+    },
+    "1x1": {
+      "duration": 30.0,
+      "shots_covered": 7,
+      "shots_expected": 7,
+      "lost": 0
+    },
+    "16x9": {
+      "duration": 30.0,
+      "shots_covered": 7,
+      "shots_expected": 7,
+      "lost": 0
+    }
+  },
+  "videos": {
+    "9x16": {
+      "duration": 30.0,
+      "size_bytes": 6651624,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30.0,
+      "vcodec": "h264",
+      "acodec": "aac",
+      "channels": 2,
+      "sample_rate": 48000
+    },
+    "1x1": {
+      "duration": 30.0,
+      "size_bytes": 2819259,
+      "width": 1080,
+      "height": 1080,
+      "fps": 30.0,
+      "vcodec": "h264",
+      "acodec": "aac",
+      "channels": 2,
+      "sample_rate": 48000
+    },
+    "16x9": {
+      "duration": 30.0,
+      "size_bytes": 2934052,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0,
+      "vcodec": "h264",
+      "acodec": "aac",
+      "channels": 2,
+      "sample_rate": 48000
+    }
+  }
+}

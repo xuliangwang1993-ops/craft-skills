@@ -1,0 +1,56 @@
+{
+  "run_id": "dev",
+  "station": "00_brief",
+  "generated_at": "2026-10-22T07:09:56Z",
+  "checks": [
+    {
+      "id": "S0-01",
+      "desc": "时长 = 30s",
+      "value": 30.0,
+      "threshold": "==30",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "id": "S0-02",
+      "desc": "语言 zh+en",
+      "value": [
+        "zh",
+        "en"
+      ],
+      "threshold": "2 languages",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "id": "S0-03",
+      "desc": "三尺寸齐全",
+      "value": [
+        "9:16",
+        "1:1",
+        "16:9"
+      ],
+      "threshold": "9:16,1:1,16:9",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "id": "S0-04",
+      "desc": "平台清单 ≥4",
+      "value": 5,
+      "threshold": ">=4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "id": "S0-05",
+      "desc": "交付清单 ≥4",
+      "value": 5,
+      "threshold": ">=4",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "passed": true,
+  "notes": []
+}

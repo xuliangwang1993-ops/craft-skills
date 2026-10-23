@@ -1,0 +1,27 @@
+{
+  "run_at": "2026-10-23T10:07:14Z",
+  "base_run": "runs/dev",
+  "drill_a_price_tamper": {
+    "drill": "字幕价格被改成 A$12.50（客户从未确认过任何价格）",
+    "command": "python3 qa/trace_check.py faildrill",
+    "exit_code": 1,
+    "mismatches": 1,
+    "kinds": [
+      "unverified_price"
+    ],
+    "stopped": true,
+    "stdout": "trace_check: 19 checks, 1 mismatch(es) → /var/minis/workspace/craft-skills/runs/faildrill/06_qa/trace.json\n  ! {\"kind\": \"unverified_price\", \"shot\": \"s03\", \"token\": \"A$12.50\"}"
+  },
+  "drill_b_license_missing": {
+    "drill": "官网菜品图被改成 permission=borrowed、license 为空（未授权素材）",
+    "command": "python3 pipeline/stations/s02_script.py（RUN_ID=失败副本）",
+    "exit_code": 1,
+    "stopped": true,
+    "error": "  - assets/1/permission: 'borrowed' is not one of ['customer-supplied', 'placeholder', 'licensed', 'generated']",
+    "qa_notes": [
+      "01_collect/media_manifest.json: 1 schema violation(s)\n  - assets/1/permission: 'borrowed' is not one of ['customer-supplied', 'placeholder', 'licensed', 'generated']"
+    ]
+  },
+  "conclusion": "两处人为错误都被下游拦住：价格错 → trace_check 退出 1；素材无许可 → 第 2 站 Schema 校验退出 1",
+  "passed": true
+}

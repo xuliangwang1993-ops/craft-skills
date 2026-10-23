@@ -1,0 +1,76 @@
+{
+  "run_id": "dev",
+  "generated_at": "2026-10-22T07:13:27Z",
+  "items": [
+    {
+      "asset_id": "ast_logo_official",
+      "name": "Slurp Slurp Noodle logo",
+      "origin": "https://revu.website/142620/",
+      "license": "客户素材 — 未授权，仅样片占位",
+      "license_url": "https://revu.website/142620/",
+      "permission": "placeholder",
+      "permission_status": "pending",
+      "in_delivery": false,
+      "attribution": "© Slurp Slurp Noodle"
+    },
+    {
+      "asset_id": "ast_photo_official",
+      "name": "店内菜品图（官网）",
+      "origin": "https://revu.website/142620/",
+      "license": "客户素材 — 未授权，仅样片占位",
+      "license_url": "https://revu.website/142620/",
+      "permission": "placeholder",
+      "permission_status": "pending",
+      "in_delivery": false,
+      "attribution": "© Slurp Slurp Noodle"
+    },
+    {
+      "asset_id": "ast_music_original",
+      "name": "原创配乐 slurp-bed-90bpm.wav",
+      "origin": "pipeline/stations/s03_edit.py 合成",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "permission": "generated",
+      "permission_status": "not-required",
+      "in_delivery": true,
+      "attribution": "原创，无第三方采样"
+    },
+    {
+      "asset_id": "ast_font_noto",
+      "name": "Noto Sans SC Bold/Regular",
+      "origin": "https://github.com/notofonts/noto-cjk",
+      "license": "OFL-1.1",
+      "license_url": "https://scripts.sil.org/OFL",
+      "permission": "licensed",
+      "permission_status": "granted",
+      "in_delivery": true,
+      "attribution": "Google Noto Project"
+    },
+    {
+      "asset_id": "ast_font_inter",
+      "name": "Inter ExtraBold/Medium",
+      "origin": "https://github.com/rsms/inter",
+      "license": "OFL-1.1",
+      "license_url": "https://scripts.sil.org/OFL",
+      "permission": "licensed",
+      "permission_status": "granted",
+      "in_delivery": true,
+      "attribution": "The Inter Project Authors"
+    },
+    {
+      "asset_id": "ast_graphics_generated",
+      "name": "版式与图形",
+      "origin": "PIL 代码绘制",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "permission": "generated",
+      "permission_status": "not-required",
+      "in_delivery": true,
+      "attribution": "本流水线"
+    }
+  ],
+  "blocked_from_delivery": [
+    "ast_logo_official",
+    "ast_photo_official"
+  ]
+}

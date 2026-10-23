@@ -1,0 +1,24 @@
+{
+  "station": "03_edit",
+  "scores": {
+    "business": 4.0,
+    "handoff": 5.0,
+    "benchmark": 4.0,
+    "craft": 3.5
+  },
+  "weights": {
+    "business": 0.35,
+    "handoff": 0.25,
+    "benchmark": 0.15,
+    "craft": 0.25
+  },
+  "total": 4.12,
+  "notes": [
+    "MLT(melt) 出时间线，ffmpeg(libx264) 出镜头；实测 melt 1088x1920 约 3.75 fps，30s 时间线约 4 分钟。",
+    "★ 环境坑：melt 在这台机器上对 1080 宽/1080x1080 直接段错误式失败（0 字节输出），1088x1920 才通过，所以基线画幅取 1088 再裁到 1080。",
+    "★ 环境坑：iOS 版 ffmpeg 没有 libx264、没有 drawtext/subtitles，只有 VideoToolbox；字幕改用 PNG 叠加（见第 5 站），CPU 版 ffmpeg 作降级。",
+    "demucs 需要 torch，本机无 musl-aarch64 轮子 → 不可用；本片本来也没有人声/第三方音乐需要分离，缺口已记录。",
+    "扣分：调色用的是 ffmpeg 曲线而非 darktable（Alpine 无 darktable 包），属降级但参数可复现。"
+  ],
+  "generated_at": "2026-10-23T01:03:39Z"
+}

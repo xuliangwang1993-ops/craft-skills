@@ -1,0 +1,65 @@
+{
+  "run_id": "dev",
+  "station": "05_compose",
+  "generated_at": "2026-10-23T09:09:15Z",
+  "checks": [
+    {
+      "id": "S5-9:16",
+      "desc": "9:16 分辨率与时长",
+      "value": "1080x1920 30.0s",
+      "threshold": "1080x1920 30±0.5",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S5-1:1",
+      "desc": "1:1 分辨率与时长",
+      "value": "1080x1080 30.0s",
+      "threshold": "1080x1080 30±0.5",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S5-16:9",
+      "desc": "16:9 分辨率与时长",
+      "value": "1920x1080 30.0s",
+      "threshold": "1920x1080 30±0.5",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S5-04",
+      "desc": "三尺寸齐全",
+      "value": "9:16, 1:1, 16:9",
+      "threshold": "3/3",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S5-05",
+      "desc": "封面三张",
+      "value": 3,
+      "threshold": "3",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S5-06",
+      "desc": "编码器",
+      "value": "libx264",
+      "threshold": "libx264 或 h264_videotoolbox",
+      "pass": true,
+      "severity": "advisory",
+      "detail": "默认 libx264（CPU，本机实测约 0.65 s/帧）；iOS 硬件编码快 ~100x，设 VIDEO_ENC=h264_videotoolbox 切换"
+    }
+  ],
+  "passed": true,
+  "blocking_failures": [],
+  "advisory_failures": [],
+  "notes": []
+}

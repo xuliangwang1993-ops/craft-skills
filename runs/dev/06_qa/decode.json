@@ -1,0 +1,33 @@
+{
+  "run_id": "dev",
+  "generated_at": "2026-10-23T09:30:29Z",
+  "videos": [
+    {
+      "file": "promo_9x16.mp4",
+      "exit": 0,
+      "errors": 0,
+      "video_exit": 0,
+      "audio_exit": 0,
+      "first_error": "",
+      "seconds": 197.01
+    },
+    {
+      "file": "promo_1x1.mp4",
+      "exit": 0,
+      "errors": 0,
+      "video_exit": 0,
+      "audio_exit": 0,
+      "first_error": "",
+      "seconds": 135.51
+    },
+    {
+      "file": "promo_16x9.mp4",
+      "exit": 0,
+      "errors": 0,
+      "video_exit": 0,
+      "audio_exit": 0,
+      "first_error": "",
+      "seconds": 251.46
+    }
+  ]
+}

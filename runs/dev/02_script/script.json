@@ -1,0 +1,177 @@
+{
+  "run_id": "dev",
+  "generated_at": "2026-10-23T00:26:23Z",
+  "duration_seconds": 30,
+  "fps": 30,
+  "shots": [
+    {
+      "shot_id": "s01",
+      "plate": "steam_pot",
+      "seconds": 4.5,
+      "visual": "铜锅特写：汤面翻滚，热气上升（占位板，客户素材到位后替换）",
+      "sub_zh": "锅开了。",
+      "sub_en": "The pot is on.",
+      "fact_refs": [],
+      "menu_refs": [],
+      "asset_refs": [
+        "ast_graphics_generated"
+      ],
+      "index": 0,
+      "motion": "push_in",
+      "refs": {
+        "facts": [],
+        "menu": [],
+        "assets": [
+          "ast_graphics_generated"
+        ]
+      }
+    },
+    {
+      "shot_id": "s02",
+      "plate": "noodle_lift",
+      "seconds": 4.5,
+      "visual": "筷子挑起面，热气跟着上升",
+      "sub_zh": "一挑，热气跟着上来。",
+      "sub_en": "Lift — the steam follows.",
+      "fact_refs": [],
+      "menu_refs": [],
+      "asset_refs": [
+        "ast_graphics_generated"
+      ],
+      "index": 1,
+      "motion": "pull_back",
+      "refs": {
+        "facts": [],
+        "menu": [],
+        "assets": [
+          "ast_graphics_generated"
+        ]
+      }
+    },
+    {
+      "shot_id": "s03",
+      "plate": "bowl_top",
+      "seconds": 4.5,
+      "visual": "成品碗 45° 俯拍，镜头缓推",
+      "sub_zh": "这一碗，趁热。",
+      "sub_en": "This bowl. While it's hot.",
+      "fact_refs": [],
+      "menu_refs": [],
+      "asset_refs": [
+        "ast_graphics_generated"
+      ],
+      "index": 2,
+      "motion": "push_in",
+      "refs": {
+        "facts": [],
+        "menu": [],
+        "assets": [
+          "ast_graphics_generated"
+        ]
+      }
+    },
+    {
+      "shot_id": "s04",
+      "plate": "storefront",
+      "seconds": 4.0,
+      "visual": "店门与招牌，傍晚灯亮（占位板）",
+      "sub_zh": "Slurp Slurp Noodle",
+      "sub_en": "Slurp Slurp Noodle",
+      "fact_refs": [
+        "src_web_title"
+      ],
+      "menu_refs": [],
+      "asset_refs": [
+        "ast_graphics_generated"
+      ],
+      "index": 3,
+      "motion": "drift_up",
+      "refs": {
+        "facts": [
+          "src_web_title"
+        ],
+        "menu": [],
+        "assets": [
+          "ast_graphics_generated"
+        ]
+      }
+    },
+    {
+      "shot_id": "s05",
+      "plate": "photo_placeholder",
+      "seconds": 4.5,
+      "visual": "官网菜品图（占位，未授权，带水印）",
+      "sub_zh": "悉尼，来 slurp 一口。",
+      "sub_en": "Sydney — come slurp.",
+      "fact_refs": [
+        "src_city"
+      ],
+      "menu_refs": [],
+      "asset_refs": [
+        "ast_photo_official"
+      ],
+      "index": 4,
+      "motion": "pull_back",
+      "refs": {
+        "facts": [
+          "src_city"
+        ],
+        "menu": [],
+        "assets": [
+          "ast_photo_official"
+        ]
+      }
+    },
+    {
+      "shot_id": "s06",
+      "plate": "steam_pot",
+      "seconds": 4.0,
+      "visual": "汤面再推近，蒸汽满屏（占位板，与 s01 不同机位）",
+      "sub_zh": "再来一口。",
+      "sub_en": "One more slurp.",
+      "fact_refs": [],
+      "menu_refs": [],
+      "asset_refs": [
+        "ast_graphics_generated"
+      ],
+      "index": 5,
+      "motion": "push_in",
+      "refs": {
+        "facts": [],
+        "menu": [],
+        "assets": [
+          "ast_graphics_generated"
+        ]
+      }
+    },
+    {
+      "shot_id": "s07",
+      "plate": "logo_card",
+      "seconds": 4.0,
+      "visual": "logo 落版 + 电话",
+      "sub_zh": "02 9663 3817",
+      "sub_en": "Slurp Slurp Noodle · Sydney",
+      "fact_refs": [
+        "src_web_tel",
+        "src_web_title"
+      ],
+      "menu_refs": [],
+      "asset_refs": [
+        "ast_logo_official"
+      ],
+      "index": 6,
+      "motion": "settle",
+      "refs": {
+        "facts": [
+          "src_web_tel",
+          "src_web_title"
+        ],
+        "menu": [],
+        "assets": [
+          "ast_logo_official"
+        ]
+      }
+    }
+  ],
+  "total_seconds": 30.0
+}

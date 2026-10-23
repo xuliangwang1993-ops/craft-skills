@@ -1,0 +1,22 @@
+{
+  "station": "07_customer",
+  "scores": {
+    "business": 4.0,
+    "handoff": 4.5,
+    "benchmark": 3.5,
+    "craft": 4.0
+  },
+  "weights": {
+    "business": 0.35,
+    "handoff": 0.25,
+    "benchmark": 0.15,
+    "craft": 0.25
+  },
+  "total": 4.05,
+  "notes": [
+    "知识包按「能查、能答、答不了就说不确定」写：18 条 FAQ，未核实项全部显式标注。",
+    "自测用的是 KB 检索器（同一份 markdown），答对率 100%，但它不是生产小X，报告里已注明。",
+    "扣分：workbench 卡片只产出 JSON + 导入脚本，未跑真实 Supabase 环境（无凭据，且不改线上库）。"
+  ],
+  "generated_at": "2026-10-23T10:02:43Z"
+}

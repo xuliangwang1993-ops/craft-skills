@@ -1,0 +1,35 @@
+{
+  "run_id": "dev",
+  "station": "00_brief",
+  "title": "需求解析",
+  "started_at": "2026-10-22T07:09:55Z",
+  "finished_at": "2026-10-22T07:09:56Z",
+  "elapsed_seconds": 1.89,
+  "exit_code": 0,
+  "seed": 20261022,
+  "inputs": [
+    {
+      "path": "runs/dev/00_brief/brief.raw.json",
+      "sha256": "46c49b8fe3b57e98d52fc5e247de694353f23f9825126e9b966d0548153cf9cb"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "runs/dev/00_brief/brief.json",
+      "sha256": "f145e6f0d0c4851659529639bd508bce94b94feb5bfc2ac936f9866235e925c7",
+      "schema": "brief",
+      "bytes": 772
+    }
+  ],
+  "tool_versions": {
+    "python": "3.12.14",
+    "ffmpeg": "6.1.2",
+    "ffprobe": "6.1.2",
+    "pillow": "11.0.0",
+    "opencv": "4.10.0",
+    "numpy": "2.1.3",
+    "sox": "14.4.2",
+    "vips": "8.15.3",
+    "melt": "7.28.0"
+  }
+}

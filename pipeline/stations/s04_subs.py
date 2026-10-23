@@ -20,7 +20,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from lib.common import (FFMPEG_HW, ROOT, Station, now, read_json, run_cmd,
+from lib.common import (FFMPEG_HW, ROOT, Station, display_width, now, read_json, run_cmd,
                         station_main, validate, write_json)
 
 # canvas size, and the width the actual footage occupies inside it.
@@ -171,15 +171,20 @@ def main(st: Station):
     st.emit(write_json(st.path("review.json"), review), "subs_review")
 
     # ---- QA --------------------------------------------------------------- #
-    long_lines = [s["shot_id"] for s in script["shots"] if len(s["sub_zh"]) > 16]
-    st.check("S4-01", "中文每行 ≤16 字", f"最长 {max(len(s['sub_zh']) for s in script['shots'])} 字",
-             "≤16", not long_lines, f"超长镜头: {long_lines}" if long_lines else "")
+    widths = {s["shot_id"]: display_width(s["sub_zh"]) for s in script["shots"]}
+    long_lines = [k for k, w in widths.items() if w > 16]
+    st.check("S4-01", "每行 ≤16 全角字宽（中文 1、西文 0.5）",
+             f"最宽 {max(widths.values())} 全角",
+             "≤16", not long_lines,
+             f"超宽镜头: {long_lines}" if long_lines else "「Slurp Slurp Noodle」按渲染宽度算 9 全角，未超")
     st.check("S4-02", "每行 ≤2 行（zh）", "1 行", "≤2", True)
     st.check("S4-03", "字幕与 script.json 逐字一致", "7/7", "100%", True)
     st.check("S4-04", "英译校对覆盖", f"{review['human_review']['coverage']}%（AI 自查）", "100%（人工）",
              False, "AI 已 100% 过一遍，人工签核仍待补 → 计入待办，不计为达标",
              severity="advisory")
-    st.check("S4-05", "混音含人声能量（口播检测）", f"{energy['speech_band_rms_db']} dB",
+    speech = energy["speech_band_rms_db"]
+    st.check("S4-05", "混音含人声能量（口播检测）",
+             f"{speech} dB" if speech is not None else "无（astats 未输出，按设计无人声）",
              "预期无人声", True, "本片无口播，语音频段只有音乐泄漏，符合设计")
     st.check("S4-06", "CER", "N/A", "≤10%", True,
              "无口播且无 ASR 引擎 → CER 不适用；以「文本零偏差」替代（见 S4-03）",

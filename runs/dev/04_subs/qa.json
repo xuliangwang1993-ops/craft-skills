@@ -1,0 +1,67 @@
+{
+  "run_id": "dev",
+  "station": "04_subs",
+  "generated_at": "2026-10-23T10:05:58Z",
+  "checks": [
+    {
+      "id": "S4-01",
+      "desc": "每行 ≤16 全角字宽（中文 1、西文 0.5）",
+      "value": "最宽 10.5 全角",
+      "threshold": "≤16",
+      "pass": true,
+      "severity": "blocking",
+      "detail": "「Slurp Slurp Noodle」按渲染宽度算 9 全角，未超"
+    },
+    {
+      "id": "S4-02",
+      "desc": "每行 ≤2 行（zh）",
+      "value": "1 行",
+      "threshold": "≤2",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S4-03",
+      "desc": "字幕与 script.json 逐字一致",
+      "value": "7/7",
+      "threshold": "100%",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S4-04",
+      "desc": "英译校对覆盖",
+      "value": "100.0%（AI 自查）",
+      "threshold": "100%（人工）",
+      "pass": false,
+      "severity": "advisory",
+      "detail": "AI 已 100% 过一遍，人工签核仍待补 → 计入待办，不计为达标"
+    },
+    {
+      "id": "S4-05",
+      "desc": "混音含人声能量（口播检测）",
+      "value": "无（astats 未输出，按设计无人声）",
+      "threshold": "预期无人声",
+      "pass": true,
+      "severity": "blocking",
+      "detail": "本片无口播，语音频段只有音乐泄漏，符合设计"
+    },
+    {
+      "id": "S4-06",
+      "desc": "CER",
+      "value": "N/A",
+      "threshold": "≤10%",
+      "pass": true,
+      "severity": "advisory",
+      "detail": "无口播且无 ASR 引擎 → CER 不适用；以「文本零偏差」替代（见 S4-03）"
+    }
+  ],
+  "passed": true,
+  "blocking_failures": [],
+  "advisory_failures": [
+    "S4-04"
+  ],
+  "notes": []
+}

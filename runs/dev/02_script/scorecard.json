@@ -1,0 +1,22 @@
+{
+  "station": "02_script",
+  "scores": {
+    "business": 3.5,
+    "handoff": 5.0,
+    "benchmark": 4.0,
+    "craft": 4.5
+  },
+  "weights": {
+    "business": 0.35,
+    "handoff": 0.25,
+    "benchmark": 0.15,
+    "craft": 0.25
+  },
+  "total": 4.2,
+  "notes": [
+    "三道门：fact_ref 必须 verified、禁用词扫描、字幕行长；任何一道不过，本站直接非 0 退出。",
+    "因为中文名与菜单都还没到，脚本刻意不含菜名/价格 —— 这是合规，不是缺内容；客户确认后 5 分钟即可补。",
+    "扣分：wordcraft（Craft 家族 Windows 可执行）本机不可用，storyboard 改用 python-docx 同族思路的 PIL+手写 PDF，属降级。"
+  ],
+  "generated_at": "2026-10-23T00:32:39Z"
+}

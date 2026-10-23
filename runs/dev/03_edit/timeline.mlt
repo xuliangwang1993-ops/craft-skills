@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+<mlt LC_NUMERIC="C" version="7.28.0" title="slurp-promo-9x16" profile="atsc_1080p_30">
+  <profile frame_rate_num="30" frame_rate_den="1" width="1088" height="1920" progressive="1"
+           sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="9" display_aspect_den="16" colorspace="709"/>
+  <producer id="p_s01" in="0" out="134"><property name="resource">/var/minis/workspace/craft-skills/runs/dev/03_edit/clips/s01.mp4</property></producer>
+  <producer id="p_s02" in="0" out="134"><property name="resource">/var/minis/workspace/craft-skills/runs/dev/03_edit/clips/s02.mp4</property></producer>
+  <producer id="p_s03" in="0" out="134"><property name="resource">/var/minis/workspace/craft-skills/runs/dev/03_edit/clips/s03.mp4</property></producer>
+  <producer id="p_s04" in="0" out="119"><property name="resource">/var/minis/workspace/craft-skills/runs/dev/03_edit/clips/s04.mp4</property></producer>
+  <producer id="p_s05" in="0" out="134"><property name="resource">/var/minis/workspace/craft-skills/runs/dev/03_edit/clips/s05.mp4</property></producer>
+  <producer id="p_s06" in="0" out="119"><property name="resource">/var/minis/workspace/craft-skills/runs/dev/03_edit/clips/s06.mp4</property></producer>
+  <producer id="p_s07" in="0" out="119"><property name="resource">/var/minis/workspace/craft-skills/runs/dev/03_edit/clips/s07.mp4</property></producer>
+  <playlist id="playlist0">
+    <entry producer="p_s01" in="0" out="134"/>
+    <entry producer="p_s02" in="0" out="134"/>
+    <entry producer="p_s03" in="0" out="134"/>
+    <entry producer="p_s04" in="0" out="119"/>
+    <entry producer="p_s05" in="0" out="134"/>
+    <entry producer="p_s06" in="0" out="119"/>
+    <entry producer="p_s07" in="0" out="119"/>
+  </playlist>
+  <tractor id="tractor0" in="0" out="899">
+    <track producer="playlist0"/>
+  </tractor>
+</mlt>

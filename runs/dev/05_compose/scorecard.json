@@ -1,0 +1,23 @@
+{
+  "station": "05_compose",
+  "scores": {
+    "business": 4.0,
+    "handoff": 5.0,
+    "benchmark": 4.0,
+    "craft": 4.5
+  },
+  "weights": {
+    "business": 0.35,
+    "handoff": 0.25,
+    "benchmark": 0.15,
+    "craft": 0.25
+  },
+  "total": 4.38,
+  "notes": [
+    "三尺寸各自成片（不是简单裁切）：9:16 裁 4px 边框，1:1 中心重构，16:9 模糊填充 + 竖版居中。",
+    "字幕用 PNG 叠加而非 subtitles 滤镜，因为 iOS 版 ffmpeg 没有 libass；外挂 srt 同时交付。",
+    "响度两遍法归一：测量 I=-22.16 LUFS → 目标 -14 LUFS / TP -1.5 dB（留 0.5 dB 余量抵消 AAC 编码过冲，后测真峰值才压得住 -1 dBTP）。",
+    "★ 成品仍是「样片」：素材是占位板 + 官网未授权图，画面里有「样片 · 占位素材 · 未授权」水印。"
+  ],
+  "generated_at": "2026-10-23T09:09:13Z"
+}

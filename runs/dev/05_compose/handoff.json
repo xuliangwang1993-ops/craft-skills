@@ -1,0 +1,91 @@
+{
+  "run_id": "dev",
+  "station": "05_compose",
+  "title": "合成与导出",
+  "started_at": "2026-10-23T08:50:42Z",
+  "finished_at": "2026-10-23T09:09:13Z",
+  "elapsed_seconds": 1111.29,
+  "exit_code": 0,
+  "seed": 20261022,
+  "inputs": [
+    {
+      "path": "runs/dev/02_script/script.json",
+      "sha256": "75d61d9dc75636dfb57f02b2fe3ecd2ec510a997e2671e04bc8776bda0666bda"
+    },
+    {
+      "path": "runs/dev/03_edit/rough_9x16.mp4",
+      "sha256": "682458d1c6e8f6534665211f7625aef7da86f43c3e425b62b39b41d6ef13bd6a"
+    },
+    {
+      "path": "runs/dev/03_edit/audio/mix.wav",
+      "sha256": "eebb7304f55e4a75c6252a3e8a933485c960c8cba8ea77efa5b697d6ac094228"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "runs/dev/05_compose/promo_9x16.mp4",
+      "sha256": "089b699bb7fca9ba1255cca2e8bf65095bf33fdcfa8a143674598a1366c2a303",
+      "schema": "video/mp4",
+      "bytes": 6651624
+    },
+    {
+      "path": "runs/dev/05_compose/promo_1x1.mp4",
+      "sha256": "d0a391f80d14ae4c87cbd0d605d10c53c058a08cab611669ca7bb0725fd59523",
+      "schema": "video/mp4",
+      "bytes": 2819259
+    },
+    {
+      "path": "runs/dev/05_compose/bg_16x9.png",
+      "sha256": "38c3f4b38c82dea50967b96fb5ceb00c1712b59187a0e05d5e8879a61d2975ab",
+      "schema": "image/png",
+      "bytes": 200964
+    },
+    {
+      "path": "runs/dev/05_compose/promo_16x9.mp4",
+      "sha256": "19d8f662db032a07b96dd8a6d28a757529b2a1d807e0af4e01da620e2240952e",
+      "schema": "video/mp4",
+      "bytes": 2934052
+    },
+    {
+      "path": "runs/dev/05_compose/cover_9x16.jpg",
+      "sha256": "e8e1cc23f3cbea9be5a1bb32133ef0a15b7e423bc0e588f4980a195687eb3391",
+      "schema": "image/jpeg",
+      "bytes": 157991
+    },
+    {
+      "path": "runs/dev/05_compose/cover_1x1.jpg",
+      "sha256": "44a918312f7ca9a26fd017161bd4218eb2b972792fc5c9a71268bda4697e7324",
+      "schema": "image/jpeg",
+      "bytes": 109673
+    },
+    {
+      "path": "runs/dev/05_compose/cover_16x9.jpg",
+      "sha256": "13a93db764723d5ae8eb3d78ff401dfab1b71df69cedc8b34d02aa9829f33193",
+      "schema": "image/jpeg",
+      "bytes": 156639
+    },
+    {
+      "path": "runs/dev/05_compose/zh.srt",
+      "sha256": "cbd04d2bffca2f1270bec4e7439d1dde5fe30a06cb211c8075454715ba75de01",
+      "schema": "text/srt",
+      "bytes": 373
+    },
+    {
+      "path": "runs/dev/05_compose/en.srt",
+      "sha256": "48109a766029d23ae0e5cd57f865ba7f13ec0c6e2129e71f97da384294b9388f",
+      "schema": "text/srt",
+      "bytes": 387
+    }
+  ],
+  "tool_versions": {
+    "python": "3.12.14",
+    "ffmpeg": "6.1.2",
+    "ffprobe": "6.1.2",
+    "pillow": "11.0.0",
+    "opencv": "4.10.0",
+    "numpy": "2.1.3",
+    "sox": "14.4.2",
+    "vips": "8.15.3",
+    "melt": "7.28.0"
+  }
+}

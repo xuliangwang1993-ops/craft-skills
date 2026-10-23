@@ -1,0 +1,170 @@
+{
+  "run_id": "dev",
+  "generated_at": "2026-10-23T01:03:37Z",
+  "grade": {
+    "lut": "inline-ffmpeg-curves+colorbalance+hue",
+    "lut_source": "pipeline/stations/s03_edit.py GRADE table (no external .cube)",
+    "targets": {
+      "temperature_k": 3200,
+      "exposure_ev": 0.0
+    },
+    "per_shot": {
+      "s01": {
+        "mean_rgb": [
+          91.0,
+          38.5,
+          27.4
+        ],
+        "luma": 48.9,
+        "warmth_rb": 107.39,
+        "seconds": 4.5,
+        "frames": 135,
+        "grade": {
+          "warmth": 0.1,
+          "lift": 0.02,
+          "exposure": 0.0,
+          "saturation": 1.06,
+          "label": "warm-broth"
+        },
+        "motion": "push_in",
+        "exposure_gain": 0.999,
+        "plate_luma": 55.06
+      },
+      "s02": {
+        "mean_rgb": [
+          91.0,
+          47.0,
+          31.0
+        ],
+        "luma": 55.2,
+        "warmth_rb": 98.42,
+        "seconds": 4.5,
+        "frames": 135,
+        "grade": {
+          "warmth": 0.12,
+          "lift": 0.03,
+          "exposure": -0.18,
+          "saturation": 1.08,
+          "label": "warm-broth"
+        },
+        "motion": "pull_back",
+        "exposure_gain": 0.8743,
+        "plate_luma": 62.91
+      },
+      "s03": {
+        "mean_rgb": [
+          68.3,
+          44.9,
+          40.6
+        ],
+        "luma": 49.6,
+        "warmth_rb": 50.8,
+        "seconds": 4.5,
+        "frames": 135,
+        "grade": {
+          "warmth": 0.08,
+          "lift": 0.02,
+          "exposure": 0.04,
+          "saturation": 1.1,
+          "label": "warm-broth"
+        },
+        "motion": "push_in",
+        "exposure_gain": 0.9799,
+        "plate_luma": 56.13
+      },
+      "s04": {
+        "mean_rgb": [
+          44.7,
+          45.4,
+          80.6
+        ],
+        "luma": 47.8,
+        "warmth_rb": -57.21,
+        "seconds": 4.0,
+        "frames": 120,
+        "grade": {
+          "warmth": 0.04,
+          "lift": -0.02,
+          "exposure": 0.55,
+          "saturation": 0.98,
+          "label": "cool-dusk"
+        },
+        "motion": "drift_up",
+        "exposure_gain": 1.5268,
+        "plate_luma": 36.02
+      },
+      "s05": {
+        "mean_rgb": [
+          61.4,
+          52.9,
+          62.9
+        ],
+        "luma": 55.5,
+        "warmth_rb": -2.45,
+        "seconds": 4.5,
+        "frames": 135,
+        "grade": {
+          "warmth": 0.06,
+          "lift": 0.01,
+          "exposure": 0.02,
+          "saturation": 1.04,
+          "label": "neutral"
+        },
+        "motion": "pull_back",
+        "exposure_gain": 1.1253,
+        "plate_luma": 48.88
+      },
+      "s06": {
+        "mean_rgb": [
+          91.1,
+          38.6,
+          27.4
+        ],
+        "luma": 48.9,
+        "warmth_rb": 107.47,
+        "seconds": 4.0,
+        "frames": 120,
+        "grade": {
+          "warmth": 0.1,
+          "lift": 0.02,
+          "exposure": 0.0,
+          "saturation": 1.06,
+          "label": "warm-broth"
+        },
+        "motion": "push_in",
+        "exposure_gain": 0.999,
+        "plate_luma": 55.06
+      },
+      "s07": {
+        "mean_rgb": [
+          231.9,
+          228.7,
+          249.0
+        ],
+        "luma": 230.8,
+        "warmth_rb": -7.08,
+        "seconds": 4.0,
+        "frames": 120,
+        "grade": {
+          "warmth": 0.0,
+          "lift": 0.0,
+          "exposure": 0.0,
+          "saturation": 1.0,
+          "label": "neutral"
+        },
+        "motion": "settle",
+        "exposure_gain": 1.0,
+        "plate_luma": 228.02
+      }
+    },
+    "encoder": "libx264",
+    "spread": {
+      "luma_min": 47.8,
+      "luma_max": 55.5,
+      "luma_spread_pct": 15.1,
+      "luma_scope": "s01-s06 footage only (s07 end card excluded: graphic, intentionally bright)",
+      "warmth_min": -57.21,
+      "warmth_max": 107.47
+    }
+  }
+}

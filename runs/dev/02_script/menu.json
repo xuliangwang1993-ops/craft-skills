@@ -1,0 +1,9 @@
+{
+  "run_id": "dev",
+  "generated_at": "2026-10-23T00:26:23Z",
+  "currency": "AUD",
+  "gst_included": true,
+  "items": [],
+  "note": "只收客户提供或已核实的品项。官网无菜单，客户尚未提供，故本片不出现任何菜品名与价格。",
+  "empty_reason": "客户未提供菜单；Uber Eats 菜单仅可作核对，不直接入片。"
+}

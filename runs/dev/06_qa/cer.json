@@ -1,0 +1,18 @@
+{
+  "run_id": "dev",
+  "generated_at": "2026-10-23T09:52:29Z",
+  "value": null,
+  "threshold": 10.0,
+  "applicable": false,
+  "reason": "本片无口播（无 TTS 可用），不存在 ASR 输出，CER 无从计算",
+  "substitute_metric": {
+    "name": "subtitle_text_fidelity",
+    "value": 100.0,
+    "method": "交付 srt 与 script.json 逐行比对（qa/trace_check.py: srt_text_drift）"
+  },
+  "asr_engines": {
+    "funasr": "unavailable",
+    "whisper": "unavailable",
+    "reason": "torch 无 musllinux-aarch64 wheel；见 reports/tool_verification.json"
+  }
+}

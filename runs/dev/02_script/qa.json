@@ -1,0 +1,65 @@
+{
+  "run_id": "dev",
+  "station": "02_script",
+  "generated_at": "2026-10-23T00:32:39Z",
+  "checks": [
+    {
+      "id": "S2-01",
+      "desc": "每镜引用字段存在且 verified",
+      "value": 4,
+      "threshold": "不一致 0",
+      "pass": true,
+      "severity": "blocking",
+      "detail": "全部 fact_refs 命中 verified 集合"
+    },
+    {
+      "id": "S2-02",
+      "desc": "时长合计 30.0s",
+      "value": 30.0,
+      "threshold": "==30.0",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S2-03",
+      "desc": "镜头数 6–8",
+      "value": 7,
+      "threshold": "6..8",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S2-04",
+      "desc": "未核实事实零泄漏",
+      "value": 0,
+      "threshold": "0",
+      "pass": true,
+      "severity": "blocking",
+      "detail": "小锅米线/云南/Rosebery/营业时间/招牌菜均未入片"
+    },
+    {
+      "id": "S2-05",
+      "desc": "字幕行数 ≤2 且中文 ≤16 字/行",
+      "value": "all",
+      "threshold": "all",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S2-06",
+      "desc": "菜品与价格入片数",
+      "value": 0,
+      "threshold": "0（客户未提供）",
+      "pass": true,
+      "severity": "blocking",
+      "detail": "menu.json 为空，成片不含任何菜品名/价格"
+    }
+  ],
+  "passed": true,
+  "blocking_failures": [],
+  "advisory_failures": [],
+  "notes": []
+}

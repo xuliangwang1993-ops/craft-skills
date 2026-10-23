@@ -206,13 +206,15 @@ def plate_logo_card(brand: dict) -> Image.Image:
     d = ImageDraw.Draw(img, "RGBA")
     d.ellipse((W // 2 - 520, -260, W // 2 + 520, 780), fill=ACCENT + (26,))
     logo = load_logo_transparent(brand["logo"])
-    lw = 780
+    lw = 720
     logo = logo.resize((lw, lw), Image.LANCZOS)
-    img.paste(logo, (W // 2 - lw // 2, 330), logo)
+    img.paste(logo, (W // 2 - lw // 2, 250), logo)
     f1 = _font(brand["font_en"], 96)
     f2 = _font(brand["font_zh"], 58)
-    d.text((W // 2, 1290), "Slurp Slurp Noodle", font=f1, fill=NAVY + (255,), anchor="mm")
-    d.text((W // 2, 1410), "S Y D N E Y", font=f2, fill=ACCENT + (255,), anchor="mm")
+    # everything stays above y=1280: the subtitle band occupies the bottom 20% of the
+    # frame and must never collide with the end card's own type
+    d.text((W // 2, 1060), "Slurp Slurp Noodle", font=f1, fill=NAVY + (255,), anchor="mm")
+    d.text((W // 2, 1170), "S Y D N E Y", font=f2, fill=ACCENT + (255,), anchor="mm")
     # the phone number lives in the subtitle track, not here — printing it twice reads as a bug
     return _noise(img, 3)
 

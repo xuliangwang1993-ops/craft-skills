@@ -1,0 +1,65 @@
+{
+  "run_id": "dev",
+  "station": "01_collect",
+  "title": "素材采集",
+  "started_at": "2026-10-22T07:13:21Z",
+  "finished_at": "2026-10-22T07:13:27Z",
+  "elapsed_seconds": 6.38,
+  "exit_code": 0,
+  "seed": 20261022,
+  "inputs": [
+    {
+      "path": "runs/dev/00_brief/brief.json",
+      "sha256": "f145e6f0d0c4851659529639bd508bce94b94feb5bfc2ac936f9866235e925c7"
+    },
+    {
+      "path": "inputs/customer_media/Slur-Slurp-New-Logo.png",
+      "sha256": "a7b5a0ad40248c49bf03fbe467cd9a6edad39b23a76f8abb778e2db0a8a86c5b"
+    },
+    {
+      "path": "inputs/customer_media/75513371_2388668874794660_3434699996744646656_n.jpg",
+      "sha256": "6402e2fa85e210f02d5825dd4c14687dd7597c76979da71daa8ea92f26c7f853"
+    },
+    {
+      "path": "inputs/site_snapshot/index.html",
+      "sha256": "e7a59aefc59b20ff217958d289cd2918e22d3677698068c82bbc874e4258d268"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "runs/dev/01_collect/facts.json",
+      "sha256": "249f4ab9c2cc966bdb105600b6f2f66b2705ef7015e12dbb8e02e0bc52ab0ad6",
+      "schema": "facts",
+      "bytes": 6988
+    },
+    {
+      "path": "runs/dev/01_collect/media_manifest.json",
+      "sha256": "be520be6c653a500835593936e79fd164fce691c435cc116c26563f7c2615fe9",
+      "schema": "media_manifest",
+      "bytes": 3947
+    },
+    {
+      "path": "runs/dev/01_collect/licenses.json",
+      "sha256": "947da1852d280f5602cf5c20f25f13961d47467f33c5c7ad4a045796622399bb",
+      "schema": "licenses",
+      "bytes": 2496
+    },
+    {
+      "path": "runs/dev/01_collect/shot_request.md",
+      "sha256": "fdcd5b5766ff80db0fba643c1eb67c57b1500fae306a8a11cba34e5e60bdf91b",
+      "schema": "text/markdown",
+      "bytes": 2531
+    }
+  ],
+  "tool_versions": {
+    "python": "3.12.14",
+    "ffmpeg": "6.1.2",
+    "ffprobe": "6.1.2",
+    "pillow": "11.0.0",
+    "opencv": "4.10.0",
+    "numpy": "2.1.3",
+    "sox": "14.4.2",
+    "vips": "8.15.3",
+    "melt": "7.28.0"
+  }
+}

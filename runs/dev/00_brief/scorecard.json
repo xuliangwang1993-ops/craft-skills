@@ -1,0 +1,21 @@
+{
+  "station": "00_brief",
+  "scores": {
+    "business": 4.5,
+    "handoff": 5.0,
+    "benchmark": 4.5,
+    "craft": 4.5
+  },
+  "weights": {
+    "business": 0.35,
+    "handoff": 0.25,
+    "benchmark": 0.15,
+    "craft": 0.25
+  },
+  "total": 4.62,
+  "notes": [
+    "jq 1.7 是整个库的 JSON 转接头，本站在此把一句话拆成可校验的契约；扣 0.5 分因为它只做结构化，不做语义理解（品牌中文名仍需人工确认）。",
+    "brief 把「三个社媒尺寸」固化为 9:16 / 1:1 / 16:9，并在下游逐项验收。"
+  ],
+  "generated_at": "2026-10-22T07:09:56Z"
+}

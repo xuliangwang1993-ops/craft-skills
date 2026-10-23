@@ -1,0 +1,74 @@
+{
+  "run_id": "dev",
+  "station": "06_qa",
+  "generated_at": "2026-10-23T09:52:33Z",
+  "checks": [
+    {
+      "id": "S6-03",
+      "desc": "字幕全部落在安全区内",
+      "value": "21/21",
+      "threshold": "100%",
+      "pass": true,
+      "severity": "blocking",
+      "detail": "9:16 底边留 250px，1:1 留 90px，16:9 留 60px；红=安全线，绿=检测到的字幕框"
+    },
+    {
+      "id": "S6-01",
+      "desc": "解码无错",
+      "value": "0 errors",
+      "threshold": "0",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S6-02",
+      "desc": "响度 -14 ±1 LUFS",
+      "value": "-14.10..-14.10 LUFS",
+      "threshold": "-14 ±1",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S6-04",
+      "desc": "真峰值 ≤ -1 dBTP",
+      "value": "-1.40 dBTP",
+      "threshold": "≤ -1",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S6-05",
+      "desc": "溯源不一致",
+      "value": 0,
+      "threshold": "0",
+      "pass": true,
+      "severity": "blocking",
+      "detail": "字幕/价格/电话/店名逐条回查 facts.json 与 menu.json"
+    },
+    {
+      "id": "S6-06",
+      "desc": "每镜在成片中有对应段落（丢失率）",
+      "value": "9x16:0, 1x1:0, 16x9:0",
+      "threshold": "全部 0",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S6-07",
+      "desc": "时长 30 ±0.5s",
+      "value": "9x16:30.0, 1x1:30.0, 16x9:30.0",
+      "threshold": "30 ±0.5",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    }
+  ],
+  "passed": true,
+  "blocking_failures": [],
+  "advisory_failures": [],
+  "notes": []
+}

@@ -1,0 +1,258 @@
+{
+  "run_id": "dev",
+  "generated_at": "2026-10-22T07:13:27Z",
+  "facts": [
+    {
+      "source_id": "src_web_title",
+      "field": "店名（英文）",
+      "value": "Slurp Slurp Noodle",
+      "status": "verified",
+      "source": {
+        "type": "official_site",
+        "ref": "https://revu.website/142620/",
+        "note": ""
+      },
+      "checked_at": "2026-10-22",
+      "evidence": "官网 <title>Slurp Slurp Noodle</title>"
+    },
+    {
+      "source_id": "src_web_tel",
+      "field": "电话",
+      "value": "02 9663 3817",
+      "status": "verified",
+      "source": {
+        "type": "official_site",
+        "ref": "https://revu.website/142620/",
+        "note": ""
+      },
+      "checked_at": "2026-10-22",
+      "evidence": "官网 <a href=\"tel:0296633817\">；展示格式按澳洲惯例分组"
+    },
+    {
+      "source_id": "src_web_cn_name",
+      "field": "店名（中文）",
+      "value": null,
+      "status": "pending_customer",
+      "source": {
+        "type": "customer",
+        "ref": "客户口头说法",
+        "note": ""
+      },
+      "checked_at": "2026-10-22",
+      "evidence": "「小锅米线」仅为客户口头说法，官网无中文名"
+    },
+    {
+      "source_id": "src_dir_addr",
+      "field": "地址",
+      "value": "Shop 1 / R1, 57 Rothschild Ave, Rosebery NSW 2018",
+      "status": "unverified",
+      "source": {
+        "type": "directory",
+        "ref": "oceaniabiz / Uber Eats / Mate's Table 三处一致",
+        "note": ""
+      },
+      "checked_at": "2026-10-22",
+      "evidence": "第三方目录一致，但官网未写，未经客户确认"
+    },
+    {
+      "source_id": "src_ue_cuisine",
+      "field": "菜系",
+      "value": "云南米线",
+      "status": "unverified",
+      "source": {
+        "type": "directory",
+        "ref": "Uber Eats 店页摘要",
+        "note": ""
+      },
+      "checked_at": "2026-10-22",
+      "evidence": "未核实；不得入片"
+    },
+    {
+      "source_id": "src_ue_signature",
+      "field": "招牌菜",
+      "value": [
+        "Slurp Slurp Little Copper Pot",
+        "Signature Minty Beef"
+      ],
+      "status": "unverified",
+      "source": {
+        "type": "directory",
+        "ref": "Uber Eats 店页摘要",
+        "note": ""
+      },
+      "checked_at": "2026-10-22",
+      "evidence": "未核实；不得入片"
+    },
+    {
+      "source_id": "src_hours_mates",
+      "field": "营业时间（来源 A）",
+      "value": "周二–周日 11:00–21:00，周一休",
+      "status": "conflict",
+      "source": {
+        "type": "directory",
+        "ref": "Mate's Table",
+        "note": ""
+      },
+      "checked_at": "2026-10-22",
+      "evidence": "与来源 B 冲突"
+    },
+    {
+      "source_id": "src_hours_zmenu",
+      "field": "营业时间（来源 B）",
+      "value": "周五–周日 11:00–15:00、16:00–21:00，周一休",
+      "status": "conflict",
+      "source": {
+        "type": "directory",
+        "ref": "Zmenu",
+        "note": ""
+      },
+      "checked_at": "2026-10-22",
+      "evidence": "与来源 A 冲突"
+    },
+    {
+      "source_id": "src_site_menu",
+      "field": "菜单与价格",
+      "value": null,
+      "status": "pending_customer",
+      "source": {
+        "type": "official_site",
+        "ref": "https://revu.website/142620/",
+        "note": ""
+      },
+      "checked_at": "2026-10-22",
+      "evidence": "官网没有菜单与价格"
+    },
+    {
+      "source_id": "src_site_social",
+      "field": "社媒账号",
+      "value": null,
+      "status": "pending_customer",
+      "source": {
+        "type": "official_site",
+        "ref": "https://revu.website/142620/",
+        "note": ""
+      },
+      "checked_at": "2026-10-22",
+      "evidence": "官网无社媒链接"
+    },
+    {
+      "source_id": "src_site_logo",
+      "field": "logo",
+      "value": "inputs/customer_media/Slur-Slurp-New-Logo.png",
+      "status": "verified",
+      "source": {
+        "type": "official_site",
+        "ref": "https://revu.website/142620/assets/images/Slur-Slurp-New-Logo.png",
+        "note": ""
+      },
+      "checked_at": "2026-10-22",
+      "evidence": "500x500 RGBA；授权待客户书面同意"
+    },
+    {
+      "source_id": "src_site_photo",
+      "field": "店内图",
+      "value": "inputs/customer_media/75513371_2388668874794660_3434699996744646656_n.jpg",
+      "status": "verified",
+      "source": {
+        "type": "official_site",
+        "ref": "https://revu.website/142620/assets/images/75513371_..._n.jpg",
+        "note": ""
+      },
+      "checked_at": "2026-10-22",
+      "evidence": "680x510；文件名像 Facebook 导出；授权待客户书面同意"
+    },
+    {
+      "source_id": "src_revu_widget",
+      "field": "评价组件",
+      "value": "Revu data-bid=142620",
+      "status": "verified",
+      "source": {
+        "type": "official_site",
+        "ref": "https://revu.website/142620/",
+        "note": ""
+      },
+      "checked_at": "2026-10-22",
+      "evidence": "官网为 Revu 评价组件页"
+    },
+    {
+      "source_id": "src_ue_rating",
+      "field": "评分",
+      "value": "4.8（900+ 评分）",
+      "status": "unverified",
+      "source": {
+        "type": "directory",
+        "ref": "Uber Eats",
+        "note": ""
+      },
+      "checked_at": "2026-10-22",
+      "evidence": "第三方评分会变；入片前须截图存档，本片不使用"
+    },
+    {
+      "source_id": "src_brand_palette",
+      "field": "品牌色",
+      "value": {
+        "clusters": [
+          "#FFFFFF",
+          "#F8F3FE",
+          "#102271",
+          "#B8A4FA",
+          "#4247CB"
+        ],
+        "primary": "#4247CB"
+      },
+      "status": "verified",
+      "source": {
+        "type": "official_site",
+        "ref": "opencv k-means on logo",
+        "note": ""
+      },
+      "checked_at": "2026-10-22",
+      "evidence": "从 logo 不透明像素提取，主色 #4247CB"
+    },
+    {
+      "source_id": "src_font",
+      "field": "字体",
+      "value": null,
+      "status": "pending_customer",
+      "source": {
+        "type": "customer",
+        "ref": "—",
+        "note": ""
+      },
+      "checked_at": "2026-10-22",
+      "evidence": "官网仅 Bootstrap 默认样式；本次用开源 Noto Sans SC + Inter"
+    },
+    {
+      "source_id": "src_city",
+      "field": "城市",
+      "value": "悉尼",
+      "status": "verified",
+      "source": {
+        "type": "customer",
+        "ref": "需求原句「悉尼小锅米线」",
+        "note": ""
+      },
+      "checked_at": "2026-10-22",
+      "evidence": "客户需求中自述"
+    }
+  ],
+  "unverified_fields": [
+    "地址",
+    "字体",
+    "店名（中文）",
+    "招牌菜",
+    "社媒账号",
+    "菜单与价格",
+    "菜系",
+    "营业时间（来源 A）",
+    "营业时间（来源 B）",
+    "评分"
+  ],
+  "conflicts": [
+    {
+      "field": "营业时间",
+      "a": "src_hours_mates",
+      "b": "src_hours_zmenu"
+    }
+  ]
+}

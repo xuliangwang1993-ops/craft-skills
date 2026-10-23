@@ -1,0 +1,58 @@
+{
+  "run_id": "dev",
+  "station": "01_collect",
+  "generated_at": "2026-10-22T07:13:27Z",
+  "checks": [
+    {
+      "id": "S1-01",
+      "desc": "每个素材都有来源+许可",
+      "value": "6/6",
+      "threshold": "100%",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S1-02",
+      "desc": "客户素材 ≥1080p/≥25fps",
+      "value": "0 条客户实拍素材",
+      "threshold": "收到后 100%",
+      "pass": false,
+      "severity": "advisory",
+      "detail": "客户尚未提供实拍素材；官网占位图 680x510 不达标，已标 placeholder"
+    },
+    {
+      "id": "S1-03",
+      "desc": "事实全部可追溯",
+      "value": "17 facts / 17 source_id",
+      "threshold": "1:1",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S1-04",
+      "desc": "未核实字段已隔离",
+      "value": 10,
+      "threshold": "全部标记",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S1-05",
+      "desc": "拍摄清单镜头数",
+      "value": 5,
+      "threshold": ">=5",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    }
+  ],
+  "passed": true,
+  "blocking_failures": [],
+  "advisory_failures": [
+    "S1-02"
+  ],
+  "notes": []
+}

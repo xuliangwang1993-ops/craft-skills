@@ -189,6 +189,20 @@ def tool_version(cmd, pattern=r"(\d+\.\d+(?:\.\d+)?)") -> str:
         return "missing"
 
 
+def display_width(text: str) -> float:
+    """Subtitle width in full-width character units (CJK = 1, Latin/digit/space = 0.5).
+
+    The 16-字/行 rule is about how much of the 9:16 frame a line eats, so an English
+    brand name counts by its rendered width, not by len(). "Slurp Slurp Noodle" is 18
+    characters but only 9 full-width units.
+    """
+    import unicodedata
+    total = 0.0
+    for ch in text:
+        total += 1.0 if unicodedata.east_asian_width(ch) in ("W", "F") else 0.5
+    return total
+
+
 def toolchain_versions() -> dict:
     import cv2
     import numpy

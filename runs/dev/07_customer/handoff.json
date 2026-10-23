@@ -1,0 +1,61 @@
+{
+  "run_id": "dev",
+  "station": "07_customer",
+  "title": "客服知识包",
+  "started_at": "2026-10-23T10:02:40Z",
+  "finished_at": "2026-10-23T10:02:43Z",
+  "elapsed_seconds": 3.18,
+  "exit_code": 0,
+  "seed": 20261022,
+  "inputs": [
+    {
+      "path": "runs/dev/01_collect/facts.json",
+      "sha256": "249f4ab9c2cc966bdb105600b6f2f66b2705ef7015e12dbb8e02e0bc52ab0ad6"
+    },
+    {
+      "path": "runs/dev/02_script/menu.json",
+      "sha256": "6965b5efba390ace7a40a267b0cab1ad271653f512565c73011d94e03621f2f7"
+    },
+    {
+      "path": "runs/dev/02_script/script.json",
+      "sha256": "75d61d9dc75636dfb57f02b2fe3ecd2ec510a997e2671e04bc8776bda0666bda"
+    },
+    {
+      "path": "runs/dev/00_brief/brief.json",
+      "sha256": "f145e6f0d0c4851659529639bd508bce94b94feb5bfc2ac936f9866235e925c7"
+    },
+    {
+      "path": "runs/dev/06_qa/trace.json",
+      "sha256": "c756eecfbc728cff0ae72effff829e0b17dc6afc5b23e6915544e7ee7833112d"
+    },
+    {
+      "path": "runs/dev/06_qa/loudness.json",
+      "sha256": "70c5aae9c70b9fe3a3b5c2f972bc93de0791f4dc4cbaf08b2bb80bf03717b4c4"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "runs/dev/07_customer/kb_manifest.json",
+      "sha256": "0db21a49b6611c3758fbdc3a43d67375cb457c1b6fd50aa3e664e6aee1a69fe0",
+      "schema": "kb_manifest",
+      "bytes": 6620
+    },
+    {
+      "path": "runs/dev/07_customer/project_delivery.json",
+      "sha256": "7686a310e3ab2ccb6b82f5fe05cb6e65b81a634dd07fd88de247a6ea4ec18146",
+      "schema": "workbench/card",
+      "bytes": 2719
+    }
+  ],
+  "tool_versions": {
+    "python": "3.12.14",
+    "ffmpeg": "6.1.2",
+    "ffprobe": "6.1.2",
+    "pillow": "11.0.0",
+    "opencv": "4.10.0",
+    "numpy": "2.1.3",
+    "sox": "14.4.2",
+    "vips": "8.15.3",
+    "melt": "7.28.0"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "run_id": "dev",
+  "station": "03_edit",
+  "generated_at": "2026-10-23T01:03:42Z",
+  "checks": [
+    {
+      "id": "S3-05",
+      "desc": "切点检测与脚本一致（pyscenedetect）",
+      "value": "7 scenes",
+      "threshold": "≈7",
+      "pass": true,
+      "severity": "blocking",
+      "detail": "detector=pyscenedetect"
+    },
+    {
+      "id": "S3-01",
+      "desc": "各镜曝光差（s01–s06 亮度离散度）",
+      "value": "15.1%",
+      "threshold": "≤ 25%",
+      "pass": true,
+      "severity": "blocking",
+      "detail": "已用 exposure 曲线逐镜配平；s07 为落版图形，单列不计入"
+    },
+    {
+      "id": "S3-02",
+      "desc": "色温符合设计（食物暖/店面冷/落版中性）",
+      "value": "食物 107.39/98.42/50.8，店面 -57.21，落版 -7.08",
+      "threshold": "食物>10，落版|·|<12",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S3-03",
+      "desc": "无爆音（music bed 峰值）",
+      "value": "-7.19 dBFS",
+      "threshold": "≤ -1 dBTP",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S3-04",
+      "desc": "MLT 时间线时长",
+      "value": "30.0s",
+      "threshold": "30 ±0.15",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S3-06",
+      "desc": "每镜时长与脚本一致",
+      "value": "s01:135f, s02:135f, s03:135f, s04:120f, s05:135f, s06:120f, s07:120f",
+      "threshold": "frames == seconds×30",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    }
+  ],
+  "passed": true,
+  "blocking_failures": [],
+  "advisory_failures": [],
+  "notes": []
+}

@@ -1,0 +1,57 @@
+{
+  "run_id": "dev",
+  "product_gaps": [
+    {
+      "gap": "TTS 配音",
+      "why": "cosyvoice 被任务书禁用，其余开源 TTS 未入库",
+      "impact": "本片无口播，只有配乐与字幕"
+    },
+    {
+      "gap": "自动配乐/素材库",
+      "why": "模板与素材生态是立项缺口（见 docs/扩库立项.md 4.6）",
+      "impact": "配乐由代码合成，风格单一"
+    },
+    {
+      "gap": "ASR/MT 实测",
+      "why": "torch / ctranslate2 无 musllinux-aarch64 wheel",
+      "impact": "字幕走人工撰写路径，无自动转写能力"
+    },
+    {
+      "gap": "darktable 调色",
+      "why": "Alpine 无该包",
+      "impact": "用 ffmpeg 曲线替代，参数可复现但少了 RAW 级控制"
+    },
+    {
+      "gap": "自动卡点（librosa）",
+      "why": "同上装不上",
+      "impact": "节奏按固定 90 BPM 手工排，不跟画面卡点"
+    },
+    {
+      "gap": "workbench 真机联调",
+      "why": "无 Supabase 凭据，且不允许改线上库",
+      "impact": "卡片只在本地产出 JSON + SQL 迁移"
+    }
+  ],
+  "environment_gaps": [
+    {
+      "gap": "MLT 画幅限制",
+      "detail": "melt 对 1080 宽/1080x1080 输出 0 字节，须用 16 的倍数（1088）再裁切"
+    },
+    {
+      "gap": "iOS ffmpeg 缺 libx264/libass",
+      "detail": "只能 VideoToolbox 编码 + PNG 叠字幕；CPU 版 ffmpeg 作降级"
+    },
+    {
+      "gap": "内存 4GB / 磁盘紧张",
+      "detail": "并发渲染会 OOM，必须串行"
+    }
+  ],
+  "missing_scorecards": [],
+  "overall": 4.13,
+  "dimension_average": {
+    "business": 3.75,
+    "handoff": 4.94,
+    "craft": 4.06,
+    "benchmark": 3.81
+  }
+}

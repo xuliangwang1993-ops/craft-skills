@@ -1,0 +1,47 @@
+{
+  "run_id": "dev",
+  "station": "07_customer",
+  "generated_at": "2026-10-23T10:02:44Z",
+  "checks": [
+    {
+      "id": "S7-01",
+      "desc": "FAQ 数量",
+      "value": 22,
+      "threshold": "≥15",
+      "pass": true,
+      "severity": "blocking",
+      "detail": ""
+    },
+    {
+      "id": "S7-02",
+      "desc": "小助手答对率",
+      "value": "100.0%",
+      "threshold": "≥90%",
+      "pass": true,
+      "severity": "blocking",
+      "detail": "18/18；错题见 kb_manifest.assistant_test.results"
+    },
+    {
+      "id": "S7-03",
+      "desc": "不编造价格/营业时间/地址",
+      "value": 0,
+      "threshold": "0",
+      "pass": true,
+      "severity": "blocking",
+      "detail": "未知字段的回答必须带「待客户确认 / 未经客户确认 / 冲突」之一"
+    },
+    {
+      "id": "S7-04",
+      "desc": "知识包只含 verified 事实",
+      "value": "5 篇",
+      "threshold": "全部",
+      "pass": true,
+      "severity": "blocking",
+      "detail": "未核实项一律写成「待客户确认」并注明原因"
+    }
+  ],
+  "passed": true,
+  "blocking_failures": [],
+  "advisory_failures": [],
+  "notes": []
+}

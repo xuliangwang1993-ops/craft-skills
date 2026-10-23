@@ -15,7 +15,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from lib.common import ROOT, Station, now, read_json, station_main, validate, write_json
+from lib.common import ROOT, Station, display_width, now, read_json, station_main, validate, write_json
 
 # 7 shots, durations sum to exactly 30.0 s
 SHOTS = [
@@ -282,12 +282,12 @@ def main(st: Station):
                 banned_hits.append({"shot": shot["shot_id"], "word": word, "fact": fact_id})
     st.require(not banned_hits, "unverified fact leaked into script: %s" % banned_hits)
 
-    # gate 3: subtitle length rules (<=2 lines, zh <=16 chars/line)
+    # gate 3: subtitle width rules (<=2 lines, <=16 full-width units per line)
     for shot in SHOTS:
         zh = shot["sub_zh"]
-        st.require(len(zh) <= 32, f"{shot['shot_id']}: zh subtitle too long ({len(zh)} chars)")
-        lines = [zh[i:i + 16] for i in range(0, len(zh), 16)]
-        st.require(len(lines) <= 2, f"{shot['shot_id']}: zh subtitle >2 lines")
+        w = display_width(zh)
+        st.require(w <= 32, f"{shot['shot_id']}: zh subtitle too wide ({w} full-width units)")
+        st.require(w <= 16, f"{shot['shot_id']}: zh subtitle needs {w} units on one line (max 16)")
 
     validate(script, "script", where="02_script/script.json")
     st.emit(write_json(st.dir / "script.json", script), "script")

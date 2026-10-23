@@ -1,0 +1,34 @@
+{
+  "run_id": "dev",
+  "sentence": "给悉尼小锅米线（Slurp Slurp Noodle）做一支 30 秒宣传短视频，配中英字幕和三个社媒尺寸",
+  "client": {
+    "name_en": "Slurp Slurp Noodle",
+    "name_zh_status": "pending_customer",
+    "name_zh_raw": "悉尼小锅米线"
+  },
+  "duration_seconds": 30.0,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+  ],
+  "platforms": [
+    "Instagram Reels",
+    "TikTok",
+    "小红书",
+    "Facebook",
+    "YouTube Shorts"
+  ],
+  "deliverables": [
+    "30s 主片 9:16 1080x1920",
+    "30s 主片 1:1 1080x1080",
+    "30s 主片 16:9 1920x1080",
+    "中英双语字幕（烧录版 + 外挂 srt）",
+    "三尺寸封面 jpg"
+  ],
+  "created_at": "2026-10-22T07:09:55Z"
+}

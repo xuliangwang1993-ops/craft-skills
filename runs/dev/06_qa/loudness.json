@@ -1,0 +1,29 @@
+{
+  "run_id": "dev",
+  "generated_at": "2026-10-23T09:40:13Z",
+  "target": {
+    "integrated_lufs": -14.0,
+    "tolerance": 1.0,
+    "true_peak_max": -1.0
+  },
+  "videos": [
+    {
+      "file": "promo_9x16.mp4",
+      "integrated_lufs": -14.1,
+      "lra_lu": 0.8,
+      "true_peak_db": -1.4
+    },
+    {
+      "file": "promo_1x1.mp4",
+      "integrated_lufs": -14.1,
+      "lra_lu": 0.8,
+      "true_peak_db": -1.4
+    },
+    {
+      "file": "promo_16x9.mp4",
+      "integrated_lufs": -14.1,
+      "lra_lu": 0.8,
+      "true_peak_db": -1.4
+    }
+  ]
+}
