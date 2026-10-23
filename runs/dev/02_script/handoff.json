@@ -2,35 +2,35 @@
   "run_id": "dev",
   "station": "02_script",
   "title": "脚本与分镜",
-  "started_at": "2026-10-23T00:26:18Z",
-  "finished_at": "2026-10-23T00:32:39Z",
-  "elapsed_seconds": 381.07,
+  "started_at": "2026-10-23T10:34:19Z",
+  "finished_at": "2026-10-23T10:36:43Z",
+  "elapsed_seconds": 144.12,
   "exit_code": 0,
   "seed": 20261022,
   "inputs": [
     {
       "path": "runs/dev/01_collect/facts.json",
-      "sha256": "249f4ab9c2cc966bdb105600b6f2f66b2705ef7015e12dbb8e02e0bc52ab0ad6"
+      "sha256": "26b9463f37f48e047b6890f717705849f4e6681d7c935433bff679ee732aacb3"
     },
     {
       "path": "runs/dev/01_collect/media_manifest.json",
-      "sha256": "be520be6c653a500835593936e79fd164fce691c435cc116c26563f7c2615fe9"
+      "sha256": "0d3412dd1ae3de8d4ac4313e54e71ccdcee3b0e0dda0efac645d5276ca280acd"
     },
     {
       "path": "runs/dev/00_brief/brief.json",
-      "sha256": "f145e6f0d0c4851659529639bd508bce94b94feb5bfc2ac936f9866235e925c7"
+      "sha256": "70d51c6c8f4e9bc05771bbe631b4848e77393a71a1012d9faae1fe9284f71410"
     }
   ],
   "outputs": [
     {
       "path": "runs/dev/02_script/menu.json",
-      "sha256": "6965b5efba390ace7a40a267b0cab1ad271653f512565c73011d94e03621f2f7",
+      "sha256": "a7d773b30425a4c3a3ecc06bc9a7f2511b4c3176cd3605271436b5e9a9044e34",
       "schema": "menu",
       "bytes": 362
     },
     {
       "path": "runs/dev/02_script/script.json",
-      "sha256": "75d61d9dc75636dfb57f02b2fe3ecd2ec510a997e2671e04bc8776bda0666bda",
+      "sha256": "a5a367f5aa0508fc8d2a599f6744d037ffc86eeac0921fcf3c701c8b8850a4cf",
       "schema": "script",
       "bytes": 4030
     },

@@ -59,12 +59,14 @@ def main() -> int:
                       [FFMPEG_CPU, "-v", "error", "-f", "lavfi", "-i", "testsrc=size=320x240:rate=30",
                        "-t", "1", "-c:v", "libx264", "-pix_fmt", "yuv420p", str(WORK / "cpu.mp4")],
                       install="apk add ffmpeg", expect_file=WORK / "cpu.mp4"))
-    rows.append(probe("ffmpeg (ios/hw)", "verified", [FFMPEG_HW, "-version"],
-                      [FFMPEG_HW, "-v", "error", "-y", "-loop", "1", "-framerate", "30",
+    IOS_FFMPEG = "/usr/bin/ffmpeg"
+    rows.append(probe("ffmpeg (ios build)", "verified", [IOS_FFMPEG, "-version"],
+                      [IOS_FFMPEG, "-v", "error", "-y", "-loop", "1", "-framerate", "30",
                        "-i", str(ROOT / "inputs/customer_media/Slur-Slurp-New-Logo.png"),
                        "-t", "1", "-c:v", "h264_videotoolbox", str(WORK / "hw.mp4")],
-                      install="preinstalled", expect_file=WORK / "hw.mp4",
-                      note="无 lavfi/libx264/libass/drawtext；有 VideoToolbox、zoompan、overlay、loudnorm"))
+                      install="preinstalled (iOS)", expect_file=WORK / "hw.mp4",
+                      note="无 lavfi/libx264/libass/drawtext，有 VideoToolbox；"
+                           "被 kill 后会把整个 App 锁死（本次踩过），所以流水线默认不用它"))
     rows.append(probe("sox", "verified", ["sox", "--version"],
                       ["sox", "-n", str(WORK / "sine.wav"), "synth", "1", "sine", "440"],
                       install="apk add sox", expect_file=WORK / "sine.wav"))

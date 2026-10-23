@@ -2,9 +2,9 @@
   "run_id": "dev",
   "station": "00_brief",
   "title": "需求解析",
-  "started_at": "2026-10-22T07:09:55Z",
-  "finished_at": "2026-10-22T07:09:56Z",
-  "elapsed_seconds": 1.89,
+  "started_at": "2026-10-23T10:34:05Z",
+  "finished_at": "2026-10-23T10:34:08Z",
+  "elapsed_seconds": 3.21,
   "exit_code": 0,
   "seed": 20261022,
   "inputs": [
@@ -16,7 +16,7 @@
   "outputs": [
     {
       "path": "runs/dev/00_brief/brief.json",
-      "sha256": "f145e6f0d0c4851659529639bd508bce94b94feb5bfc2ac936f9866235e925c7",
+      "sha256": "70d51c6c8f4e9bc05771bbe631b4848e77393a71a1012d9faae1fe9284f71410",
       "schema": "brief",
       "bytes": 772
     }

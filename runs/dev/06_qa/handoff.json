@@ -2,51 +2,51 @@
   "run_id": "dev",
   "station": "06_qa",
   "title": "后测",
-  "started_at": "2026-10-23T09:30:29Z",
-  "finished_at": "2026-10-23T09:52:32Z",
-  "elapsed_seconds": 1322.33,
+  "started_at": "2026-10-23T11:30:53Z",
+  "finished_at": "2026-10-23T11:53:43Z",
+  "elapsed_seconds": 1370.24,
   "exit_code": 0,
   "seed": 20261022,
   "inputs": [
     {
       "path": "runs/dev/02_script/script.json",
-      "sha256": "75d61d9dc75636dfb57f02b2fe3ecd2ec510a997e2671e04bc8776bda0666bda"
+      "sha256": "a5a367f5aa0508fc8d2a599f6744d037ffc86eeac0921fcf3c701c8b8850a4cf"
     },
     {
       "path": "runs/dev/05_compose/promo_9x16.mp4",
-      "sha256": "089b699bb7fca9ba1255cca2e8bf65095bf33fdcfa8a143674598a1366c2a303"
+      "sha256": "4acf1ffec68dc769dc11e1fa41ee2824e6a2a2f0759cb8e382098dd80dc0fedf"
     },
     {
       "path": "runs/dev/05_compose/promo_1x1.mp4",
-      "sha256": "d0a391f80d14ae4c87cbd0d605d10c53c058a08cab611669ca7bb0725fd59523"
+      "sha256": "2ecbbce49e8fb7be7898d69cfd0a78127eb3b64de91249644000c91595d42d32"
     },
     {
       "path": "runs/dev/05_compose/promo_16x9.mp4",
-      "sha256": "19d8f662db032a07b96dd8a6d28a757529b2a1d807e0af4e01da620e2240952e"
+      "sha256": "c3e8da757c125eed0fbe65bf901824f20521722d020350cab65338b5d6c4f565"
     }
   ],
   "outputs": [
     {
       "path": "runs/dev/06_qa/decode.json",
-      "sha256": "0f059ea4f3a5352204a21b3d7a3e5e58699b5c8ae4a4afba001ddda535c00abe",
+      "sha256": "b8e592ec666758e1712ac94feb46a45bb445c2b3bc0eabcc70cf4fadc62e8bc3",
       "schema": "reports/decode",
-      "bytes": 609
+      "bytes": 608
     },
     {
       "path": "runs/dev/06_qa/loudness.json",
-      "sha256": "70c5aae9c70b9fe3a3b5c2f972bc93de0791f4dc4cbaf08b2bb80bf03717b4c4",
+      "sha256": "7ef83367a068bb6ffc8cce75b37f18ab223da66991a77bc552e523365cdaea99",
       "schema": "reports/loudness",
       "bytes": 553
     },
     {
       "path": "runs/dev/06_qa/trace.json",
-      "sha256": "c756eecfbc728cff0ae72effff829e0b17dc6afc5b23e6915544e7ee7833112d",
+      "sha256": "0f1e242b4f269fb90457d235646445ed46ddcd14992943614e7b8c65b2f7a9a9",
       "schema": "trace",
       "bytes": 4456
     },
     {
       "path": "runs/dev/06_qa/cer.json",
-      "sha256": "94d7a5aa74886f2fce5b2157090e3528f7ed4a1f70230e980d80b83c892fa22b",
+      "sha256": "be9c468068597777ead51b8a9e769d5782f71d279e4ee108031e859aca610075",
       "schema": "reports/cer",
       "bytes": 571
     }

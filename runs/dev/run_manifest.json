@@ -1,0 +1,58 @@
+{
+  "run_id": "dev",
+  "sentence": "给悉尼小锅米线（Slurp Slurp Noodle）做一支 30 秒宣传短视频，配中英字幕和三个社媒尺寸",
+  "started_at": "2026-10-23T10:34:04Z",
+  "python": "3.12.14",
+  "stations": [
+    {
+      "station": "00_brief",
+      "title": "需求解析",
+      "exit_code": 0,
+      "seconds": 4.1
+    },
+    {
+      "station": "01_collect",
+      "title": "素材采集",
+      "exit_code": 0,
+      "seconds": 9.7
+    },
+    {
+      "station": "02_script",
+      "title": "脚本/分镜",
+      "exit_code": 0,
+      "seconds": 145.1
+    },
+    {
+      "station": "03_edit",
+      "title": "切镜/调色/清音/响度",
+      "exit_code": 0,
+      "seconds": 1561.8
+    },
+    {
+      "station": "04_subs",
+      "title": "字幕",
+      "exit_code": 0,
+      "seconds": 8.3
+    },
+    {
+      "station": "05_compose",
+      "title": "合成",
+      "exit_code": 0,
+      "seconds": 1678.8
+    },
+    {
+      "station": "06_qa",
+      "title": "后测",
+      "exit_code": 0,
+      "seconds": 1373.1
+    },
+    {
+      "station": "07_customer",
+      "title": "客服知识包",
+      "exit_code": 0,
+      "seconds": 8.9
+    }
+  ],
+  "status": "done",
+  "finished_at": "2026-10-23T11:53:54Z"
+}

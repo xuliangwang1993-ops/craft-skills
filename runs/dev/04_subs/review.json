@@ -1,11 +1,11 @@
 {
   "run_id": "dev",
-  "generated_at": "2026-10-23T10:05:56Z",
+  "generated_at": "2026-10-23T11:02:51Z",
   "method": "bilingual-authoring + line-by-line review（无 TTS/口播，故不走 ASR）",
   "generated_by": "pipeline/stations/s04_subs.py",
   "human_review": {
     "reviewer": "AI 自查（Minis agent）— 非人工签核",
-    "reviewed_at": "2026-10-23T10:05:56Z",
+    "reviewed_at": "2026-10-23T11:02:51Z",
     "lines_total": 7,
     "lines_changed": 0,
     "coverage": 100.0,

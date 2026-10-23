@@ -38,11 +38,9 @@
     },
     {
       "name": "subs",
-      "status": "attention",
+      "status": "done",
       "score": 3.67,
-      "checks_failed": [
-        "S4-01"
-      ]
+      "checks_failed": []
     },
     {
       "name": "compose",
@@ -66,7 +64,7 @@
   "artifacts": [
     {
       "name": "promo_9x16.mp4",
-      "bytes": 6651624,
+      "bytes": 6659682,
       "path": "runs/dev/05_compose/promo_9x16.mp4"
     },
     {
@@ -76,7 +74,7 @@
     },
     {
       "name": "promo_1x1.mp4",
-      "bytes": 2819259,
+      "bytes": 2827317,
       "path": "runs/dev/05_compose/promo_1x1.mp4"
     },
     {
@@ -86,7 +84,7 @@
     },
     {
       "name": "promo_16x9.mp4",
-      "bytes": 2934052,
+      "bytes": 2942110,
       "path": "runs/dev/05_compose/promo_16x9.mp4"
     },
     {

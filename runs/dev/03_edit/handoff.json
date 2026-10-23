@@ -2,25 +2,25 @@
   "run_id": "dev",
   "station": "03_edit",
   "title": "切镜/调色/清音/响度",
-  "started_at": "2026-10-23T00:33:44Z",
-  "finished_at": "2026-10-23T01:03:39Z",
-  "elapsed_seconds": 1795.05,
+  "started_at": "2026-10-23T10:36:45Z",
+  "finished_at": "2026-10-23T11:02:42Z",
+  "elapsed_seconds": 1557.12,
   "exit_code": 0,
   "seed": 20261022,
   "inputs": [
     {
       "path": "runs/dev/02_script/script.json",
-      "sha256": "75d61d9dc75636dfb57f02b2fe3ecd2ec510a997e2671e04bc8776bda0666bda"
+      "sha256": "a5a367f5aa0508fc8d2a599f6744d037ffc86eeac0921fcf3c701c8b8850a4cf"
     },
     {
       "path": "runs/dev/01_collect/media_manifest.json",
-      "sha256": "be520be6c653a500835593936e79fd164fce691c435cc116c26563f7c2615fe9"
+      "sha256": "0d3412dd1ae3de8d4ac4313e54e71ccdcee3b0e0dda0efac645d5276ca280acd"
     }
   ],
   "outputs": [
     {
       "path": "runs/dev/03_edit/grade.json",
-      "sha256": "16f1ef780f9b10e15861239f872a65b0a0a130ac0876652da1a321986976a690",
+      "sha256": "f2b7dedd46a44b5f7c6bd4a9ad32f612fe425554389480ccec1ee4076e27274a",
       "schema": "grade",
       "bytes": 3819
     },
@@ -80,7 +80,7 @@
     },
     {
       "path": "runs/dev/03_edit/audio/mix.wav",
-      "sha256": "eebb7304f55e4a75c6252a3e8a933485c960c8cba8ea77efa5b697d6ac094228",
+      "sha256": "398f0bf0a9a80c979ec9f97f7f3842a0c639436b91f71b1b5a8e7ba3aa6db4bf",
       "schema": "audio/wav",
       "bytes": 5760044
     }

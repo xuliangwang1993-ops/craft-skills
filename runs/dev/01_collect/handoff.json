@@ -2,15 +2,15 @@
   "run_id": "dev",
   "station": "01_collect",
   "title": "素材采集",
-  "started_at": "2026-10-22T07:13:21Z",
-  "finished_at": "2026-10-22T07:13:27Z",
-  "elapsed_seconds": 6.38,
+  "started_at": "2026-10-23T10:34:09Z",
+  "finished_at": "2026-10-23T10:34:18Z",
+  "elapsed_seconds": 8.7,
   "exit_code": 0,
   "seed": 20261022,
   "inputs": [
     {
       "path": "runs/dev/00_brief/brief.json",
-      "sha256": "f145e6f0d0c4851659529639bd508bce94b94feb5bfc2ac936f9866235e925c7"
+      "sha256": "70d51c6c8f4e9bc05771bbe631b4848e77393a71a1012d9faae1fe9284f71410"
     },
     {
       "path": "inputs/customer_media/Slur-Slurp-New-Logo.png",
@@ -28,19 +28,19 @@
   "outputs": [
     {
       "path": "runs/dev/01_collect/facts.json",
-      "sha256": "249f4ab9c2cc966bdb105600b6f2f66b2705ef7015e12dbb8e02e0bc52ab0ad6",
+      "sha256": "26b9463f37f48e047b6890f717705849f4e6681d7c935433bff679ee732aacb3",
       "schema": "facts",
       "bytes": 6988
     },
     {
       "path": "runs/dev/01_collect/media_manifest.json",
-      "sha256": "be520be6c653a500835593936e79fd164fce691c435cc116c26563f7c2615fe9",
+      "sha256": "0d3412dd1ae3de8d4ac4313e54e71ccdcee3b0e0dda0efac645d5276ca280acd",
       "schema": "media_manifest",
       "bytes": 3947
     },
     {
       "path": "runs/dev/01_collect/licenses.json",
-      "sha256": "947da1852d280f5602cf5c20f25f13961d47467f33c5c7ad4a045796622399bb",
+      "sha256": "e7b53340c1d778c77434a975d0d669aedd6c517d3035beec30a4278150b99dac",
       "schema": "licenses",
       "bytes": 2496
     },

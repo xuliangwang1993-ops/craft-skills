@@ -2,15 +2,15 @@
   "run_id": "dev",
   "station": "05_compose",
   "title": "合成与导出",
-  "started_at": "2026-10-23T08:50:42Z",
-  "finished_at": "2026-10-23T09:09:13Z",
-  "elapsed_seconds": 1111.29,
+  "started_at": "2026-10-23T11:02:54Z",
+  "finished_at": "2026-10-23T11:30:50Z",
+  "elapsed_seconds": 1676.13,
   "exit_code": 0,
   "seed": 20261022,
   "inputs": [
     {
       "path": "runs/dev/02_script/script.json",
-      "sha256": "75d61d9dc75636dfb57f02b2fe3ecd2ec510a997e2671e04bc8776bda0666bda"
+      "sha256": "a5a367f5aa0508fc8d2a599f6744d037ffc86eeac0921fcf3c701c8b8850a4cf"
     },
     {
       "path": "runs/dev/03_edit/rough_9x16.mp4",
@@ -18,21 +18,27 @@
     },
     {
       "path": "runs/dev/03_edit/audio/mix.wav",
-      "sha256": "eebb7304f55e4a75c6252a3e8a933485c960c8cba8ea77efa5b697d6ac094228"
+      "sha256": "398f0bf0a9a80c979ec9f97f7f3842a0c639436b91f71b1b5a8e7ba3aa6db4bf"
     }
   ],
   "outputs": [
     {
       "path": "runs/dev/05_compose/promo_9x16.mp4",
-      "sha256": "089b699bb7fca9ba1255cca2e8bf65095bf33fdcfa8a143674598a1366c2a303",
+      "sha256": "4acf1ffec68dc769dc11e1fa41ee2824e6a2a2f0759cb8e382098dd80dc0fedf",
       "schema": "video/mp4",
-      "bytes": 6651624
+      "bytes": 6659682
+    },
+    {
+      "path": "runs/dev/05_compose/bg_1x1.png",
+      "sha256": "b369f5ee2c471eda42fa15916f4e7fc12c3b8d0f0eb0f6353d77f445f6f46add",
+      "schema": "image/png",
+      "bytes": 133275
     },
     {
       "path": "runs/dev/05_compose/promo_1x1.mp4",
-      "sha256": "d0a391f80d14ae4c87cbd0d605d10c53c058a08cab611669ca7bb0725fd59523",
+      "sha256": "2ecbbce49e8fb7be7898d69cfd0a78127eb3b64de91249644000c91595d42d32",
       "schema": "video/mp4",
-      "bytes": 2819259
+      "bytes": 2827317
     },
     {
       "path": "runs/dev/05_compose/bg_16x9.png",
@@ -42,9 +48,9 @@
     },
     {
       "path": "runs/dev/05_compose/promo_16x9.mp4",
-      "sha256": "19d8f662db032a07b96dd8a6d28a757529b2a1d807e0af4e01da620e2240952e",
+      "sha256": "c3e8da757c125eed0fbe65bf901824f20521722d020350cab65338b5d6c4f565",
       "schema": "video/mp4",
-      "bytes": 2934052
+      "bytes": 2942110
     },
     {
       "path": "runs/dev/05_compose/cover_9x16.jpg",

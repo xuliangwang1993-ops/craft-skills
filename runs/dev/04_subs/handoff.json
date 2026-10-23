@@ -2,19 +2,19 @@
   "run_id": "dev",
   "station": "04_subs",
   "title": "字幕",
-  "started_at": "2026-10-23T10:05:50Z",
-  "finished_at": "2026-10-23T10:05:58Z",
-  "elapsed_seconds": 7.55,
+  "started_at": "2026-10-23T11:02:45Z",
+  "finished_at": "2026-10-23T11:02:53Z",
+  "elapsed_seconds": 7.17,
   "exit_code": 0,
   "seed": 20261022,
   "inputs": [
     {
       "path": "runs/dev/02_script/script.json",
-      "sha256": "75d61d9dc75636dfb57f02b2fe3ecd2ec510a997e2671e04bc8776bda0666bda"
+      "sha256": "a5a367f5aa0508fc8d2a599f6744d037ffc86eeac0921fcf3c701c8b8850a4cf"
     },
     {
       "path": "runs/dev/03_edit/audio/mix.wav",
-      "sha256": "eebb7304f55e4a75c6252a3e8a933485c960c8cba8ea77efa5b697d6ac094228"
+      "sha256": "398f0bf0a9a80c979ec9f97f7f3842a0c639436b91f71b1b5a8e7ba3aa6db4bf"
     }
   ],
   "outputs": [
@@ -32,7 +32,7 @@
     },
     {
       "path": "runs/dev/04_subs/review.json",
-      "sha256": "ebebdfb6ab0f30b235abbc989249461678357965e496bc8c42b46814d7bd9a90",
+      "sha256": "6353d480f4110c125b05243965d67377cb9ef384dee08be76c5e4950758b5033",
       "schema": "subs_review",
       "bytes": 2856
     }

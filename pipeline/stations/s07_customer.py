@@ -225,6 +225,46 @@ def main(st: Station):
     validate(manifest, "kb_manifest", where="07_customer/kb_manifest.json")
     st.emit(write_json(st.path("kb_manifest.json"), manifest), "kb_manifest")
 
+    # ---- 报价单：用本次实测耗时算成本，不用拍脑袋 ------------------------- #
+    handoffs = {}
+    for qa_path in sorted(prev.glob("0*/handoff.json")):
+        h = read_json(qa_path)
+        handoffs[h["station"]] = h.get("elapsed_seconds", 0)
+    render_seconds = sum(v for k, v in handoffs.items() if k in ("03_edit", "05_compose", "06_qa"))
+    total_seconds = sum(handoffs.values())
+    quote = {
+        "run_id": st.run_id, "generated_at": now(),
+        "packages": [
+            {"name": "基础包（30s × 3 尺寸 + 中英字幕 + 封面，含 1 次修改）",
+             "price_min_aud": 300, "price_max_aud": 600,
+             "includes": ["promo_9x16.mp4", "promo_1x1.mp4", "promo_16x9.mp4",
+                          "cover_9x16.jpg", "cover_1x1.jpg", "cover_16x9.jpg",
+                          "zh.srt", "en.srt", "1 次修改"],
+             "basis": "只做后期，拍摄由店家手机完成；约为悉尼整包下限 A$1,895 的 16–32%"},
+            {"name": "月度包（每月 4 支，复用品牌模板）",
+             "price_min_aud": 800, "price_max_aud": 1500,
+             "includes": ["4 支 30s 成片", "每支 3 尺寸 + 双语字幕 + 封面", "每月 1 次拍摄指导"],
+             "basis": "第 2 支起省掉脚本与版式设计，边际工时约为基础包的 55%"},
+        ],
+        "measured_cost": {
+            "machine_seconds_total": round(total_seconds, 1),
+            "machine_seconds_render": round(render_seconds, 1),
+            "human_minutes_estimate": 25,
+            "human_note": "字幕校对 10 分钟 + 拍摄清单沟通 10 分钟 + 交付说明 5 分钟（估算，非实测）",
+            "per_station_seconds": {k: round(v, 1) for k, v in handoffs.items()},
+            "environment": "iPhone iSH / 纯 CPU / 4 GB；换到 8 核 x86 约快 6–10 倍（未实测）",
+        },
+        "market_comparison": {
+            "sydney_full_package_aud": [1895, 6500],
+            "rev_subtitle_usd_per_minute": 1.99,
+            "rev_translation_usd_per_minute": 10.49,
+            "our_share_of_floor_pct": 16,
+            "note": "价格区间为建议值，未经市场验证；用实测工时与客户反馈修正",
+        },
+    }
+    validate(quote, "quote", where="07_customer/quote.json")
+    st.emit(write_json(st.path("quote.json"), quote), "quote")
+
     # ---- workbench delivery card ----------------------------------------- #
     stations = []
     for key, qa in qa_all.items():

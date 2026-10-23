@@ -1,7 +1,7 @@
 {
   "run_id": "dev",
   "station": "00_brief",
-  "generated_at": "2026-10-22T07:09:56Z",
+  "generated_at": "2026-10-23T10:34:08Z",
   "checks": [
     {
       "id": "S0-01",
@@ -9,6 +9,7 @@
       "value": 30.0,
       "threshold": "==30",
       "pass": true,
+      "severity": "blocking",
       "detail": ""
     },
     {
@@ -20,6 +21,7 @@
       ],
       "threshold": "2 languages",
       "pass": true,
+      "severity": "blocking",
       "detail": ""
     },
     {
@@ -32,6 +34,7 @@
       ],
       "threshold": "9:16,1:1,16:9",
       "pass": true,
+      "severity": "blocking",
       "detail": ""
     },
     {
@@ -40,6 +43,7 @@
       "value": 5,
       "threshold": ">=4",
       "pass": true,
+      "severity": "blocking",
       "detail": ""
     },
     {
@@ -48,9 +52,12 @@
       "value": 5,
       "threshold": ">=4",
       "pass": true,
+      "severity": "blocking",
       "detail": ""
     }
   ],
   "passed": true,
+  "blocking_failures": [],
+  "advisory_failures": [],
   "notes": []
 }

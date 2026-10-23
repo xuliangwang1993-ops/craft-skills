@@ -36,15 +36,4 @@ fail-drill:
 	@$(PY) tests/fail_drill.py
 
 check-schemas:
-	@$(PY) - <<'PY'
-import json, sys
-from pathlib import Path
-from jsonschema import Draft202012Validator
-ok = True
-for p in sorted(Path("schemas").glob("*.schema.json")):
-    schema = json.loads(p.read_text())
-    errs = list(Draft202012Validator.check_schema(schema))
-    print(("OK  " if not errs else "BAD ") + p.name)
-    ok = ok and not errs
-sys.exit(0 if ok else 1)
-PY
+	@$(PY) pipeline/check_schemas.py

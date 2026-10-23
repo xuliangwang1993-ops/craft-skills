@@ -18,5 +18,5 @@
     "扣分：客户实拍素材为 0，官网图仅 680x510，达不到 1080p 交付标准 —— 这是本单最大的商业风险。",
     "crawl4ai 安装失败（见 reports/tool_verification.json），站点抓取降级为 curl + 本地解析，够用且可复现。"
   ],
-  "generated_at": "2026-10-22T07:13:27Z"
+  "generated_at": "2026-10-23T10:34:18Z"
 }

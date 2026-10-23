@@ -20,5 +20,5 @@
     "demucs 需要 torch，本机无 musl-aarch64 轮子 → 不可用；本片本来也没有人声/第三方音乐需要分离，缺口已记录。",
     "扣分：调色用的是 ffmpeg 曲线而非 darktable（Alpine 无 darktable 包），属降级但参数可复现。"
   ],
-  "generated_at": "2026-10-23T01:03:39Z"
+  "generated_at": "2026-10-23T11:02:42Z"
 }

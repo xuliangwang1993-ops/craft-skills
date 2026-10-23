@@ -1,6 +1,6 @@
 {
   "run_id": "dev",
-  "generated_at": "2026-10-23T09:52:27Z",
+  "generated_at": "2026-10-23T11:53:38Z",
   "ok": true,
   "checked": 18,
   "mismatches": [],
@@ -172,7 +172,7 @@
   "videos": {
     "9x16": {
       "duration": 30.0,
-      "size_bytes": 6651624,
+      "size_bytes": 6659682,
       "width": 1080,
       "height": 1920,
       "fps": 30.0,
@@ -183,7 +183,7 @@
     },
     "1x1": {
       "duration": 30.0,
-      "size_bytes": 2819259,
+      "size_bytes": 2827317,
       "width": 1080,
       "height": 1080,
       "fps": 30.0,
@@ -194,7 +194,7 @@
     },
     "16x9": {
       "duration": 30.0,
-      "size_bytes": 2934052,
+      "size_bytes": 2942110,
       "width": 1920,
       "height": 1080,
       "fps": 30.0,

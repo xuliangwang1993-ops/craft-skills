@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-10-22T10:00:19Z",
+  "run_at": "2026-10-23T12:02:12Z",
   "environment": {
     "os": "iOS iSH (Alpine Linux 3.21, aarch64, musl)",
     "python": "3.12.14",
@@ -7,8 +7,8 @@
     "note": "musl + aarch64 决定了大量 PyPI 轮子不可用，这是本报告里所有 unavailable 的共同原因"
   },
   "summary": {
-    "passed": 7,
-    "failed": 4,
+    "passed": 10,
+    "failed": 1,
     "unavailable": 9,
     "total": 20
   },
@@ -20,22 +20,22 @@
       "install_command": "apk add ffmpeg",
       "example_command": "/opt/ffmpeg/bin/ffmpeg -v error -f lavfi -i testsrc=size=320x240:rate=30 -t 1 -c:v libx264 -pix_fmt yuv420p /var/minis/workspace/craft-skills/reports/.toolwork/cpu.mp4",
       "exit_code": 0,
-      "seconds": 64.3,
+      "seconds": 0.5,
       "status": "passed",
       "stderr_tail": "",
       "note": ""
     },
     {
-      "tool": "ffmpeg (ios/hw)",
+      "tool": "ffmpeg (ios build)",
       "tier": "verified",
       "version": "ffmpeg version 1229403 Copyright (c) 2000-2024 the FFmpeg developers",
-      "install_command": "preinstalled",
+      "install_command": "preinstalled (iOS)",
       "example_command": "/usr/bin/ffmpeg -v error -y -loop 1 -framerate 30 -i /var/minis/workspace/craft-skills/inputs/customer_media/Slur-Slurp-New-Logo.png -t 1 -c:v h264_videotoolbox /var/minis/workspace/craft-skills/reports/.toolwork/hw.mp4",
       "exit_code": 0,
       "seconds": 0.2,
       "status": "passed",
       "stderr_tail": "",
-      "note": "无 lavfi/libx264/libass/drawtext；有 VideoToolbox、zoompan、overlay、loudnorm"
+      "note": "无 lavfi/libx264/libass/drawtext，有 VideoToolbox；被 kill 后会把整个 App 锁死（本次踩过），所以流水线默认不用它"
     },
     {
       "tool": "sox",
@@ -44,7 +44,7 @@
       "install_command": "apk add sox",
       "example_command": "sox -n /var/minis/workspace/craft-skills/reports/.toolwork/sine.wav synth 1 sine 440",
       "exit_code": 0,
-      "seconds": 0.3,
+      "seconds": 0.1,
       "status": "passed",
       "stderr_tail": "",
       "note": ""
@@ -56,7 +56,7 @@
       "install_command": "apk add vips vips-tools",
       "example_command": "vips copy /var/minis/workspace/craft-skills/inputs/customer_media/Slur-Slurp-New-Logo.png /var/minis/workspace/craft-skills/reports/.toolwork/logo.webp",
       "exit_code": 1,
-      "seconds": 1.0,
+      "seconds": 0.5,
       "status": "failed",
       "stderr_tail": "",
       "note": "本机 vips 未装 jpeg/png 模块（只能读 vips 原生格式）→ 图片处理改用 PIL/ImageMagick"
@@ -68,7 +68,7 @@
       "install_command": "apk add imagemagick",
       "example_command": "magick /var/minis/workspace/craft-skills/inputs/customer_media/Slur-Slurp-New-Logo.png -resize 200x200 /var/minis/workspace/craft-skills/reports/.toolwork/logo_im.jpg",
       "exit_code": 0,
-      "seconds": 0.7,
+      "seconds": 0.4,
       "status": "passed",
       "stderr_tail": "",
       "note": ""
@@ -76,13 +76,13 @@
     {
       "tool": "opencv",
       "tier": "verified",
-      "version": "Traceback (most recent call last):",
+      "version": "4.10.0",
       "install_command": "pip install opencv-python-headless（本机已预装）",
       "example_command": "/usr/bin/python3 -c import cv2,numpy as np;im=cv2.imread('/var/minis/workspace/craft-skills/inputs/customer_media/Slur-Slurp-New-Logo.png');print(im.shape, cv2.kmeans(im.reshape(-1,3).astype(np.float32),3,None,(3,10,0.2),3,cv2.KMEANS_PP_CENTERS)[2].shape)",
-      "exit_code": 1,
-      "seconds": 6.4,
-      "status": "failed",
-      "stderr_tail": "ortlib.import_module(\"cv2\")\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/importlib/__init__.py\", line 90, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nImportError: Error loading shared library libLLVM.so.19.1: Out of memory (needed by /usr/lib/libgallium-24.2.8.so)\n",
+      "exit_code": 0,
+      "seconds": 5.9,
+      "status": "passed",
+      "stderr_tail": "",
       "note": ""
     },
     {
@@ -92,9 +92,9 @@
       "install_command": "apk add mlt",
       "example_command": "melt /var/minis/workspace/craft-skills/reports/.toolwork/cpu.mp4 -consumer avformat:/var/minis/workspace/craft-skills/reports/.toolwork/melt_out.mp4 f=mp4 vcodec=libx264 an=1",
       "exit_code": 0,
-      "seconds": 2.6,
-      "status": "failed",
-      "stderr_tail": "mlt_repository_init: failed to dlopen /usr/lib/mlt-7/libmltavformat.so\n  (Error loading shared library libavutil.so.58: Out of memory (needed by /usr/lib/mlt-7/libmltavformat.so))\nFailed to load \"/var/minis/workspace/craft-skills/reports/.toolwork/cpu.mp4\"\nFailed to load \"/var/minis/workspace/craft-skills/reports/.toolwork/cpu.mp4\"\n",
+      "seconds": 2.2,
+      "status": "passed",
+      "stderr_tail": "",
       "note": "1088x1920 及以上画幅需宽高为 16 的倍数，1080 宽会失败"
     },
     {
@@ -104,7 +104,7 @@
       "install_command": "apk add pandoc",
       "example_command": "pandoc -f markdown -t html -o /var/minis/workspace/craft-skills/reports/.toolwork/p.html",
       "exit_code": 0,
-      "seconds": 3.3,
+      "seconds": 0.4,
       "status": "passed",
       "stderr_tail": "",
       "note": ""
@@ -116,7 +116,7 @@
       "install_command": "pip install python-docx",
       "example_command": "/usr/bin/python3 -c import docx;d=docx.Document();d.add_paragraph('ok');d.save('/var/minis/workspace/craft-skills/reports/.toolwork/d.docx')",
       "exit_code": 0,
-      "seconds": 24.3,
+      "seconds": 2.6,
       "status": "passed",
       "stderr_tail": "",
       "note": ""
@@ -128,7 +128,7 @@
       "install_command": "apk add jq",
       "example_command": "jq -n --arg x 30 {seconds: ($x|tonumber)}",
       "exit_code": 0,
-      "seconds": 0.2,
+      "seconds": 0.0,
       "status": "passed",
       "stderr_tail": "",
       "note": "第 0 站用它把一句话拆成 brief.json"
@@ -136,13 +136,13 @@
     {
       "tool": "pyscenedetect",
       "tier": "unverified-now-verified",
-      "version": "Traceback (most recent call last):",
+      "version": "[PySceneDetect] PySceneDetect 0.7.2",
       "install_command": "pip install --no-deps scenedetect click tqdm platformdirs（opencv 用系统包）",
       "example_command": "scenedetect -i /var/minis/workspace/craft-skills/reports/.toolwork/cpu.mp4 -o /var/minis/workspace/craft-skills/reports/.toolwork detect-adaptive list-scenes",
-      "exit_code": 1,
-      "seconds": 7.6,
-      "status": "failed",
-      "stderr_tail": "ortlib.import_module(\"cv2\")\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/importlib/__init__.py\", line 90, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nImportError: Error loading shared library libLLVM.so.19.1: Out of memory (needed by /usr/lib/libgallium-24.2.8.so)\n",
+      "exit_code": 0,
+      "seconds": 7.2,
+      "status": "passed",
+      "stderr_tail": "",
       "note": "第 3 站用它核对成片切点数；装上后实测 7 镜切出 7 段"
     },
     {
